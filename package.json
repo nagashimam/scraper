@@ -1,0 +1,23 @@
+{
+  "name": "web-scraper-markdown",
+  "version": "1.0.0",
+  "description": "A web scraping tool that converts static website content to Markdown for RAG systems",
+  "main": "scrape.js",
+  "scripts": {
+    "start": "node scrape.js"
+  },
+  "keywords": [
+    "web-scraping",
+    "markdown",
+    "crawler",
+    "rag"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "cheerio": "^1.0.0-rc.12",
+    "turndown": "^7.1.2",
+    "turndown-plugin-gfm": "^1.0.2"
+  }
+}

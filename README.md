@@ -26,8 +26,13 @@ This will install the required packages:
 - `axios` - For making HTTP requests
 - `cheerio` - For parsing HTML
 - `turndown` - For converting HTML to Markdown
+- `turndown-plugin-gfm` - For GitHub Flavored Markdown support (tables, etc.)
 
 ## Usage
+
+There are two ways to specify which URLs to scrape:
+
+### Option 1: Command-Line Argument (Quick)
 
 Run the scraper with a starting URL:
 
@@ -35,7 +40,7 @@ Run the scraper with a starting URL:
 node scrape.js <URL>
 ```
 
-### Examples
+**Examples:**
 
 Scrape a documentation site:
 ```bash
@@ -46,6 +51,30 @@ Scrape starting from a specific page:
 ```bash
 node scrape.js https://example.com/docs/index.html
 ```
+
+### Option 2: Config File (Multiple URLs)
+
+Create or edit `scrape.config.json` in the project root:
+
+```json
+{
+  "urls": [
+    "https://example.com/guide/",
+    "https://example.com/docs/",
+    "https://another-site.com/api/"
+  ]
+}
+```
+
+Then run without arguments:
+
+```bash
+node scrape.js
+```
+
+The scraper will process each URL in sequence.
+
+**Note:** If you provide a command-line argument, it takes priority over the config file.
 
 ## How It Works
 
@@ -59,9 +88,8 @@ node scrape.js https://example.com/docs/index.html
    - Images removed
 
 4. **File Naming**:
-   - URLs ending in `.html` or `.htm`: uses the base filename (e.g., `page.html` → `page.md`)
-   - Other URLs: uses the last path segment (e.g., `/api/v1` → `v1.md`)
-   - Special case: `index.html` → `index.md`
+   - URLs ending in `.html` or `.htm`: Creates directory structure matching URL path, changes extension to `.md` (e.g., `http://example.com/foo/bar/index.html` → `example.com/foo/bar/index.md`)
+   - Other URLs: Last directory segment becomes filename, rest becomes directory path (e.g., `http://example.com/foo/bar/` → `example.com/foo/bar.md`)
 
 5. **Output**: All Markdown files are saved in the `./markdown_output` directory (automatically created if it doesn't exist).
 

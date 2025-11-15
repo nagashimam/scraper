@@ -6,10 +6,34 @@ One of Vue’s most distinctive features is the unobtrusive reactivity system. C
 
 This term comes up in programming quite a bit these days, but what do people mean when they say it? Reactivity is a programming paradigm that allows us to adjust to changes in a declarative manner. The canonical example that people usually show, because it’s a great one, is an Excel spreadsheet:
 
-|  | A | B | C | 
+|  | A | B | C |
 | --- | --- | --- | --- |
+| 0 | 
+1
 
-<tbody data-v-dffbe810=""><tr data-v-dffbe810=""><th data-v-dffbe810="">0</th><td data-v-dffbe810=""><div class="cell" title="1" data-v-dffbe810="" data-v-3da8ea48=""><span data-v-3da8ea48="">1</span></div></td><td data-v-dffbe810=""><div class="cell" title="" data-v-dffbe810="" data-v-3da8ea48=""><span data-v-3da8ea48=""></span></div></td><td data-v-dffbe810=""><div class="cell" title="" data-v-dffbe810="" data-v-3da8ea48=""><span data-v-3da8ea48=""></span></div></td></tr><tr data-v-dffbe810=""><th data-v-dffbe810="">1</th><td data-v-dffbe810=""><div class="cell" title="2" data-v-dffbe810="" data-v-3da8ea48=""><span data-v-3da8ea48="">2</span></div></td><td data-v-dffbe810=""><div class="cell" title="" data-v-dffbe810="" data-v-3da8ea48=""><span data-v-3da8ea48=""></span></div></td><td data-v-dffbe810=""><div class="cell" title="" data-v-dffbe810="" data-v-3da8ea48=""><span data-v-3da8ea48=""></span></div></td></tr><tr data-v-dffbe810=""><th data-v-dffbe810="">2</th><td data-v-dffbe810=""><div class="cell" title="= A0 + A1" data-v-dffbe810="" data-v-3da8ea48=""><span data-v-3da8ea48="">3</span></div></td><td data-v-dffbe810=""><div class="cell" title="" data-v-dffbe810="" data-v-3da8ea48=""><span data-v-3da8ea48=""></span></div></td><td data-v-dffbe810=""><div class="cell" title="" data-v-dffbe810="" data-v-3da8ea48=""><span data-v-3da8ea48=""></span></div></td></tr></tbody>
+ | 
+
+ | 
+
+ |
+| 1 | 
+
+2
+
+ | 
+
+ | 
+
+ |
+| 2 | 
+
+3
+
+ | 
+
+ | 
+
+ |
 
 Here cell A2 is defined via a formula of `= A0 + A1` (you can click on A2 to view or edit the formula), so the spreadsheet gives us 3. No surprises there. But if you update A0 or A1, you'll notice that A2 automagically updates too.
 

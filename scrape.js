@@ -8,6 +8,7 @@ const { URL } = require('url');
 
 // Configuration
 const OUTPUT_DIR = './markdown_output';
+const CONFIG_FILE = './scrape.config.json';
 
 /**
  * Initialize the Turndown service with custom configuration
@@ -224,26 +225,116 @@ async function crawl(startUrl) {
   console.log(`Crawl complete! Scraped ${visited.size} pages.`);
 }
 
+/**
+ * Read URLs from config file
+ */
+function readConfigFile() {
+  try {
+    if (!fs.existsSync(CONFIG_FILE)) {
+      return null;
+    }
+
+    const configContent = fs.readFileSync(CONFIG_FILE, 'utf-8');
+    const config = JSON.parse(configContent);
+
+    if (!config.urls || !Array.isArray(config.urls)) {
+      console.error('Error: Config file must contain a "urls" array');
+      process.exit(1);
+    }
+
+    if (config.urls.length === 0) {
+      console.error('Error: Config file "urls" array is empty');
+      process.exit(1);
+    }
+
+    return config.urls;
+  } catch (error) {
+    if (error instanceof SyntaxError) {
+      console.error(`Error: Invalid JSON in ${CONFIG_FILE}`);
+      console.error(error.message);
+    } else {
+      console.error(`Error reading config file: ${error.message}`);
+    }
+    process.exit(1);
+  }
+}
+
+/**
+ * Validate a URL string
+ */
+function validateUrl(urlString) {
+  try {
+    new URL(urlString);
+    return true;
+  } catch (error) {
+    return false;
+  }
+}
+
 // Main execution
 (async () => {
   const args = process.argv.slice(2);
+  let urlsToScrape = [];
 
-  if (args.length === 0) {
-    console.error('Error: No URL provided');
-    console.error('Usage: node scrape.js <URL>');
-    console.error('Example: node scrape.js https://example.com/guide/');
-    process.exit(1);
+  // Priority 1: Command-line argument
+  if (args.length > 0) {
+    const startUrl = args[0];
+    if (!validateUrl(startUrl)) {
+      console.error(`Error: Invalid URL: ${startUrl}`);
+      process.exit(1);
+    }
+    urlsToScrape = [startUrl];
+    console.log('Using URL from command-line argument');
+  }
+  // Priority 2: Config file
+  else {
+    const configUrls = readConfigFile();
+    if (!configUrls) {
+      console.error('Error: No URL provided');
+      console.error('');
+      console.error('Usage:');
+      console.error('  1. Command-line: node scrape.js <URL>');
+      console.error('  2. Config file: Create scrape.config.json with URLs');
+      console.error('');
+      console.error('Example command-line usage:');
+      console.error('  node scrape.js https://example.com/guide/');
+      console.error('');
+      console.error('Example config file (scrape.config.json):');
+      console.error('  {');
+      console.error('    "urls": [');
+      console.error('      "https://example.com/guide/",');
+      console.error('      "https://example.com/docs/"');
+      console.error('    ]');
+      console.error('  }');
+      process.exit(1);
+    }
+
+    // Validate all URLs from config
+    for (const url of configUrls) {
+      if (!validateUrl(url)) {
+        console.error(`Error: Invalid URL in config file: ${url}`);
+        process.exit(1);
+      }
+    }
+
+    urlsToScrape = configUrls;
+    console.log(`Using ${urlsToScrape.length} URL(s) from config file`);
   }
 
-  const startUrl = args[0];
+  // Scrape each URL
+  for (let i = 0; i < urlsToScrape.length; i++) {
+    const url = urlsToScrape[i];
 
-  // Validate URL
-  try {
-    new URL(startUrl);
-  } catch (error) {
-    console.error(`Error: Invalid URL: ${startUrl}`);
-    process.exit(1);
+    if (urlsToScrape.length > 1) {
+      console.log('');
+      console.log(`========================================`);
+      console.log(`Scraping ${i + 1} of ${urlsToScrape.length}`);
+      console.log(`========================================`);
+    }
+
+    await crawl(url);
   }
 
-  await crawl(startUrl);
+  console.log('');
+  console.log('All scraping complete!');
 })();

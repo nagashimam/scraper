@@ -123,10 +123,16 @@ template
 
 [Landmarks](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/landmark_role) provide programmatic access to sections within an application. Users who rely on assistive technology can navigate to each section of the application and skip over content. You can use [ARIA roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles) to help you achieve this.
 
-| HTML | ARIA Role | Landmark Purpose | 
+| HTML | ARIA Role | Landmark Purpose |
 | --- | --- | --- |
-
-<tbody><tr><td>header</td><td>role="banner"</td><td>Prime heading: title of the page</td></tr><tr><td>nav</td><td>role="navigation"</td><td>Collection of links suitable for use when navigating the document or related documents</td></tr><tr><td>main</td><td>role="main"</td><td>The main or central content of the document.</td></tr><tr><td>footer</td><td>role="contentinfo"</td><td>Information about the parent document: footnotes/copyrights/links to privacy statement</td></tr><tr><td>aside</td><td>role="complementary"</td><td>Supports the main content, yet is separated and meaningful on its own content</td></tr><tr><td>search</td><td>role="search"</td><td>This section contains the search functionality for the application</td></tr><tr><td>form</td><td>role="form"</td><td>Collection of form-associated elements</td></tr><tr><td>section</td><td>role="region"</td><td>Content that is relevant and that users will likely want to navigate to. Label must be provided for this element</td></tr></tbody>
+| header | role="banner" | Prime heading: title of the page |
+| nav | role="navigation" | Collection of links suitable for use when navigating the document or related documents |
+| main | role="main" | The main or central content of the document. |
+| footer | role="contentinfo" | Information about the parent document: footnotes/copyrights/links to privacy statement |
+| aside | role="complementary" | Supports the main content, yet is separated and meaningful on its own content |
+| search | role="search" | This section contains the search functionality for the application |
+| form | role="form" | Collection of form-associated elements |
+| section | role="region" | Content that is relevant and that users will likely want to navigate to. Label must be provided for this element |
 
 [Read more about landmarks](https://www.w3.org/TR/wai-aria-1.2/#landmark_roles)
 

@@ -164,7 +164,8 @@ By setting different `transition` properties on hover/focus, it's possible to cr
   background: blue;
 
   /* This transition is applied on the "enter" transition */
-  transition: backg
+  transition: background 150ms ease;
+}
 ```
 
 ## Accessibility considerations
@@ -188,7 +189,9 @@ CSS transitions are not for everyone. For some people, transitions and animation
 */
 @media (prefers-reduced-motion: no-preference) {
   .my-element {
-    transition: transform 250ms ease
+    transition: transform 250ms ease;
+  }
+}
 ```
 
 Check out our blog post [prefers-reduced-motion: Sometimes less movement is more](/articles/prefers-reduced-motion) for more information on this media feature.

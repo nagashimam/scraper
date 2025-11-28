@@ -289,8 +289,8 @@ They are relative to the document window they were created in, which may or may 
 *   [CSS Spec Values and Units Level 4](https://www.w3.org/TR/css-values-4)
 *   [Sizing and Units on MDN](https://developer.mozilla.org/docs/Learn/CSS/Building_blocks/Values_and_units)
 *   [All About Ems](https://learn.scannerlicker.net/2014/07/31/so-how-much-is-an-em/)
-*   [A percentages explainer](https://wattenberger.com/blog/css-percents)
+*   [A percentages explainer](https://2019.wattenberger.com/blog/css-percents)
 
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2025-06-24 UTC.
+Last updated 2025-11-24 UTC.

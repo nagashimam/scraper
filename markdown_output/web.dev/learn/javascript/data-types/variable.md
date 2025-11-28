@@ -240,9 +240,9 @@ As far as JavaScript is concerned, a block scoped variable _doesn't_ exist outsi
 
 ```
 {
-  const myConstant = false;
+  const scopedConstant = false;
 }
-const myConstant = true;
+const scopedConstant = true;
 
 scopedConstant;
 > true

@@ -67,13 +67,13 @@ If you'd like to experiment with all the permutations of document directions (th
 It's a good idea to identify the language of your page by using the `lang` attribute on the `html` element.
 
 ```
-<html lang="en">
+<html lang=&quo>t
 ```
 
 That example is for a page in English. You can be even more specific. Here's how you declare that a page is using US English:
 
 ```
-<html lang="en-us">
+<html lang="e>n
 ```
 
 Declaring the language of your document is useful for search engines. It's also useful for assistive technologies like screen readers and voice assistants. By providing language metadata you're helping these kinds of speech synthesizers pronounce your content correctly.
@@ -81,7 +81,7 @@ Declaring the language of your document is useful for search engines. It's also 
 The `lang` attribute can go on any HTML element, not just `html`. If you switch languages in your web page, indicate that change. In this case, one word is in German:
 
 ```
-<p>I felt some <span lang="de">schadenfreude</span>.</p>
+<p>I felt some <span lang=&quo>t;de"sch<adenf>r<eu>d
 ```
 
 ## Identify a linked document's language
@@ -89,19 +89,19 @@ The `lang` attribute can go on any HTML element, not just `html`. If you switch 
 There's another attribute called `hreflang` which you can use on links. The `hreflang` takes the same language code notation as the `lang` attribute and describes the linked document's language. If there's a translation of your entire page available in German, link to it like this:
 
 ```
-<a href="/path/to/german/version" hreflang="de">German version</a>
+<a href="/path/to/german/version" hre>flang="de<&q>u
 ```
 
 If you use text in German to describe the link to the German version, use both `hreflang` and `lang`. Here, the text "Deutsche Version" is marked up as being in the German language, and the destination link is also marked up as being in German:
 
 ```
-<a href="/path/to/german/version" hreflang="de" lang="de">Deutsche Version</a>
+<a href="/path/to/german/version" hreflang=&quo>t;de" lang=<&q>u
 ```
 
 You can also use the `hreflang` attribute on the `link` element. This goes in the `head` of your document:
 
 ```
-<link href="/path/to/german/version" rel="alternate" hreflang="de">
+<link href="/path/to/german/version" rel="alternate>&
 ```
 
 But unlike the `lang` attribute, which can go on any element, `hreflang` can only be applied to `a` and `link` elements.

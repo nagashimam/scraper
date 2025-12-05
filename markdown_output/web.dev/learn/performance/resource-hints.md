@@ -57,12 +57,12 @@ DNS lookups are fairly inexpensive, and because of their relatively small cost, 
 The `preload` directive is used to initiate an early request for a resource required for rendering the page:
 
 ```
-<link rel="preload" href="/lcp-image.jpg" as="image">
+<link rel="preload" href="/lcp-image.jpg" as="image" fetchpriority="high">
 ```
 
-`preload` directives should be limited to late-discovered critical resources. The most common use cases are font files, CSS files fetched through `@import` declarations, or CSS `background-image` resources that are likely to be [Largest Contentful Paint (LCP) candidates](/articles/lcp#what-elements-are-considered). In such cases, these files wouldn't be discovered by the preload scanner as the resource is referenced in external resources.
+`preload` directives should be limited to late-discovered critical resources. The most common use cases are font files, CSS files fetched through `@import` declarations, or CSS `background-image` resources that are likely to be [Largest Contentful Paint (LCP) candidates](/articles/lcp#what-elements-are-considered) or other LCP resources that are not discoverable in the initial HTML (for example, if loaded by JavaScript). In such cases, these files wouldn't be discovered by the preload scanner as the resource is referenced in external resources.
 
-**Caution:** If you are using `preload` to download an image specified by an `<img>` element that varies based on the user's viewport, be sure to add the [`imagesrcset` attribute to the `preload` hint to download the correct image for the current viewport](/articles/preload-responsive-images). You should also exclude the `src` attribute so browsers that don't support responsive preloading don't download the fallback image.
+**Caution:** If you are using `preload` to download an image specified by an `<img>` element that varies based on the user's viewport, be sure to add the [`imagesrcset` attribute to the `preload` hint to download the correct image for the current viewport](/articles/preload-responsive-images). You should also exclude the `src` attribute so browsers that don't support responsive preloading don't download the fallback image. Finally preloaded images should have the `fetchpriority="high"` attribute since images are low priority by default, and preload does not change this.
 
 Similarly to `preconnect`, the `preload` directive requires the `crossorigin` attribute if you are preloading a CORS resource—such as fonts. If you don't add the `crossorigin` attribute—or add it for non-CORS requests—then the resource is downloaded by the browser _twice_, wasting bandwidth that could have been better spent on other resources.
 

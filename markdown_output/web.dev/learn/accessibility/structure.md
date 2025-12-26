@@ -220,7 +220,7 @@ When a table is structured correctly, relationships form between the column head
 
 Depending on the complexity of the table, forming relationships through code is accomplished in different ways. The first step to making a table accessible is to mark up header cells with [`<th>`](https://developer.mozilla.org/docs/Web/HTML/Element/th) and data cells with [`<td>`](https://developer.mozilla.org/docs/Web/HTML/Element/td) elements.
 
-For more complex tables, you may need to use additional HTML table elements such as [`<rowgroup>`](https://developer.mozilla.org/docs/Web/Accessibility/ARIA/Roles/rowgroup_role), [`<colgroup>`](https://developer.mozilla.org/docs/Web/HTML/Element/colgroup), [`<caption>`](https://developer.mozilla.org/docs/Web/HTML/Element/caption), and [`scope`](https://developer.mozilla.org/docs/Web/HTML/Element/th#attr-scope) to convey meaning and relationships.
+For more complex tables, you may need to use additional HTML table elements such as [`<rowgroup>`](https://developer.mozilla.org/docs/Web/Accessibility/ARIA/Reference/Roles/rowgroup_role), [`<colgroup>`](https://developer.mozilla.org/docs/Web/HTML/Element/colgroup), [`<caption>`](https://developer.mozilla.org/docs/Web/HTML/Element/caption), and [`scope`](https://developer.mozilla.org/docs/Web/HTML/Element/th#attr-scope) to convey meaning and relationships.
 
 Don't
 

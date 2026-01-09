@@ -4,7 +4,7 @@
 
 # Image performance Stay organized with collections Save and categorize content based on your preferences.
 
-**Important:**  The following is a general overview of image performance. For an in-depth treatment on the subject, check out the [Learn Images course](/learn/images) for more information on things such as specific file formats and [high performance image workflows](/learn/images/automating).
+**Tip:** For in-depth learning on creating better web images, take the [Learn Images course](/learn/images). Learn about specific file formats, high performance image workflows, and more.
 
 Images are often the [heaviest](https://almanac.httparchive.org/en/2022/page-weight#fig-8) and [most prevalent](https://almanac.httparchive.org/en/2022/page-weight#fig-3) resource on the web. As a result, optimizing images can significantly improve performance on your website. In most cases, optimizing images means reducing the network time by sending fewer bytes, but you can also optimize the amount of bytes sent to the user by serving images that are properly sized for the user's device.
 
@@ -12,7 +12,7 @@ Images can be added to a page using [the `<img>` or `<picture>` elements](/learn
 
 **Note:** In some limited cases, SVG images may be inlined directly into a page by inserting `<svg>` markup directly into a page's HTML. This allows for direct access to an SVG's child elements in JavaScript. Given this module's focus on image performance, this use case for SVG images isn't covered.
 
-Regardless of whether you inline an SVG or load one from the HTML `<img>` element, it helps to know when to use an SVG image. Because SVG is a [vector image format](https://en.wikipedia.org/wiki/Vector_graphics), they're most useful in cases where the image's contents are line art, diagrams and charts, and other cases where there aren't fine photographic details.
+Regardless of whether you inline an SVG or load one from the HTML `<img>` element, it helps to know when to use an SVG image. Because SVG is a [vector image format](https://wikipedia.org/wiki/Vector_graphics), they're most useful in cases where the image's contents are line art, diagrams and charts, and other cases where there aren't fine photographic details.
 
 If you use SVG images on your website, bear in mind that the SVG format is text-based, so techniques such as minification and compression apply. Lossy optimization is also possible using [svgo](https://github.com/svg/svgo), a Node.js-based SVG optimization tool.
 
@@ -22,11 +22,11 @@ The first optimization you can perform when it comes to using image resources is
 
 However, there are _many_ variables involved in choosing the proper image size, making the task of choosing the proper image size in every case to be quite complicated. In 2010, when the iPhone 4 was released, the screen resolution (640x960) was double that of the iPhone 3 (320x480). However, the physical size of the iPhone 4's screen remained roughly the same as the iPhone 3.
 
-Displaying everything at the higher resolution would have made text and images significantly smaller—half their previous size to be exact. Instead, 1 pixel became 2 [device pixels](https://en.wikipedia.org/wiki/Device-independent_pixel). This is called the [device pixel ratio (DPR)](https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio). The iPhone 4—and many iPhone models released after it—had a DPR of 2.
+Displaying everything at the higher resolution would have made text and images significantly smaller—half their previous size to be exact. Instead, 1 pixel became 2 [device pixels](https://wikipedia.org/wiki/Device-independent_pixel). This is called the [device pixel ratio (DPR)](https://developer.mozilla.org/docs/Web/API/Window/devicePixelRatio). The iPhone 4 (and many iPhone models released after) had a DPR of 2.
 
 Revisiting the earlier example, if the device has a DPR of 2 and the image is displayed in a 500 pixel by 500 pixel container, then a square 1000 pixel image (referred to as the [intrinsic size](https://developer.mozilla.org/docs/Glossary/Intrinsic_Size)) is now the optimal size. Similarly, if the device has a DPR of 3, then a square 1500 pixel image would be the optimal size.
 
-In most cases, the [human eye is unable to benefit from a DPR of 3](https://observablehq.com/@eeeps/visual-acuity-and-device-pixel-ratio) and you can probably use an image that is smaller than the optimal size without a perceivable decrease in image quality for most users.
+**Note:** In most cases, the human eye is [unable to benefit from a DPR of 3](https://observablehq.com/@eeeps/visual-acuity-and-device-pixel-ratio). You can probably use an image that is smaller than the optimal size, without a perceivable decrease in image quality for most users.
 
 ### `srcset`
 
@@ -67,30 +67,30 @@ In the preceding HTML snippet, the `srcset` attribute specifies a list of image 
 
 Using this information, the browser evaluates the media condition in the `sizes` attribute, and—in this case—is instructed that if the device's viewport width exceeds 768 pixels, the image is displayed at a width of 500 pixels. On smaller devices, the image is displayed at `100vw`—or the full viewport width.
 
-**Note:** If you are unfamiliar with the `vw` CSS unit, read [The large, small, and dynamic viewport units](/articles/viewport-units) to learn more.
+**Note:** If you are unfamiliar with the `vw` CSS unit, read [The large, small, and dynamic viewport units](/blog/viewport-units) to learn more.
 
 The browser can then combine this information with the list of `srcset` image sources to find the optimal image. For example, if the user is on a mobile device with a screen width of 320 pixels with a DPR of 3, the image is displayed at `320 CSS pixels x 3 DPR = 960 device pixels`. In this example, the closest sized image would be `image-1000.jpg` which has an intrinsic width of 1000 pixels (`1000w`).
 
-**Note:** `srcset` width descriptors don't work without the `sizes` attribute. Similarly, if you omit the `srcset` width descriptors, the `sizes` attribute doesn't do anything.
+**Caution:** `srcset` width descriptors must have both `sizes` attribute and width descriptors, or they don't work.
 
 ## File formats
 
 Browsers support several different image file formats. Modern image formats like [WebP](/articles/serve-images-webp) and [AVIF](/articles/compress-images-avif) may provide better compression than PNG or JPEG, making your image file size smaller and therefore taking less time to download. By serving images in modern formats, you can [reduce a resource's load time](/articles/optimize-lcp#3_reduce_resource_load_time), which may result in a lower [Largest Contentful Paint (LCP)](/articles/lcp).
 
-WebP is a [widely supported](https://caniuse.com/webp) format that works on all modern browsers. WebP often has better compression than JPEG, PNG, or GIF, offering both [lossy](https://en.wikipedia.org/wiki/Lossy_compression) and [lossless compression](https://en.wikipedia.org/wiki/Lossless_compression). WebP also supports alpha channel transparency even when using lossy compression—a feature the JPEG codec doesn't offer.
+WebP is a [widely supported](https://caniuse.com/webp) format that works on all modern browsers. WebP often has better compression than JPEG, PNG, or GIF, offering both [lossy](https://wikipedia.org/wiki/Lossy_compression) and [lossless compression](https://wikipedia.org/wiki/Lossless_compression). WebP also supports alpha channel transparency even when using lossy compression—a feature the JPEG codec doesn't offer.
 
-AVIF is a newer image format, and while it isn't as widely supported as WebP, it does enjoy [reasonably decent support across browsers](https://caniuse.com/avif). AVIF supports both lossy and lossless compression, and [tests](https://netflixtechblog.com/avif-for-next-generation-image-coding-b1d75675fe4) have shown greater than 50% savings when compared to JPEG in some cases. AVIF also offers [Wide Color Gamut (WCG)](https://en.wikipedia.org/wiki/Gamut#Wide_color_gamut) and [High Dynamic Range (HDR)](https://en.wikipedia.org/wiki/High_dynamic_range#Imaging) features.
+AVIF is a newer image format, and while it isn't as widely supported as WebP, it does enjoy [reasonably decent support across browsers](https://caniuse.com/avif). AVIF supports both lossy and lossless compression, and [tests](https://netflixtechblog.com/avif-for-next-generation-image-coding-b1d75675fe4) have shown greater than 50% savings when compared to JPEG in some cases. AVIF also offers [Wide Color Gamut (WCG)](https://wikipedia.org/wiki/Gamut#Wide_color_gamut) and [High Dynamic Range (HDR)](https://wikipedia.org/wiki/High_dynamic_range#Imaging) features.
 
 ## Compression
 
 Where images are concerned, there are two types of compression:
 
-1.  [Lossy compression](https://en.wikipedia.org/wiki/Lossy_compression)
-2.  [Lossless compression](https://en.wikipedia.org/wiki/Lossless_compression)
+1.  [Lossy compression](https://wikipedia.org/wiki/Lossy_compression)
+2.  [Lossless compression](https://wikipedia.org/wiki/Lossless_compression)
 
-Lossy compression works by reducing the image accuracy through [quantization](https://cs.stanford.edu/people/eroberts/courses/soco/projects/data-compression/lossy/jpeg/coeff.htm), and additional color information may be discarded using [chroma subsampling](https://en.wikipedia.org/wiki/Chroma_subsampling). Lossy compression is most effective on high-density images with lots of noise and colors—typically photos or imagery with similar contents. This is because the [artifacts](https://en.wikipedia.org/wiki/Compression_artifact) produced by lossy compression are much less likely to be noticed in such detailed images. However, lossy compression may be less effective with imagery containing sharp edges such as line art, similarly stark details, or text. Lossy compression can be applied to JPEG, WebP, and AVIF images.
+Lossy compression works by reducing the image accuracy through [quantization](https://cs.stanford.edu/people/eroberts/courses/soco/projects/data-compression/lossy/jpeg/coeff.htm), and additional color information may be discarded using [chroma subsampling](https://wikipedia.org/wiki/Chroma_subsampling). Lossy compression is most effective on high-density images with lots of noise and colors—typically photos or imagery with similar contents. This is because the [artifacts](https://wikipedia.org/wiki/Compression_artifact) produced by lossy compression are much less likely to be noticed in such detailed images. However, lossy compression may be less effective with imagery containing sharp edges such as line art, similarly stark details, or text. Lossy compression can be applied to JPEG, WebP, and AVIF images.
 
-**Note:** When using lossy compression, always confirm that the compressed image meets your quality standards. For example, images which contain high-contrast colored text atop a flat color are prone to artifacts from chroma subsampling.
+**Note:** When using lossy compression, always confirm that the compressed image meets your quality standards. For example, images which contain high-contrast colored text atop a flat color are prone to artifacts from chroma subsampling.
 
 Lossless compression reduces the file size by compressing an image with no data loss. Lossless compression describes a pixel based on the difference from its neighboring pixels. Lossless compression is used for the GIF, PNG, WebP, and AVIF image formats.
 
@@ -108,8 +108,7 @@ The `<picture>` element gives you greater flexibility in specifying multiple ima
     alt="An image"
     width="500"
     height="500"
-    src="/image.jpg"
-  >
+    src="/image.jpg">
 </picture>
 ```
 
@@ -119,21 +118,19 @@ A `<picture>` element requires an `<img>` element nested inside of it. The `alt`
 
 The `<source>` element also supports the `media`, `srcset`, and `sizes` attributes. Similarly to the `<img>` example earlier, these indicate to the browser which image to select on different viewports.
 
-**Note:** While the `srcset` attribute provides the browser _hints_ on which image to use, the media query on the `<source>` element is a _command_ to be followed by the browser.
+**Note:** While the `srcset` attribute provides the browser hints on which image to use, the media query on `<src>` is a **command** to be followed by the browser.
 
 ```
 <picture>
   <source
     media="(min-resolution: 1.5x)"
     srcset="/image-1000.jpg 1000w, /image-1500.jpg 1500w"
-    sizes="(min-width: 768px) 500px, 100vw"
-  >
+    sizes="(min-width: 768px) 500px, 100vw">
   <img
     alt="An image"
     width="500"
     height="500"
-    src="/image-500.jpg"
-  >
+    src="/image-500.jpg">
 </picture>
 ```
 
@@ -156,19 +153,16 @@ Devices with a DPR of 1 download the `image-500.jpg` image, including most deskt
   <source
     media="(min-width: 561px) and (min-resolution: 1.5x)"
     srcset="/image-1000.jpg 1000w, /image-1500.jpg 1500w"
-    sizes="(min-width: 768px) 500px, 100vw"
-  >
+    sizes="(min-width: 768px) 500px, 100vw">
   <source
     media="(max-width: 560px) and (min-resolution: 1.5x)"
     srcset="/image-1000-sm.jpg 1000w, /image-1500-sm.jpg 1500w"
-    sizes="(min-width: 768px) 500px, 100vw"
-  >
+    sizes="(min-width: 768px) 500px, 100vw">
   <img
     alt="An image"
     width="500"
     height="500"
-    src="/image-500.jpg"
-  >
+    src="/image-500.jpg">
 </picture>
 ```
 
@@ -190,24 +184,21 @@ Alternatively, by adjusting the `srcset` and `media` attributes, you can avoid s
 <picture>
   <source
     media="(min-width: 561px)"
-    srcset="/image-500.jpg, /image-1000.jpg 2x, /image-1500.jpg 3x"
-  >
+    srcset="/image-500.jpg, /image-1000.jpg 2x, /image-1500.jpg 3x">
   <source
     media="(max-width: 560px)"
-    srcset="/image-500.jpg 1x, /image-1000.jpg 2x"
-  >
+    srcset="/image-500.jpg 1x, /image-1000.jpg 2x">
   <img
     alt="An image"
     width="500"
     height="500"
-    src="/image-500.jpg"
-  >
+    src="/image-500.jpg">
 </picture>
 ```
 
 In the preceding HTML snippet, the width descriptors have been removed in favor of device pixel ratio descriptors. Images served on a mobile device are limited to `/image-500.jpg` or `/image-1000.jpg`, even on devices with a DPR of 3.
 
-## How to manage complexity
+## Manage complexity
 
 When working with responsive images, you can find yourself with many different size variations and formats for each image. In the preceding example, variations for each size are used, but exclude AVIF and WebP. How many variants should you have? Like many engineering problems, the answer tends to be "it depends".
 
@@ -233,7 +224,7 @@ if (request.headers.accept) {
 return reply.from('image.jpg');
 ```
 
-**Important:** The `Accept` request header usually only communicates what image types are supported in requests for HTML resources. If you choose to serve resources based on the value of this header, be sure to specify it in an additional [`Vary` response header](https://developer.mozilla.org/docs/Web/HTTP/Headers/Vary) so that shared caches—such as Content Delivery Networks (CDNs)—can account for different responses for the same URL.
+**Important:** The `Accept` request header usually only communicates what image types are supported in requests for HTML resources. If you choose to serve resources based on the value of this header, specify it in an additional [`Vary` response header](https://developer.mozilla.org/docs/Web/HTTP/Headers/Vary) so that shared caches (such as content delivery networks (CDNs)) can account for different responses for the same URL.
 
 The preceding HTML snippet is a simplified version of the code you can add to your server's JavaScript backend to choose and serve the optimal image format. If the request `Accept` header includes `image/avif`, then the AVIF image is served. Otherwise, if the `Accept` header includes `image/webp`, the WebP image is served. If neither of these conditions is true, then the JPEG image is served.
 
@@ -247,15 +238,21 @@ The key is to find a balance, generate a reasonable number of image candidates, 
 
 It's possible to tell the browser to lazy load images when they appear in the viewport using the [`loading`](https://developer.mozilla.org/docs/Web/API/HTMLImageElement/loading) attribute. An attribute value of `lazy` tells the browser to not download the image until it is in (or near) the viewport. This saves bandwidth, allowing the browser to prioritize the resources it needs to render the critical content that is already in the viewport.
 
-**Important:** To go in-depth on lazy loading images, read the [Lazy load images and `<iframe>` elements](/learn/performance/lazy-load-images-and-iframe-elements) module.
+**Tip:** To learn more about lazy loading, read the [Lazy load images and `<iframe>` elements](/learn/performance/lazy-load-images-and-iframe-elements) module.
 
-## `decoding`
+## Decoding attribute
 
-The [`decoding`](https://developer.mozilla.org/docs/Web/API/HTMLImageElement/decoding) attribute tells the browser how it should decode the image. A value of `async` tells the browser that the image can be decoded asynchronously, possibly improving the time to render other content. A value of `sync` tells the browser that the image should be presented at the same time as other content. The default value of `auto` allows the browser to decide what is best for the user.
+The [`decoding`](https://developer.mozilla.org/docs/Web/API/HTMLImageElement/decoding) attribute tells the browser how it should decode the image. There are three possible values:
 
-**Note:** The effect of the `decoding` attribute may only be noticeable on very large, high-resolution images which take a much longer time to decode. You can also use the [`decode` method](https://developer.mozilla.org/docs/Web/API/HTMLImageElement/decode) on an instance of an `HTMLImageElement` in JavaScript when inserting an image into the DOM programmatically. For more detailed information on the `decode` attribute and the `decode` method, read [What does the image decoding attribute actually do?](https://www.tunetheweb.com/blog/what-does-the-image-decoding-attribute-actually-do/)
+*   `async` tells the browser that the image can be decoded asynchronously, which may improve the time to render other content.
+*   `sync` tells the browser that the image should be presented at the same time as other content.
+*   `auto` (default) allows the browser to decide what is best for the user.
 
-## Image demos
+You can use the [`decode` method](https://developer.mozilla.org/docs/Web/API/HTMLImageElement/decode) on an instance of an `HTMLImageElement` in JavaScript, when inserting an image into the DOM.
+
+**Note:** The effects of `decoding` and `decode` may only be noticeable on very large, high-resolution images. These take a much longer time to decode. Learn more about [what the image decoding attribute actually does](https://www.tunetheweb.com/blog/what-does-the-image-decoding-attribute-actually-do).
+
+## Image demo
 
 ## Test your knowledge
 

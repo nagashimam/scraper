@@ -1,6 +1,6 @@
 *   [web.dev](https://web.dev/)
 *   [Resources](https://web.dev/learn)
-*   [Privacy](https://web.dev/learn/privacy)
+*   [AI](https://web.dev/learn/ai)
 
 Stay organized with collections Save and categorize content based on your preferences.
 
@@ -39,6 +39,16 @@ Course
 An in-depth course on the basics of JavaScript.
 
 [Start course](https://web.dev/learn/javascript)
+
+[![](https://web.dev/static/learn/ai/card.png)](https://web.dev/learn/ai)
+
+Course
+
+### [Learn AI](https://web.dev/learn/ai)
+
+An artificial intelligence course built for web developers.
+
+[Start course](https://web.dev/learn/ai)
 
 [![](https://web.dev/static/learn/performance/card.png)](https://web.dev/learn/performance)
 

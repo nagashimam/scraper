@@ -82,7 +82,7 @@ Since version 3.2.34, a single-file component using `<script setup>` will automa
 
 ## Max Cached Instances [​](#max-cached-instances)
 
-We can limit the maximum number of component instances that can be cached via the `max` prop. When `max` is specified, `<KeepAlive>` behaves like an [LRU cache](https://en.wikipedia.org/wiki/Cache_replacement_policies#Least_recently_used_\(LRU\)): if the number of cached instances is about to exceed the specified max count, the least recently accessed cached instance will be destroyed to make room for the new one.
+We can limit the maximum number of component instances that can be cached via the `max` prop. When `max` is specified, `<KeepAlive>` behaves like an [LRU cache](https://en.wikipedia.org/wiki/Cache_replacement_policies#Least_Recently_Used_\(LRU\)): if the number of cached instances is about to exceed the specified max count, the least recently accessed cached instance will be destroyed to make room for the new one.
 
 template
 

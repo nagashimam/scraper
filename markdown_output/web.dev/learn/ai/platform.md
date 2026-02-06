@@ -28,7 +28,7 @@ For deployment, think of AI platforms along two primary axes. You can choose:
 
 ![Examples of models based on platform and control.](/static/learn/ai/platform/images/model-map.jpg)
 
-Figure 1: AI options, distinguished by deployment platform and level of control.
+Figure 1: AI platform options, distinguished by deployment platform and level of control.
 
 ### Client-side AI
 

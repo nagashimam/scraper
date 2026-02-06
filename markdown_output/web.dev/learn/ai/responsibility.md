@@ -123,7 +123,9 @@ Most users expect predictable applications. For example, button clicks always pe
 
 Your users are the last line of defense against these errors.
 
-![](/static/learn/ai/responsibility/images/trust-calibration.png)
+![](/static/learn/ai/responsibility/images/calibrate-trust-v2.jpg)
+
+Your goal should be to move users to the middle, towards calibrated trust. Under- and over-trust lead to problems.
 
 At the beginning, users likely under-trust or over-trust your system. Under-trust means they won't use the system, and over-trust means they completely accept outputs, without checking for errors. Your task is to pull users into the golden middle of _calibrated trust_, where they rely on AI for efficiency while still taking responsibility for the final results.
 

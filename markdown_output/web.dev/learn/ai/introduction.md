@@ -136,13 +136,6 @@ Figure 3: The AI system blueprint for _Example Shoppe_'s enhanced product search
 
 You can expect to see this blueprint again for different examples, with certain layers explained in greater depth.
 
-## Resources
-
-To keep learning about these topics, we recommend you read the following:
-
-*   [The Shift from Models to Compound AI Systems](https://bair.berkeley.edu/blog/2024/02/18/compound-ai-systems/) from Berkeley Artificial Intelligence Research
-*   Read about [Google's research on generative UI](https://research.google/blog/generative-ui-a-rich-custom-visual-interactive-user-experience-for-any-prompt/). Imagine future user experiences where the content, as well as the functions and design of a web application adapted to each user.
-
 ## Check your understanding
 
 According to the AI system blueprint, which three core perspectives should be considered when mapping a new AI feature?

@@ -28,7 +28,7 @@ Remember Example Shoppe? We've shared two system blueprints so far, for differen
 
 Product pages often contain hundreds of reviews. For users, it can be difficult to evaluate the characteristics that actually matter to them.
 
-You can use AI to offer recurring themes within their searches to provide personalized review highlights and summaries. In our example interface, the user is looking for headphones, so themes of sound quality and battery life are highlighted.This reduces cognitive load and can lead to faster purchase decisions.
+You can use AI to offer recurring themes within their searches to provide personalized review highlights and summaries. In our example interface, the user is looking for headphones, so themes of sound quality and battery life are highlighted. This reduces cognitive load and can lead to faster purchase decisions.
 
 ![Example Shoppe's review listings.](/static/learn/ai/ux-patterns/images/example-shoppe_reviewux.jpg)
 
@@ -56,7 +56,7 @@ Just as with background AI, constrained AI features pair well with client-side m
 
 Headline generation can be a particularly challenging task. BlogBuddy uses AI to help writers offer thoughtful, contextual headlines, with minimal effort. Review the [AI system blueprint](/learn/ai/generative#define_the_opportunity) for this feature.
 
-The user can click **Show titles** to produce multiple drafts for evaluation and refinement.
+The user can click **Show Titles** to produce multiple drafts for evaluation and refinement.
 
 ![BlogBuddy's editor, featuring a personal essay.](/static/learn/ai/ux-patterns/images/blogbuddy-showtitles.jpg)
 
@@ -74,7 +74,7 @@ We walked through how this could be implemented with the Prompt API in [Prompt e
 
 Your goal is to nudge users to use new features. To do so, demonstrate value and give them control over the outcome:
 
-*   **Communicate clarity and confidence**: Clear action labels are always preferable to generic language, such as "Ask AI." Your user should be able to intuit what's happening, beyond _how_ it happens. If your feature latency is low, add labels that convey the result is already available. For example, "Show titles" instead of "Generate titles."
+*   **Communicate clarity and confidence**: Clear action labels are always preferable to generic language, such as "Ask AI." Your user should be able to intuit what's happening, beyond _how_ it happens. If your feature latency is low, add labels that convey the result is already available. For example, **Show Titles** instead of **Generate Titles**.
 *   **Keep the user in the loop**: Add light cognitive friction to keep users alert. By offering multiple choices, you can prevent users from feeling stuck with a result they may not like. Users should be able to explicitly accept or edit results before it's saved.
 *   **If possible, prepare the result beforehand**: Especially for client-side tasks, consider precomputing the result, so it's available immediately.
 *   **Support fast iteration**: Regeneration should be easy, reversible, and cheap. Users should have the option to undo their actions. Collect these feedback signals so you can fine-tune the feature for future runs.
@@ -133,11 +133,11 @@ Users interact open a chat with the agent, asking, "Where is my order?" or "I wa
 
 ![](/static/learn/ai/ux-patterns/images/shoppe-pre-interaction.jpg)
 
-Figure 6. Customer support chat agents can offer pre-determined filters to support the AI system. [View this image full-size](/static/learn/ai/ux-patterns/images/shoppe-pre-interaction.jpg).
+Figure 6. An open-ended customer support agent accepts any user input. It can guide users through predefined prompt suggestions. [View this image full-size](/static/learn/ai/ux-patterns/images/shoppe-pre-interaction.jpg).
 
 ![](/static/learn/ai/ux-patterns/images/shoppe-interaction.jpg)
 
-Figure 7. When selected, the agent has the best chance of being right. [View this image full-size](/static/learn/ai/ux-patterns/images/shoppe-interaction.jpg).
+Figure 7. Even in open-ended UX, structured elements, such as clickable order IDs, can reduce mistakes. [View this image full-size](/static/learn/ai/ux-patterns/images/shoppe-interaction.jpg).
 
 Most open-ended AI systems rely on server-side models. These can be combined with other components, like databases, external tools, and business logic, to form a compound AI system. You should to provide escalation paths to human support agents.
 

@@ -14,9 +14,9 @@ The following AI opportunity tree defines the big categories of value that AI ca
 
 ![Opportunities are mapped to use cases.](/static/learn/ai/use-cases/images/use-cases.jpg)
 
-Figure 1. Each opportunity has a set of possible examples.
+Figure 1. For each category of AI value, there are multiple use cases. For example, in the convenience category, you could build AI-powered smart filters or autocomplete.
 
-As you move down this list, the complexity, risk, and potential user impact of related use cases tend to increase. There are a number of categories to frame your solutions:
+We've listed categories of value to frame your solutions. As you move through the list, the complexity, risk, and potential for user impact tends to increase:
 
 *   **Insights**: Improve decision making.
 *   **Convenience**: Remove friction.
@@ -50,9 +50,7 @@ At each step of the user journey, you can identify different opportunities to ad
 
 ## Shape your solution
 
-By now, you've mapped several AI ideas along your user journey. The next step is to give them a shape and gain enough confidence so you can decide which ones to develop first. This is a team effort and is usually driven by the product manager.
-
-As a developer, your primary responsibility is to estimate the cost, effort, and risks of the planned AI solution.
+By now, you've mapped several AI ideas along your user journey. The next step is to give them a shape and gain enough confidence so you can decide which ones to develop first. This is a team effort and is usually driven by the product manager. As a developer, your primary responsibility is to estimate the cost, effort, and risks of the planned AI solution.
 
 ### Specify your ideas
 
@@ -76,7 +74,7 @@ By assessing effort early, you can focus on high-value, low-friction wins and de
 
 ### Estimate failure modes
 
-Sometimes, features fail. You need to build ways to communicate with your users what's happening and where the failure occurred, so they know if they can make a change to fix it.
+Sometimes, the model makes mistakes and features fail to perform as expected. You need to communicate with your users what's happening and where the failure occurred, so they know if they are able to change their input to get the results they seek.
 
 For example, say you run a travel agency. Your company wants to offer personalized inspiration for travelers. Your users have asked for a tool to do this on their own, and your product team pushes to implement it. However, you know that personalization requires many signals from users about their interests, and you haven't set up a database that collects such signals. This leads to unsuccessful personalization that offers irrelevant inspiration, which leads to users abandoning the feature. Your understanding of personalized data availability should have informed your team's value estimation.
 
@@ -112,6 +110,10 @@ In most cases, prototyping happens alongside your assessment and [specification 
 You learned how to turn abstract AI potential into concrete, high-value product ideas. As a developer, your advantage lies in connecting technical feasibility with user experience. You explored how AI can create value across different categories, mapped these opportunities to your product's user journey, and learned how to specify, evaluate, and prioritize them using structured frameworks.
 
 Remember that AI succeeds through relentless iteration. Ship early, listen to your users and observe them, and refine fast. Every prototype is a step toward understanding how AI can increase the value and delight of your product.
+
+## Resources
+
+*   [Getting AI Discovery Right](https://towardsdatascience.com/getting-ai-discovery-right/), a guide to ideating, validating, and prioritizing your AI use cases.
 
 ## Check your understanding
 

@@ -24,9 +24,9 @@ The development of a generative AI system follows an iterative approach.
 ![Each step points to the next step,
 in a continuous circle.](/static/learn/ai/generative/images/genai-model-loop.jpg)
 
-Figure 1. Just like the predictive AI loop, you start by defining your use case. The loop iterates, through each step and starts again.
+Figure 1. Just like the predictive AI loop, you start by defining your use case. The loop iterates through each step and starts again.
 
-Walk through how this work with our sample application, _BlogBuddy_, a content management system assistant that helps users generate catchy descriptions and SEO-friendly article titles.
+We'll walk through how this works with our sample application, _BlogBuddy_, a content management system assistant that helps users generate catchy descriptions and SEO-friendly article titles.
 
 ### Define your use case
 

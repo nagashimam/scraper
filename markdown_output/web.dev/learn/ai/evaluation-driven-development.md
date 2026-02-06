@@ -68,14 +68,18 @@ Prioritize quality over quantity. In classic machine learning and predictive AI,
 
 ## Evaluate and optimize
 
-The faster you can test and refine your prompts, the sooner you'll arrive at something that aligns with user expectations. You need to get into a habit of continuous optimization; try an improvement, evaluate, and try something else. Once in production, continue observing and evaluating the behavior of your users and your AI system. Then, analyze and transform this data into optimization steps.
+The faster you can test and refine your prompts, the sooner you'll arrive at something that aligns with user expectations. You need to get into a habit of continuous optimization. Try an improvement, evaluate, and try something else.
+
+Once in production, continue observing and evaluating the behavior of your users and your AI system. Then, analyze and transform this data into optimization steps.
 
 ### Automate your evaluation pipeline
 
-To reduce friction in your optimization efforts, you need operational infrastructure that automates evaluation, tracks changes, and connects development to production. This is commonly referred to as LLMOps. While there are platforms that can help with automation, such as [Braintrust](https://www.braintrust.dev/) or [Arize.ai](https://Arize.ai), it's important that you design your ideal workflow before committing to a third-party solution. Key components to consider include:
+To reduce friction in your optimization efforts, you need operational infrastructure that automates evaluation, tracks changes, and connects development to production. This is commonly referred to as LLMOps. While there are platforms that can help with automation, you should design your ideal workflow before committing to a third-party solution.
+
+Here are some key components to consider include:
 
 *   **Versioning**: Store prompts, evaluation metrics, and test inputs in version control. Treat them as code to ensure reproducibility and clear change history.
-*   **Automated batch evaluations**: Use workflows (such as GitHub Actions or Airflow) to run evaluations on each prompt update and generate comparison reports.
+*   **Automated batch evaluations**: Use workflows (such as GitHub Actions) to run evaluations on each prompt update and generate comparison reports.
 *   **CI/CD for prompts**: Gate deployments with automated checks, such as deterministic tests, LLM-as-judge scores, or guardrails, and block merges when quality regresses.
 *   **Production logging and observability**: Capture inputs, outputs, errors, latency, and token usage. Monitor for drift, unexpected patterns, or spikes in failures.
 *   **Feedback ingestion**: Collect user signals (thumbs, rewrites, abandonment) and turn recurring issues into new test cases.

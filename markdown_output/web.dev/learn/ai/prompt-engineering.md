@@ -95,18 +95,18 @@ Some of the prompt components are hard-coded, while others can be supplied by th
     
     **Tip:** For inspiration, check out this [collection of system prompts](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) from popular models and applications.
     
-*   The _user prompt_ contains the immediate request that leads to an output. The user requests a specific task, which can include specific variables. For example, "Generate three titles for this post," "Continue this paragraph," or "Make this copy sound more formal."
+*   The _user prompt_ contains the immediate request that leads to an output. The user requests a specific task, which can include specific variables. For example, "Show three titles for this post," "Continue this paragraph," or "Make this copy sound more formal."
     
 
 Most generative AI APIs let you structure a prompt as an array of messages, each with a role (system or user) and content. This makes it easier to separate stable, global instructions from dynamic, per-request input.
 
-How do you decide what components belong in the system prompt and what should be left to the user to specify? The answer depends on how much flexibility [your user experience has](/learn/ai/introduction#use_case) and how capable your model is.
+How do you decide what components belong in the system prompt and what should be left to the user to specify? The answer depends on how much flexibility [your user experience](/learn/ai/introduction#use_case) has and how capable your model is.
 
 ### Constrained use cases
 
-For highly specific use cases, most of the prompt can be predefined in the system prompt. For example in BlogBuddy, users can click a "Generate Titles" button to generate title suggestions for their draft.
+For highly specific use cases, most of the prompt can be predefined in the system prompt. For example in BlogBuddy, users can click **Show Titles** to list generated title suggestions for their draft.
 
-![](/static/learn/ai/prompt-engineering/images/writing-assistant-example.png)
+![](/static/learn/ai/prompt-engineering/images/blogbuddy.png)
 
 The task is fixed, the output format is known, and the user doesn't need to provide extra context to get the expected result. In this case, you place all stable rules, tone guidelines, output schemas, and examples in the system prompt.
 
@@ -128,12 +128,14 @@ const session = await LanguageModel.create({
 });
 ```
 
-When the user clicks the "Generate Titles" button, the prompt is invoked for the current content:
+When the user clicks **Show Titles**, the prompt is invoked for the current content:
 
 ```
 // The only variable input is the blog content
 const result = await session.prompt(blogContent);
 ```
+
+**Note:** In the [UX Patterns](/learn/ai/ux-patterns#best_practices_2) module, we cover why you'd use the language **Show Titles** instead of **Generate Titles**.
 
 Over time, users might ask for more flexibility and control. In this case, you can move certain components into the user prompt, with interface controls. For example, a drop-down menu of style or tone specifications.
 

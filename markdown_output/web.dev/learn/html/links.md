@@ -4,11 +4,11 @@
 
 # Links Stay organized with collections Save and categorize content based on your preferences.
 
-In the introduction to the attributes section, you saw an example showing how attributes are added to the opening tag. The example used the `<a>` tag, but neither the element nor the specific attributes introduced in that example were discussed:
+In the introduction to attributes, we shared an example of how attributes are added to the opening tag. The example used the `<a>` tag, but neither the element nor the specific attributes introduced in that example were discussed.
 
 ![The opening tag, attributes, and closing tag, labelled on an HTML element.](/static/learn/html/links/image/the-opening-tag-attribut-d88e53073201a.png)
 
-The `<a>` anchor tag, along with the `href` attribute, create a hyperlink. Links are the backbone of the internet. The [first web page](http://info.cern.ch/hypertext/WWW/TheProject.html) contained 25 links, reading "Everything there is online about W3 is linked directly or indirectly to this document." In all likelihood, everything there is online about W3 is linked directly or indirectly from this document too!
+The `<a>` anchor tag, along with the `href` attribute, create a hyperlink. Links are the backbone of the internet. The [first web page](http://info.cern.ch/hypertext/WWW/TheProject.html) contained 25 links, reading "Everything there is online about W3 is linked directly or indirectly to this document." In all likelihood, everything there is online about W3 is linked directly or indirectly from this document, too.
 
 The power of the web, and the `<a>` tag, have grown immensely since Tim Berners-Lee published this first explanation in August 1991. Links represent a connection between two resources, one of which is the current document. Links can be created by [`<a>`](https://developer.mozilla.org/docs/Web/HTML/Element/a), [`<area>`](https://developer.mozilla.org/docs/Web/HTML/Element/area), [`<form>`](https://developer.mozilla.org/docs/Web/HTML/Element/form), and [`<link>`](https://developer.mozilla.org/docs/Web/HTML/Element/link). You've learned about [`<link>`](/learn/html/document-structure#other_uses_of_the_link_element), and will discover [forms](/learn/html/forms) in a separate section. There is also an entire [form learn section](/learn/forms/form). In this session, you'll find out about the single-letter, not-so-simple `<a>` tag.
 
@@ -24,11 +24,11 @@ While not required, the `href` attribute is found in almost all `<a>` tags. Prov
 <a href="tel:8005551212">Call Hal</a>
 ```
 
-The first link includes an absolute [URL](https://developer.mozilla.org/docs/Learn/Common_questions/What_is_a_URL), which can be used on any site in the world to navigate to the MLW home page. Absolute URLs include a protocol, in this case `https://`, and a domain name. When the protocol is written simply as `//`, it is an implicit protocol and means "use the same protocol as is currently being used."
+The first link includes an absolute [URL](https://developer.mozilla.org/docs/Learn/Common_questions/What_is_a_URL), which can be used on any site in the world to navigate to the MLW home page. Absolute URLs include a protocol, in this case `https://`, and a domain name. When the protocol is written as `//`, it's an implicit protocol and means "use the same protocol as is actively being used."
 
-Relative URLs do not include a protocol or domain name. They are "relative" to the current file. MLW is a single-page site, but this HTML series has several sections. In order to link from this page to the attributes lesson, a relative URL is used `<a href="../attributes/">Attributes</a>`.
+Relative URLs don't include a protocol or domain name. They are "relative" to the current file. MLW is a single-page site, but this HTML series has several sections. In order to link from this page to the attributes lesson, a relative URL is used `<a href="../attributes/">Attributes</a>`.
 
-The second link is just a [link fragment identifier](/learn/html/attributes#link_fragment_identifier), and will link to the element with `id="teachers",` if there is one, on the current page. Browsers also support two "top of page" links: clicking on `<a href="#top">Top</a>` (case-insensitive) or simply `<a href="#">Top</a>` will scroll the user to the top of the page, unless there is an element with the id of `top` set in the same letter casing.
+The second link is just a [link fragment identifier](/learn/html/attributes#link_fragment_identifier), and will link to the element with `id="teachers",` if there is one, on the current page. Browsers also support two "top of page" links: clicking on `<a href="#top">Top</a>` (case-insensitive) or even just `<a href="#">Top</a>` returns the user to the top of the page, unless there is an element with the ID of `top` set in the same letter casing.
 
 MLW is a fairly long document. To save scrolling, you can add a link back to the top from the bottom of the #teachers section:
 
@@ -36,7 +36,7 @@ MLW is a fairly long document. To save scrolling, you can add a link back to the
 <a href="#top">Go to top.</a>
 ```
 
-The third link combines the two values: it contains an absolute URL followed by a link fragment. This enables linking directly to a section in the defined URL, in this case, the `#teachers` section of the MLW home page. The MLW page will be loaded; then the browser will scroll to the teachers section without sending the fragment in the HTTP request.
+The third link combines the two values: it contains an absolute URL followed by a link fragment. This enables linking directly to a section in the defined URL, in this case, the `#teachers` section of the MLW home page. The MLW page loads and the browser scrolls to the teachers section, without sending the fragment in the HTTP request.
 
 The `href` attribute can begin with `mailto:` or `tel:` to email or make calls, with the handling of the link depending on the device, operating system, and installed applications.
 
@@ -57,7 +57,7 @@ When including links that are likely to open other installed applications, it's 
 
 ## Downloadable resources
 
-The `download` attribute should be included when the `href` points to a downloadable resource. The value of the download attribute is the suggested filename for the resource to be saved in the user's local file system. SVGOMG, the SVG Optimizer, uses the `download` attribute to suggest a file name for the downloadable blob that the optimizer creates. When `hal.svg` is optimized, SVGOMG's download link opening tag is similar to:
+The `download` attribute should be included when the `href` points to a downloadable resource. The value of the download attribute is the suggested filename for the resource to be saved in the user's local file system. SVGOMG, the SVG Optimizer, uses the `download` attribute to suggest a filename for the downloadable blob that the optimizer creates. When `hal.svg` is optimized, SVGOMG's download link opening tag is similar to:
 
 ```
 <a href="blob:https://jakearchibald.github.io/944a5fc8-fdb3-458a-91ee-cdd5964b6646" download="hal.svg">
@@ -65,15 +65,24 @@ The `download` attribute should be included when the `href` points to a download
 
 There's also a demo of a [`<canvas>` that creates a downloadable PNG data URL](https://developer.mozilla.org/docs/Web/HTML/Element/a#using_the_download_attribute_to_save_a_canvas_as_a_png).
 
-To link to a downloadable resource, include the URL of the asset as the value of the href attribute and the suggested filename that can be used in the user's file system as the value of the `download` attribute.
+To link to a downloadable resource, include the URL of the asset as the value of the `href` attribute and a suggested filename for the user, as the value of the `download` attribute.
 
 ## Browsing context
 
-The `target` attribute enables the defining of the browsing context for link navigation (and [form submission](/learn/html/forms). The four case-insensitive, underscore-prefixed keywords were discussed with the [`<base>`](/learn/html/document-structure#base) element. They include the default `_self`, which is the current window, `_blank`, which opens the link in a new tab, `_parent`, which is the parent if the current link is nested in an object or iframe, and `_top`, which is the top-most ancestor, especially useful if the current link is deeply nested. `_top` and `_parent` are the same as `_self` if the link is not nested. The `target` attribute is not limited to these four key terms: any term can be used.
+The `target` attribute enables the defining of the browsing context for link navigation (and [form submission](/learn/html/forms)). The four case-insensitive, underscore-prefixed keywords were discussed with the [`<base>`](/learn/html/document-structure#base) element. This includes:
 
-Every browsing context—basically, every browser tab—has a browsing context name. Links can open links in the current tab, a new unnamed tab, or a new or existing named tab. By default, the name is the empty string. To open a link in a new tab, the user can right-click and select "Open in a new tab". Developers can force this by including `target="_blank"`.
+*   (Default) `_self`: Open link in the current window.
+*   `_blank`: Open link in a new tab.
+*   `_parent`: Open link in the parent object or iframe.
+*   `_top`: Open link in the top-most ancestor. This is especially useful if the link is deeply nested.
 
-A link with `target="_blank"` will be opened in a new tab with a null name, opening a new, unnamed tab with every link click. This can create many new tabs. Too many tabs. For example, if the user clicks on `<a href="registration.html" target="_blank">Register Now</a>` 15 times, the registration form will be opened in 15 separate tabs. This problem can be fixed by providing a tab context name. By including the [`target`attribute](https://html.spec.whatwg.org/#browsing-context-names) with a case-sensitive value—such as `<a href="registration.html" target="reg">Register Now</a>`—the first click on this link will open the registration form in a new `reg` tab. Clicking on this link 15 more times will reload the registration in the `reg` browsing context, without opening any additional tabs.
+If the link isn't nested, `_top` and `_parent` act the same as `_self`. The `target` attribute isn't limited to these four key terms: any term can be used.
+
+Every browsing context (or every browser tab) has a browsing context name. Links can open links in the current tab, a new unnamed tab, or a new or existing named tab. By default, the name is the empty string.
+
+To open a link in a new tab, the user can right-click and select "Open in a new tab". Developers can force this by including `target="_blank"`.
+
+A link with `target="_blank"` opens in a new tab with a null name, opening a new, unnamed tab with every link click. This can create many new tabs. Too many tabs. For example, if the user clicks on `<a href="registration.html" target="_blank">Register Now</a>` 15 times, the registration form will open in 15 separate tabs. This problem can be fixed by providing a tab context name. By including the [`target`attribute](https://html.spec.whatwg.org/#browsing-context-names) with a case-sensitive value, such as `<a href="registration.html" target="reg">Register Now</a>`, the first click will open the registration form in a new `reg` tab. Clicking on this link 15 more times will reload the registration in the `reg` browsing context, without opening any additional tabs.
 
 The `rel` attribute controls what kinds of links the link creates, defining the relationship between the current document and the resource linked to in the hyperlink. The attribute's value must be a space-separated list on one or more of the [score of rel attribute values](https://developer.mozilla.org/docs/Web/HTML/Link_types) supported by the `<a>` tag.
 
@@ -94,16 +103,16 @@ If the French translation is a PDF, you can provide the type attribute with the 
 <a href="/fr.pdf" hreflang="fr-FR" rel="alternate" lang="fr-FR" type="application/x-pdf">atelier d'apprentissage mechanique (pdf).</a>
 ```
 
-## Tracking link clicks
+## Track link clicks
 
 One way to track user interactions is to ping a URL when a link is clicked. The `ping` attribute, if present, includes a space-separated list of secure URLs (which start with `https`) that should be notified, or pinged, if the user activates the hyperlink. The browser sends `POST` requests with the body `PING` to the URLs listed as the value of the `ping` attribute.
 
 ### User experience tips
 
-*   Always consider the user experience when writing HTML. Links should provide enough information about the linked resource so the user knows what they are clicking on.
-*   Within a block of text, ensure the appearance of your links differs enough from the surrounding text so that users can easily identify links from the rest of the content, ensuring that color alone is not the only means of differentiating between text and the surrounding content.
-*   Always include focus styles; this enables keyboard navigators to know where they are when tabbing through your content.
-*   The content between the opening `<a>` and closing `</a>` is the link's default accessible name and should inform the user of the link's destination or purpose. If the content of a link is an image, the `alt` description is the accessible name. Whether the accessible name comes from the `alt` attribute or a subset of words within a block of text, make sure it provides information about the link's destination. Link text should be more descriptive than "click here" or "more information"; this is important for your screen reader users and your search engine results!
+*   Always consider the user experience when writing HTML. Links should provide enough information about the linked resource so the user knows what they're clicking on.
+*   Within a block of text, the appearance of your links should differ enough from the surrounding text, so users can more easily identify links from other content. Use multiple visual indicators, such as color and an underline. Color alone isn't enough.
+*   Always include focus styles. This helps keyboard navigators to know where they're when tabbing through your content.
+*   The content between the opening `<a>` and closing `</a>` is the link's default accessible name and should inform the user of the link's destination or purpose. If the content of a link is an image, the `alt` description is the accessible name. Link text and `alt` text should be more descriptive than "click here" or "more information". Instead, it should offer the user information about where they go when the link is activated. This is critical for screen reader users and search engine results.
 *   Don't include interactive content, such as a `<button>` or `<input>`, inside a link. Don't nest a link within a `<button>` or `<label>` either. While the HTML page will still render, nesting focusable and clickable elements inside interactive elements creates a bad user experience.
 *   If the `href` attribute is present, pressing the Enter key while focused on the `<a>` element will activate it.
 *   Links are not limited to HTML. The `a` element can also be used within an SVG, forming a link with either the 'href' or 'xlink:href' attributes.
@@ -120,7 +129,7 @@ a.protocol = 'ftp'; // change just the scheme part of the URL
 a.setAttribute('href', 'https://machinelearningworkshop.com/'); // change the attribute content directly
 ```
 
-In this section, you have learned all about links. The next section covers lists, which we need to learn so we can group them together to create lists of links (also known as navigation).
+In this section, you learned all about links. The next section covers lists, which we need to learn so we can create lists of links, also known as navigation.
 
 ### Check your understanding
 

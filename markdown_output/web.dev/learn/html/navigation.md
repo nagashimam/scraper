@@ -172,13 +172,13 @@ Our sample code uses an ordered list, which is preferable to an unordered list a
 
 Generally, the link to the home page in a breadcrumb should read "home" rather than the site name or the site logo. As the breadcrumb is at the top of the document, it makes sense as to why this anti-pattern was used.
 
-The current page, "Navigation", is not included in the breadcrumb.
+The current page, **Navigation**, is not included in the breadcrumb.
 
 ### Current page
 
 When the current page is included in a breadcrumb, the text should preferably not be a link, and `aria-current="page"` should be included on the current page's list item. If it's not included, it's helpful to indicate that the heading that follows is the current page with an icon or other symbol.
 
-Let's look at an alternative version of the breadcrumb that takes this practice:
+Take a look at an alternative version of the breadcrumb with this practice:
 
 ```
 <nav aria-label="breadcrumbs">
@@ -241,7 +241,7 @@ The content of the news and sports global navigation headers are the same. Howev
 
 Here's a better version of the navigation, with higher contrast.
 
-Similar to global navigation, footers should be identical on all pages. But that's is the only similarity. Global navigation allows for navigation to all parts of the site, from a product perspective. Navigation elements within a footer don't have specific requirements.
+Similar to global navigation, footers should be identical on all pages. But that's the only similarity. Global navigation allows for navigation to all parts of the site, from a product perspective. Navigation elements within a footer don't have specific requirements.
 
 Generally, the footer includes corporate links, such as legal statements, about the company, a career page, and links to relevant external sources, such as social media.
 

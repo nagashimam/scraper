@@ -4,7 +4,7 @@
 
 # Attributes Stay organized with collections Save and categorize content based on your preferences.
 
-Attributes were briefly discussed in [Overview of HTML](/learn/html/overview#attributes); it's time for a deep dive.
+Attributes were briefly discussed in [Overview of HTML](/learn/html/overview#attributes). It's time for a deep dive.
 
 Attributes are what make HTML so powerful. Attributes are space-separated names and name/value pairs appearing in the opening tag, providing information about and functionality for the element.
 
@@ -12,16 +12,16 @@ Attributes are what make HTML so powerful. Attributes are space-separated names 
 
 Attributes define the behavior, linkages, and functionality of elements. Some attributes are global, meaning they can appear within any element's opening tag. Other attributes apply to several elements but not all, while other attributes are element-specific, relevant only to a single element. In HTML, all attributes except boolean, and to some extent enumerated attributes, require a value.
 
-If an attribute value includes a space or special characters, the value must be quoted. For this reason, and for improved legibility, quoting is always recommended.
+If an attribute value includes a space or special characters, the value must be quoted. For this reason and improved legibility, quotations are always recommended.
 
-While HTML is not case-sensitive, some attribute values are. Values that are part of the HTML specification are case-insensitive. Strings values that are defined, such as class and id names, are case-sensitive. If an attribute value is case-sensitive in HTML, it is case-sensitive when used as part of an [attribute selector](https://developer.mozilla.org/docs/Web/CSS/Attribute_selectors) in CSS and in JavaScript; otherwise, it's not.
+While HTML isn't case-sensitive, some attribute values are. Values that are part of the HTML specification are case-insensitive. Strings values that are defined, such as class and ID names, are case-sensitive. If an attribute value is case-sensitive in HTML, it's case-sensitive when used as an [attribute selector](https://developer.mozilla.org/docs/Web/CSS/Attribute_selectors) in CSS and in JavaScript; otherwise, it's not.
 
 ```
 <!-- the type attribute is case insensitive: these are equivalent -->
 <input type="text">
 <input type="TeXt">
 
-<!-- the id attribute is case sensitive: they are not equivalent -->
+<!-- the ID attribute is case sensitive: they are not equivalent -->
 <div id="myId">
 <div id="MyID">
 ```
@@ -50,13 +50,13 @@ myMedia.removeAttribute("muted");
 myMedia.setAttribute("muted");
 ```
 
-Note that in XML languages, like SVG, all attributes need to include a value, including boolean attributes.
+**Note:** In XML languages, like SVG, all attributes need to include a value, including boolean attributes.
 
 ## Enumerated attributes
 
 Enumerated attributes are sometimes confused with boolean attributes. They are HTML attributes that have a limited set of predefined valid values. Like boolean attributes, they have a default value if the attribute is present but the value is missing. For example, if you include `<style contenteditable>`, it defaults to `<style contenteditable="true">`.
 
-Unlike boolean attributes, though, omitting the attribute doesn't mean it's false; a present attribute with a missing value isn't necessarily true; and the default for invalid values isn't necessarily the same as a null string. Continuing the example, `contenteditable` defaults to `inherit` if missing or invalid, and can be explicitly set to `false`.
+Unlike boolean attributes, though, omitting the attribute doesn't mean it's false. A present attribute with a missing value isn't necessarily true, and the default for invalid values isn't necessarily the same as a null string. Continuing the example, `contenteditable` defaults to `inherit` if missing or invalid, and can be explicitly set to `false`.
 
 The default value depends on the attribute. Unlike boolean values, attributes aren't automatically "true" if present. If you include `<style contenteditable="false">`, the element is not editable. If the value is invalid, such as `<style contenteditable="😀">`, or, surprisingly, `<style contenteditable="contenteditable">`, the value is invalid and defaults to `inherit`.
 
@@ -82,13 +82,13 @@ The`id` should be unique to the document. The layout of your page probably won't
 
 #### Link fragment identifier
 
-The navigation bar includes four links. We will cover the link element later, but for now, realize links are not restricted to HTTP-based URLs; they can be fragment identifiers to sections of the page in the current document (or in other documents).
+The navigation bar includes four links. We will cover the link element later, but for now, realize links aren't restricted to HTTP-based URLs. They can be fragment identifiers to sections of the page in the current document (or in other documents).
 
 On the machine learning workshop site, the navigation bar in the page header includes four links:
 
 The href attribute provides the hyperlink that activating the link directs the user to. When a URL includes a hash mark (`#`) followed by a string of characters, that string is a fragment identifier. If that string matches an `id` of an element in the web page, the fragment is an anchor, or bookmark, to that element. The browser will scroll to the point where the anchor is defined.
 
-These four links point to four sections of our page identified by their `id` attribute. When the user clicks on any of the four links in the navigation bar, the element linked to by the fragment identifier, the element containing the matching id minus the `#`, scrolls into view.
+These four links point to four sections of our page identified by their `id` attribute. When the user clicks on any of the four links in the navigation bar, the element linked to by the fragment identifier, the element containing the matching ID minus the `#`, scrolls into view.
 
 The `<main>` content of the machine learning workshop has four sections with ids. When the site visitor clicks on one of the links in the `<nav>`, the section with that fragment identifier scrolls into view. The markup is similar to:
 
@@ -111,19 +111,26 @@ The `<main>` content of the machine learning workshop has four sections with ids
 </section>
 ```
 
-Comparing the fragment identifiers in the `<nav>` links, you'll note that each matches the `id` of a `<section>` in `<main>`. The browser gives us a free "top of page" link. Setting `href="#top"`, case-insensitive, or simply `href="#"`, will scroll the user to the top of the page.
+Comparing the fragment identifiers in the `<nav>` links, you'll notice that each matches the `id` of a `<section>` in `<main>`. The browser gives us a free "top of page" link. Setting `href="#top"`, case-insensitive, or `href="#"`, will scroll the user to the top of the page.
 
-The hash-mark separator in the `href` is not part of the fragment identifier. The fragment identifier is always the last part of the URL and is not sent to the server.
+The hash-mark separator in the `href` isn't part of the fragment identifier. The fragment identifier is always the last part of the URL and is not sent to the server.
 
 #### CSS selectors
 
-In CSS, you can target each section using an id selector, such as `#feedback` or, for less [specificity](https://developer.mozilla.org/docs/Web/CSS/Specificity), a case-sensitive [attribute selector](/learn/css/selectors#attribute_selector), `[id="feedback"]`.
+In CSS, you can target each section using anselector, such as `#feedback`. For less [specificity](https://developer.mozilla.org/docs/Web/CSS/Specificity), use a case-sensitive [attribute selector](/learn/css/selectors#attribute_selector), `[id="feedback"]`.
 
 #### Scripting
 
-On MLW.com, there is an easter egg for mouse users only. Clicking the light switch toggles the page on and off.
+On `MLW.com`, there is an easter egg for mouse users only. Clicking the light switch toggles the page on and off.
 
-The markup for the light switch image is: `html <img src="svg/switch2.svg" id="switch" alt="light switch" class="light" />` The `id` attribute can be used as the parameter for the [`getElementById()`](https://developer.mozilla.org/docs/Web/API/Document/getElementById) method and, with a `#` prefix, as part of a parameter for the [`querySelector()`](https://developer.mozilla.org/docs/Web/API/Document/querySelector) and [`querySelectorAll()`](https://developer.mozilla.org/docs/Web/API/Document/querySelectorall) methods.
+The markup for the light switch image is:
+
+```
+<img src="svg/switch2.svg" id="switch"
+  alt="light switch" class="light" />
+```
+
+The `id` attribute can be used as the parameter for the [`getElementById()`](https://developer.mozilla.org/docs/Web/API/Document/getElementById) method and, with a `#` prefix, as part of a parameter for the [`querySelector()`](https://developer.mozilla.org/docs/Web/API/Document/querySelector) and [`querySelectorAll()`](https://developer.mozilla.org/docs/Web/API/Document/querySelectorall) methods.
 
 ```
 const switchViaID = document.getElementById("switch");
@@ -134,7 +141,7 @@ Our one JavaScript function makes use of this ability to target elements by thei
 
 ```
 <script>
-  /* switch is a reserved word in js, so we us onoff instead */
+  /* Switch is a reserved word in JavaScript, so instead, we use onoff */
   const onoff = document.getElementById('switch');
   onoff.addEventListener('click', function(){
     document.body.classList.toggle('black');
@@ -158,38 +165,38 @@ If the form control is nested between the `<label>` opening and closing tags, th
 
 The association between `for` and `id` makes the information available to users of assistive technologies. In addition, clicking anywhere on a label gives focus to the associated element, extending the control's click area. This isn't just helpful to people with dexterity issues making mousing less accurate; it also helps every mobile device user with fingers wider than a radio button.
 
-In this code example, the fake fifth question of a fake quiz is a single select multiple-choice question. Each form control has an explicit label, with a unique `id` for each. To ensure we don't accidentally duplicate an id, the id value is a combination of the question number and the value.
+In this code example, the fake fifth question of a fake quiz is a single select multiple-choice question. Each form control has an explicit label, with a unique `id` for each. To ensure we don't accidentally duplicate an ID, the ID value is a combination of the question number and the value.
 
 When including radio buttons, as the labels describe the value of the radio buttons, we encompass all the same-named buttons in a `<fieldset>` with the `<legend>` being the label, or question, for the entire set.
 
 #### Other accessibility uses
 
-The use of `id` in accessibility and usability is not limited to labels. In [introduction to text](/learn/html/text-basics), a `<section>` was converted into region landmark by referencing the `id` of an `<h2>` as the value of the `<section>`'s `aria-labelledby` to provide the accessible name:
+The use of `id` in accessibility and usability goes beyond labels. In [introduction to text](/learn/html/text-basics), a `<section>` was converted into region landmark by referencing the `id` of an `<h2>` as the value of the `<section>`'s `aria-labelledby` to provide the accessible name:
 
 ```
 <section id="about" aria-labelledby="about_heading">
 <h2 id="about_heading">What you'll learn</h2>
 ```
 
-There are over 50 `aria-*` states and properties that can be used to ensure accessibility. [`aria-labelledby`](https://developer.mozilla.org/docs/Web/Accessibility/ARIA/Attributes/aria-labelledby), [`aria-describedby`](https://developer.mozilla.org/docs/Web/Accessibility/ARIA/Attributes/aria-describedby), [`aria-details`](https://developer.mozilla.org/docs/Web/Accessibility/ARIA/Attributes/aria-details), and [`aria-owns`](https://developer.mozilla.org/docs/Web/Accessibility/ARIA/Attributes/aria-owns) take as their value a space-separated `id` reference list. [`aria-activedescendant`](https://developer.mozilla.org/docs/Web/Accessibility/ARIA/Attributes/aria-activedescendant), which identifies the currently focused descendant element, takes as its value a single `id` reference: that of the single element that has focus (only one element can be focused at a time).
+There are over 50 `aria-*` states and properties that can be used to ensure accessibility. [`aria-labelledby`](https://developer.mozilla.org/docs/Web/Accessibility/ARIA/Attributes/aria-labelledby), [`aria-describedby`](https://developer.mozilla.org/docs/Web/Accessibility/ARIA/Attributes/aria-describedby), [`aria-details`](https://developer.mozilla.org/docs/Web/Accessibility/ARIA/Attributes/aria-details), and [`aria-owns`](https://developer.mozilla.org/docs/Web/Accessibility/ARIA/Attributes/aria-owns) take as their value a space-separated `id` reference list. [`aria-activedescendant`](https://developer.mozilla.org/docs/Web/Accessibility/ARIA/Attributes/aria-activedescendant), which identifies the focused descendant element, takes as its value a single `id` reference: that of the single element that has focus (only one element can be focused at a time).
 
-**Note:** Using `aria-labelledby`, you can create a reverse association from a form control to multiple labels, including text not nested in a `<label>`, whether the text labels more than one form control or not. If a control has both `<label>` and `aria-labelledby`, the `aria-labelledby` has precedence; users will not hear the `<label>` text unless the `aria-labelledby` includes the id of the label.
+**Note:** Use the `aria-labelledby` attribute to create a reverse association from a form control to multiple labels, including text not nested in a `<label>`, whether the text labels more than one form control or not. If a control has `<label>` and `aria-labelledby`, the `aria-labelledby` takes precedence. Users won't hear the `<label>` text, unless `aria-labelledby` includes the label's ID.
 
 ### `class`
 
 The `class` attribute provides an additional way of targeting elements with CSS (and JavaScript), but serves no other purpose in HTML (though frameworks and component libraries may use them). The class attribute takes as its value a space-separated list of the case-sensitive classes for the element.
 
-**Note:** Elements can be selected with CSS selectors and DOM methods based on their element names, attributes, attribute values, position within the DOM tree, etc. Semantic HTML provides meaningful hooks, making the addition of class names often unnecessary. The unique difference between including a class name and using [`document.getElementsByClassName()`](https://developer.mozilla.org/docs/Web/API/Document/getElementsByClassName) versus targeting elements based on attributes and page structure with the more robust document.querySelectorAll() is that the former returns a live node list, the latter is static.
+**Note:** Elements can be selected with CSS selectors and DOM methods based on their element names, attributes, attribute values, position within the DOM tree, etc. Semantic HTML provides meaningful hooks, making the addition of class names often unnecessary. The unique difference between including a class name and using [`document.getElementsByClassName()`](https://developer.mozilla.org/docs/Web/API/Document/getElementsByClassName) versus targeting elements based on attributes and page structure with the more robust `document.querySelectorAll()` is that the former returns a live node list, the latter is static.
 
-Building a sound semantic structure enables the targeting of elements based on their placement and function. Sound structure enables the use of descendant element selectors, relational selectors, and attribute selectors. As you learn about attributes throughout this section, consider how elements with the same attributes or attribute values can be styled. It's not that you shouldn't use the class attribute, it's just that most developers don't realize they often don't need to.
+Building a sound semantic structure enables the targeting of elements based on their placement and function. Sound structure enables the use of descendant element selectors, relational selectors, and attribute selectors. As you learn about attributes, consider how elements with the same attributes or attribute values can be styled. It's not that you shouldn't use the class attribute, it's just that most developers don't realize they often don't need to.
 
-Thus far, MLW has not used any classes. Can a site be launched without a single class name? We'll see.
+Thus far, MLW hasn't used any classes. Can a site be launched without a single class name? We'll see.
 
 ### `style`
 
 The `style` attribute enables applying inline styles, which are styles applied to the single element on which the attribute is set. The `style` attribute takes as its value CSS property value pairs, with the value's syntax being the same as the contents of a CSS style block: properties are followed by a colon, just like in CSS, and semicolons end each declaration, coming after the value.
 
-The styles are only applied to the element on which the attribute is set, with descendants inheriting inherited property values if not overridden by other style declarations on nested elements or in `<style>` blocks or style sheets. As the value comprises the equivalent of the contents of a single style block applied to that element only, it can't be used for generated content, to create keyframe animations, or to apply any other at-rules.
+The styles are only applied to the element on which the attribute is set. Descendants inherit inherited property values, unless they're overridden by other style declarations on nested elements or in `<style>` blocks or stylesheets. As the value comprises the equivalent of the contents of a single style block applied to that element only, it can't be used for generated content, to create keyframe animations, or to apply any other at-rules.
 
 While `style` is indeed a global attribute, using it is not recommended. Rather, define styles in a separate file or files. That said, the `style` attribute can come in handy during development to enable quick styling such as for testing purposes. Then take the 'solution' style and stick it in your linked [CSS](/learn/css) file.
 
@@ -197,7 +204,7 @@ While `style` is indeed a global attribute, using it is not recommended. Rather,
 
 The `tabindex` attribute can be added to any element to enable it to receive focus. The `tabindex` value defines whether it gets added to the tab order, and, optionally, into a non-default tabbing order.
 
-The `tabindex` attribute takes as its value an integer. A negative value (the convention is to use `-1`) makes an element capable of receiving focus, such as via JavaScript, but does not add the element to the tabbing sequence. A `tabindex` value of `0` makes the element focusable and reachable via tabbing, adding it to the default tab order of the page in source code order. A value of `1` or more puts the element into a prioritized focus sequence and is not recommended.
+The `tabindex` attribute takes as its value an integer. A negative value (the convention is to use `-1`) makes an element capable of receiving focus, such as with JavaScript, but doesn't add the element to the tabbing sequence. A `tabindex` value of `0` makes the element focusable and reachable with tabbing, adding it to the default tab order of the page in source code order. A value of `1` or more puts the element into a prioritized focus sequence and is not recommended.
 
 On this page, there is a share functionality using a `<share-action>` custom element acting as a `<button>`. The `tabindex` of zero is included to add the custom element into the keyboard default tabbing order:
 
@@ -214,9 +221,9 @@ The [`role` of `button`](https://developer.mozilla.org/docs/Web/Accessibility/AR
 
 Form controls, links, buttons, and [content editable](#contenteditable) elements are able to receive focus; when a keyboard user hits the tab key, focus moves to the next focusable element as if they had `tabindex="0"` set. Other elements are not focusable by default. Adding the `tabindex` attribute to those elements enables them to receive focus when they would otherwise not.
 
-If a document includes elements with a `tabindex` of `1` or more, they are included in a separate tab sequence. As you'll notice in the codepen, tabbing begins in a separate sequence, in order of lowest value to highest value, before going through those in the regular sequence in source order.
+If a document includes elements with a `tabindex` of `1` or more, they're included in a separate tab sequence. In the CodePen, tabbing begins in a separate sequence, in order of lowest value to highest value, before going through those in the regular sequence in source order.
 
-Altering the tabbing order can create a really bad user experience. It makes it difficult to rely on assistive technology—keyboards and screen readers alike—to navigate your content. It is also difficult as a developer to manage and maintain. Focus is important; there is an entire module discussing focus and focus order.
+Altering the tabbing order can create a really bad user experience. It makes it difficult to rely on assistive technology, keyboards and screen readers alike, to navigate your content. It is also difficult as a developer to manage and maintain. Focus is important; there is an entire module discussing focus and focus order.
 
 ### `role`
 
@@ -282,7 +289,7 @@ You can create any custom attribute you want by adding the [`data-`](https://dev
 
 While HTML is forgiving and won't break if you create unsupported attributes that don't start with `data`, or even if you start your custom attribute with `xml` or include a `:`, there are benefits to creating valid custom attributes that begin with `data-`. With custom data attributes you know that you aren't accidentally using an existing attribute name. Custom data attributes are future-proof.
 
-While browsers won't implement default behaviors for any specific `data-` prefixed attribute, there is a built-in dataset API to iterate through your custom attributes. Custom properties are an excellent way of communicating application-specific information via JavaScript. Add custom attributes to elements in the form of `data-name` and access these through the DOM using `dataset[name]` on the element in question.
+While browsers won't implement default behaviors for any specific `data-` prefixed attribute, there is a built-in dataset API to iterate through your custom attributes. Custom properties are an excellent way of communicating application-specific information in JavaScript. Add custom attributes to elements in the form of `data-name` and access these through the DOM using `dataset[name]` on the element in question.
 
 ```
 <blockquote data-machine-learning="workshop"

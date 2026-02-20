@@ -1,3 +1,5 @@
+Chrome is back at Google I/O May 19-20! [Register now](https://io.google/2026/?utm_source=web&utm_medium=embedded_marketing&utm_campaign=web-dev&utm_content=)
+
 *   [web.dev](https://web.dev/)
 *   [Resources](https://web.dev/learn)
 *   [AI](https://web.dev/learn/ai)
@@ -68,7 +70,7 @@ Look at effort and cost across multiple dimensions:
 *   **Integration complexity**: How many systems need to connect? Is there backend, APIs, UI, or third-party tools? The more touchpoints, the higher the cost and risk.
 *   **Operating cost**: How expensive is each model call or inference? Estimate monthly usage and budget for scaling. A feature that's "cheap" at the prototype stage can become costly once thousands of users are live.
 
-Also, consider the hidden costs for the user. AI can introduce uncertainty and regular mistakes into your product, which most people don't like. If you implement client-side AI, these features run on the user's device, consuming bandwidth, storage, and energy. The feature must be valuable enough that users are comfortable with the cost.
+Consider the hidden costs for the user. AI can introduce uncertainty and regular mistakes into your product. With client-side AI, features run on a user's device, which consumes bandwidth, storage, and energy. The feature must be valuable enough that users are comfortable with the cost.
 
 By assessing effort early, you can focus on high-value, low-friction wins and defer the more complex ideas until your data, infrastructure, and experience mature.
 
@@ -114,6 +116,7 @@ Remember that AI succeeds through relentless iteration. Ship early, listen to yo
 ## Resources
 
 *   [Getting AI Discovery Right](https://towardsdatascience.com/getting-ai-discovery-right/), a guide to ideating, validating, and prioritizing your AI use cases.
+*   [AI Radar](https://ai-radar.app/), a discovery and decision-support tool to identify and prioritize use cases, across industries.
 
 ## Check your understanding
 

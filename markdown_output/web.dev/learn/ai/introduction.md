@@ -1,3 +1,5 @@
+Chrome is back at Google I/O May 19-20! [Register now](https://io.google/2026/?utm_source=web&utm_medium=embedded_marketing&utm_campaign=web-dev&utm_content=)
+
 *   [web.dev](https://web.dev/)
 *   [Resources](https://web.dev/learn)
 *   [AI](https://web.dev/learn/ai)
@@ -36,7 +38,7 @@ Other examples of AI use cases include:
 *   On a publishing platform, you can improve accessibility by automatically suggesting alt texts and captions.
 *   As a cloud service provider, you can reduce support requests through smarter documentation search.
 
-Discovering high-value opportunities is key to success with AI. As found in [a report by RAND Corporation](https://www.rand.org/pubs/research_reports/RRA2680-1.html), choosing the wrong opportunity is one of the main reasons why AI projects fail.
+Discovering high-value opportunities is key to success with AI. As found in a [report by RAND Corporation](https://www.rand.org/pubs/research_reports/RRA2680-1.html), choosing the wrong opportunity is one of the main reasons why AI projects fail.
 
 ### Value
 
@@ -120,7 +122,7 @@ In Example Shoppe's AI-powered search, governance starts with safeguards built i
 *   **Fairness**: Search results are audited to ensure balanced exposure across sellers.
 *   **Trust and transparency**: Example Shoppe offers an opportunity to learn why a result was given at the top of each search query.. This offers an opportunity to build trust with the users.
 *   **Safety**: Restricted or unsafe queries (for example, prohibited items) are filtered or blocked through guardrails.
-*   **Recourse**: Users can easily dismiss AI suggestions, report bad AI results or interactions, and revert to a keyword-only search, if the AI enhancements aren't helpful.
+*   **Recourse**: Users can quickly dismiss AI suggestions, report bad AI results or interactions, and revert to a keyword-only search, if the AI enhancements aren't helpful.
 
 To build AI responsibly, you must take ownership of your deployment process. Design thoughtful guardrails and feedback loops. You shape the safety and reliability of the experience, while setting the expectations for its use and limits. While you cannot control the output completely, you should be ready to address any concerns.
 

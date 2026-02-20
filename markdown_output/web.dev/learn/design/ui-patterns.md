@@ -1,3 +1,5 @@
+Chrome is back at Google I/O May 19-20! [Register now](https://io.google/2026/?utm_source=web&utm_medium=embedded_marketing&utm_campaign=web-dev&utm_content=)
+
 *   [web.dev](https://web.dev/)
 *   [Resources](https://web.dev/learn)
 *   [Responsive Design](https://web.dev/learn/design)

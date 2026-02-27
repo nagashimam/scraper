@@ -24,21 +24,17 @@ EDD also supports your discovery efforts. Just like writing tests helps clarify 
 
 You can frame your problem like an API contract, including the input type, the output format, and any additional constraints. For example:
 
-*   Input type: blog post draft
-*   Output format: JSON array with 3 post titles
-*   Constraints: less than 128 characters, using a friendly tone
+*   **Input type**: Blog post draft
+*   **Output format**: JSON array with 3 post titles
+*   **Constraints**: less than 128 characters, using a friendly tone
 
 Then, collect example inputs. To ensure data diversity, you include both ideal examples and real, messy inputs. Think about variations and edge cases, such as posts with emoji, nested structure, and a lot of code snippets.
 
 ## Initialize a baseline
 
-Write your first prompt. You can start with [zero-shot](/learn/ai/prompt-engineering#zero-shot_prompting) and include:
+Write your first prompt. Start with [zero-shot](/learn/ai/prompt-engineering#zero-shot_prompting) and include clear instructions, output format, and a variable placeholder for the input content.
 
-*   Clear instruction
-*   Output format
-*   Placeholder for input variable
-
-You increase complexity and work with other components and advanced prompting techniques in when you evaluate and optimize. First, we need to set up an evaluation system to steer the optimization effort into the right direction.
+You'll increase the complexity of your system and work with additional components or prompting techniques to optimize your AI system. To ensure we use our time efficiently and optimize the right components, you need to set up an evaluation system.
 
 ## Create your evaluation system
 
@@ -48,11 +44,11 @@ You likely need multiple measurement tools to evaluate effectively.
 
 ### Define your evaluation metrics
 
-Evaluation metrics can be deterministic. For example, you might check whether the model returns valid JSON or outputs the correct number of items.
+Evaluation metrics can be deterministic, meaning there is a known, correct answer. For example, you can check if the model returns valid JSON or outputs the correct number of items.
 
-However, much of your time should be dedicated to identifying and refining subjective or qualitative metrics, such as clarity, usefulness, tone, or creativity. You might start with broad goals but quickly encounter more nuanced issues.
+However, with AI, you'll spend most of your time dedicated to identifying and refining subjective, qualitative measurements. This includes output quality, usefulness, tone, and creativity. You may start with broader success goals, for how the output should meet your expectations. Eventually, you'll encounter specific, nuanced problems that help you better define your goals.
 
-For example, say your title generator overuses certain phrases or patterns, leading to repetitive, robotic results. In that case, you'd define new metrics to encourage variation and discourage overused structures or keywords. Over time, your core metrics will stabilize and you can track improvements.
+For example, say your title generator overuses certain phrases or patterns, leading to repetitive, robotic results. In that case, you should define new metrics to encourage variation and discourage overused structures or keywords. Over time, your core metrics will stabilize and you can track improvements.
 
 **Caution:** Avoid over-relying on public generative AI benchmarks such as [MMLU-Pro](https://huggingface.co/spaces/TIGER-Lab/MMLU-Pro) and [SEED-Bench](https://huggingface.co/spaces/AILab-CVC/SEED-Bench_Leaderboard). These can serve as initial signals for model selection, but likely, they aren't representative of your user base.
 

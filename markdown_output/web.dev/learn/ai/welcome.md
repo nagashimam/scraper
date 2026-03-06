@@ -26,7 +26,7 @@ As AI evolves, you're more likely to become a system architect. Instead of jumpi
 
 Whether prompted by company mandates or enthusiasm, AI for AI's sake isn't useful. The best features come from a user need and are measured by the value they deliver.
 
-You'll how to think about building your web applications with an AI system that is responsible, usable, and valuable, so that your application delivers on the technology's promise.
+You'll learn how to think about building your web applications with an AI system that is responsible, usable, and valuable, so that your application delivers on the technology's promise.
 
 ### [Introducing AI for Web developers](/learn/ai/introduction)
 

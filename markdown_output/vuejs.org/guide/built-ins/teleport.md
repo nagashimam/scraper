@@ -123,7 +123,7 @@ You can combine `<Teleport>` with [`<Transition>`](/guide/built-ins/transition) 
 
 TIP
 
-The teleport `to` target must be already in the DOM when the `<Teleport>` component is mounted. Ideally, this should be an element outside the entire Vue application. If targeting another element rendered by Vue, you need to make sure that element is mounted before the `<Teleport>`.
+The teleport `to` target must be already in the DOM when the `<Teleport>` component is mounted. Ideally, this should be an element outside the entire Vue application. If targeting another element rendered by Vue, you need to make sure that element is mounted before the `<Teleport>`. If you are using SSR, see [Handling Teleports in SSR](/guide/scaling-up/ssr#teleports).
 
 ## Using with Components [​](#using-with-components)
 

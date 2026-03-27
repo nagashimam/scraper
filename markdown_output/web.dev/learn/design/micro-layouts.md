@@ -175,6 +175,18 @@ Previously, you learned about page-level macro layouts. Now you know about compo
 
 Next, you'll go deeper into the very building blocks of your content and learn how to make your images responsive. First, you'll learn about [responsive typography](/learn/design/typography).
 
+[
+
+Previous
+
+arrow\_back Macro layouts](/learn/design/macro-layouts)
+
+[
+
+Next
+
+Typography arrow\_forward](/learn/design/typography)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2021-11-03 UTC.

@@ -158,6 +158,18 @@ Try again.
 
 With an understanding of font optimization under your belt, you can now move onto the next module, which covers a topic that has a high potential to improve initial page load speed for your users, and that is to [defer the loading of JavaScript through code splitting](/learn/performance/code-split-javascript). By doing so, you can keep bandwidth and CPU contention as low as possible during the startup phase of a page, a period of time in which users are quite likely to interact with it.
 
+[
+
+Previous
+
+arrow\_back Video performance](/learn/performance/video-performance)
+
+[
+
+Next
+
+Code-split JavaScript arrow\_forward](/learn/performance/code-split-javascript)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2023-11-01 UTC.

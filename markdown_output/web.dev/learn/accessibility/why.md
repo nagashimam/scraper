@@ -231,6 +231,18 @@ Contact a company's developers directly.
 
 If you see something, say something. If you encounter accessibility problems online and are able to contact the developers, through the platform directly or by other methods, it's possible you'll draw their attention to a problem they were otherwise unaware of and therefore may fix. The more evidence you can offer, the more likely the developers will understand the problem.
 
+[
+
+Previous
+
+arrow\_back Welcome to Learn Accessibility!](/learn/accessibility/welcome)
+
+[
+
+Next
+
+How is digital accessibility measured? arrow\_forward](/learn/accessibility/measure)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2022-09-30 UTC.

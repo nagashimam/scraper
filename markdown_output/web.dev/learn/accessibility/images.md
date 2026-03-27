@@ -158,6 +158,18 @@ Add longform alt text with a full description.
 
 Avoid using alt text in this instance, as it won't be available to users without AT and may not be read in-full.
 
+[
+
+Previous
+
+arrow\_back JavaScript](/learn/accessibility/javascript)
+
+[
+
+Next
+
+Color and contrast arrow\_forward](/learn/accessibility/color-contrast)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2022-09-30 UTC.

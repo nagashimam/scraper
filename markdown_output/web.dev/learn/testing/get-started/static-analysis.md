@@ -129,6 +129,18 @@ TypeScript can't prevent invalid data being entered by users, or from a network 
 
 The `noImplicitAny` flag doesn't prevent you from _explicitly_ writing `any` in your codebase. You can still write a function that accepts or returns the `any` type. It just ensures that you give every variable a type.
 
+[
+
+Previous
+
+arrow\_back Component testing in practice](/learn/testing/get-started/component-testing)
+
+[
+
+Next
+
+Tools of the trade arrow\_forward](/learn/testing/assertions/tools)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2024-01-31 UTC.

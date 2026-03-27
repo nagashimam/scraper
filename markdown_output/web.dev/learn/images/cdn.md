@@ -79,6 +79,18 @@ The net result is a process that not only absolves you of creating alternately e
 
 The drawbacks of using an image CDN are more logistical than technical, chief among them being cost. While it is common for image CDNs to offer feature-robust free plans for personal usage, generating image assets requires bandwidth and storage space for uploads, processing on the server to transform images, and additional space for the cached transform results—so advanced usage and high-traffic applications may require a paid plan.
 
+[
+
+Previous
+
+arrow\_back Site Generators, frameworks, and CMSs](/learn/images/cms)
+
+[
+
+Next
+
+Conclusion arrow\_forward](/learn/images/conclusion)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2023-02-01 UTC.

@@ -133,6 +133,18 @@ Correct!
 
 Now that you have a handle on lazy loading images and `<iframe>` elements, you're in a good position to ensure that pages can load more quickly while respecting the needs of your users. However, there are cases in which speculative loading of resources can be desirable. In [the next module](/learn/performance/prefetching-prerendering-precaching), learn about prefetching and prerendering, and how these techniques—when used carefully—can substantially speed up navigations to subsequent pages by loading them ahead of time.
 
+[
+
+Previous
+
+arrow\_back Code-split JavaScript](/learn/performance/code-split-javascript)
+
+[
+
+Next
+
+Prefetching and prerendering arrow\_forward](/learn/performance/prefetching-prerendering-precaching)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2023-11-01 UTC.

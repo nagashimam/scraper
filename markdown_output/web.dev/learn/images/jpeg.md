@@ -78,6 +78,18 @@ Looking back outside now, after writing all this, my psycho-visual processing ha
 
 For that reason, avoid the instinct to upscale an image looking for artifacts—or even look too closely at the parts of our images where you know artifacts will appear first. For users, faint artifacts blend in with the tiny details that their lossy psycho-visual systems usually gloss over. In fact, even with an understanding of the tricks JPEG tries to play, you wouldn't notice those same artifacts while browsing the web unless you went looking for them. For that reason, it's almost always a safe bet to nudge JPEG compression just a little lower than you think might be noticeable—especially when that image is going to be displayed _smaller_ than its intrinsic size due to direct styling, or constraints set by the surrounding layout.
 
+[
+
+Previous
+
+arrow\_back Image formats: PNG](/learn/images/png)
+
+[
+
+Next
+
+Image formats: WebP arrow\_forward](/learn/images/webp)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2023-02-01 UTC.

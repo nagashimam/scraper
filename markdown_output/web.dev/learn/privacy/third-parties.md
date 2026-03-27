@@ -355,6 +355,18 @@ The best place to keep up to date with new APIs being proposed is currently the 
 
 If your product is directly built on top of third-party cookies or techniques such as fingerprinting, you should get involved with these new APIs, experiment with them, and contribute your own experiences to the discussions and API design. In all other cases, you don’t necessarily need to know all the details on these new APIs at the time of writing, but it’s good to be aware of what’s coming.
 
+[
+
+Previous
+
+arrow\_back Use just the data you need](/learn/privacy/data)
+
+[
+
+Next
+
+Fingerprinting arrow\_forward](/learn/privacy/fingerprinting)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2023-02-22 UTC.

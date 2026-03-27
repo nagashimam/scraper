@@ -64,6 +64,18 @@ In practice, the combination of lossless compression and palette quantization me
 
 Ultimately, GIF is only an efficient format for encoding simple images that already use limited color palettes, hard edges rather than anti-aliasing, and solid colors rather than gradients—all use cases that are far better served by other formats. The smaller and more featured PNG is often a better choice for raster images, though both are far inferior to SVG in terms of file size and visual fidelity for use cases like icons or line art, where vector shines. The most commonly seen modern use case for GIF is animation, but there are far more efficient—and accessible—modern video formats to serve that purpose.
 
+[
+
+Previous
+
+arrow\_back Raster images](/learn/images/raster-images)
+
+[
+
+Next
+
+Image formats: PNG arrow\_forward](/learn/images/png)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2023-02-01 UTC.

@@ -228,6 +228,18 @@ Not quite. While you could style this link like a button with CSS, it's not the 
 
 Great job! Use the correct semantic HTML as well as the type to create a button.
 
+[
+
+Previous
+
+arrow\_back How is digital accessibility measured?](/learn/accessibility/measure)
+
+[
+
+Next
+
+Content structure arrow\_forward](/learn/accessibility/structure)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2022-09-30 UTC.

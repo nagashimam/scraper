@@ -120,6 +120,18 @@ Correct!
 
 Now that you're familiar with some of the performance considerations involved with your website's HTML, you're in a better position to ensure that it can load as quickly as possible—but that's only the beginning of learning web performance. Next up, the theory behind the [the critical rendering path](/learn/performance/understanding-the-critical-path) is covered. This module describes key concepts such as render-blocking and parsing-blocking resources, and the role they play in getting a page's initial rendering in the browser as quickly as possible.
 
+[
+
+Previous
+
+arrow\_back Why speed matters](/learn/performance/why-speed-matters)
+
+[
+
+Next
+
+Understanding the critical path arrow\_forward](/learn/performance/understanding-the-critical-path)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2023-11-01 UTC.

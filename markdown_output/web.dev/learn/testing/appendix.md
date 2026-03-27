@@ -27,6 +27,12 @@ While this course does provide general code examples that test plain JavaScript,
 
 This is a practical choice. Despite criticisms, React is the most used framework of the participants in the [State of JS survey](https://2023.stateofjs.com/en-US/libraries/front-end-frameworks/).
 
+[
+
+Previous
+
+arrow\_back Tools of the trade](/learn/testing/assertions/tools)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2024-01-31 UTC.

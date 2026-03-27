@@ -138,6 +138,18 @@ If that sounds a little vague, well, there's a good reason: these web standards 
 
 While responsive image markup promises to only get easier to work with over time, like any web technology, there are a number of services, technologies, and frameworks to help ease the burden of hand-writing this markup available. In the next module, we'll look at how to integrate everything we've learned about image formats, compression, and responsive images into a modern development workflow.
 
+[
+
+Previous
+
+arrow\_back Descriptive syntaxes](/learn/images/descriptive)
+
+[
+
+Next
+
+Automating compression and encoding arrow\_forward](/learn/images/automating)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2023-02-01 UTC.

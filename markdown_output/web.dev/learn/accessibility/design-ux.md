@@ -152,6 +152,18 @@ Some areas to consider for accessibility annotations include:
 *   **Forms**: add field labels, helper text, error messages, and success messages.
 *   **Accessible names**: identify how assistive technology should recognize the element.
 
+[
+
+Previous
+
+arrow\_back Patterns, components, and design systems](/learn/accessibility/patterns)
+
+[
+
+Next
+
+Automated accessibility testing arrow\_forward](/learn/accessibility/test-automated)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2022-12-05 UTC.

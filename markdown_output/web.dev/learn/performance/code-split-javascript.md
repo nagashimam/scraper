@@ -156,6 +156,18 @@ Try again.
 
 Though it tends to be a fairly expensive type of resource, JavaScript isn't the only resource type you can defer the loading of. Image and `<iframe>` elements are potentially costly resources in their own right. Similar to JavaScript, you can defer the loading of images and `<iframe>` element by [lazy loading them](/learn/performance/lazy-load-images-and-iframe-elements), which is explained in the next module of this course.
 
+[
+
+Previous
+
+arrow\_back Optimize web fonts](/learn/performance/optimize-web-fonts)
+
+[
+
+Next
+
+Lazy load images and <iframe> elements arrow\_forward](/learn/performance/lazy-load-images-and-iframe-elements)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2023-12-04 UTC.

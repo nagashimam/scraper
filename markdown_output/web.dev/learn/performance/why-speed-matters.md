@@ -53,6 +53,18 @@ Now that you know the real costs of websites that fail to engage and retain user
 
 If you're ready to Learn Performance, then your journey starts by [learning the general considerations of HTML and performance](/learn/performance/general-html-performance). From there, additional modules delve further into performance as it pertains to a number of different aspects of web development. By the time you reach the end of this course, you'll have what it takes to make your corner of the web faster for all who use it!
 
+[
+
+Previous
+
+arrow\_back Welcome to Learn Performance!](/learn/performance/welcome)
+
+[
+
+Next
+
+General HTML performance considerations arrow\_forward](/learn/performance/general-html-performance)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2023-11-01 UTC.

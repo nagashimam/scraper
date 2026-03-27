@@ -82,6 +82,12 @@ So, are you ready to learn Images?
 
 **Note:** Course written by [Mat Marquis](https://hire.wil.to), with input and review from [Rachel Andrew](/authors/rachelandrew), [Jake Archibald](/authors/jakearchibald), [Barry Pollard](/authors/tunetheweb), [Aaron Forinton](https://github.com/aaronforinton), [Eric Portis](https://ericportis.com/), [Zach Leatherman](https://www.zachleat.com/), and [K.Adam White](https://www.kadamwhite.com/).
 
+[
+
+Next
+
+A brief history of images on the web arrow\_forward](/learn/images/history)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2023-01-31 UTC.

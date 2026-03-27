@@ -291,6 +291,18 @@ not a valid value, try again!
 *   [MDN reference on computed values](https://developer.mozilla.org/docs/Web/CSS/computed_value)
 *   [An article on how inheritance can be useful in modular front-ends](https://www.smashingmagazine.com/2016/11/css-inheritance-cascade-global-scope-new-old-worst-best-friends/)
 
+[
+
+Previous
+
+arrow\_back Specificity](/learn/css/specificity)
+
+[
+
+Next
+
+Color arrow\_forward](/learn/css/color)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2025-09-08 UTC.

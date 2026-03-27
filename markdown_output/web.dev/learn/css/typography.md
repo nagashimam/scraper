@@ -603,6 +603,18 @@ Correct!
 *   [Font best practices](/articles/font-best-practices) discusses importing fonts, rendering fonts, and other best practices for using fonts on the web.
 *   [MDN Fundamental text and font styling](https://developer.mozilla.org/docs/Learn/CSS/Styling_text/Fundamentals).
 
+[
+
+Previous
+
+arrow\_back Backgrounds](/learn/css/backgrounds)
+
+[
+
+Next
+
+Container queries arrow\_forward](/learn/css/container-queries)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2021-11-23 UTC.

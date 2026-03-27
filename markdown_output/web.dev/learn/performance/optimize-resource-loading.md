@@ -241,6 +241,18 @@ Correct!
 
 Now that you have a handle on how resources loaded in the `<head>` element can affect initial page load and various metrics, it's time to move on. In the next module, [resource hints](/learn/performance/resource-hints) are explored, and how they can give valuable hints to the browser to begin loading resources and opening connections to cross-origin servers sooner than the browser otherwise would without them.
 
+[
+
+Previous
+
+arrow\_back Understanding the critical path](/learn/performance/understanding-the-critical-path)
+
+[
+
+Next
+
+Assist the browser with resource hints arrow\_forward](/learn/performance/resource-hints)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2023-11-01 UTC.

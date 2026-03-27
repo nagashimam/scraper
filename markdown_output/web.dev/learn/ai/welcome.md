@@ -34,7 +34,7 @@ Introducing basic principles and mental models to help you think about your own 
 
 ### [Explore AI use cases](/learn/ai/use-cases)
 
-You shouldn't build AI features because they're novel or impressive, but because they genuinely make life easier, faster, or more enjoyable for users. This module describes a structured, iterative method for ideating, specifying, and prototyping AI use cases in your product.
+You shouldn't build AI features because they're novel or impressive. Instead, build them because they genuinely make life easier, faster, or more enjoyable for users. This module describes a structured, iterative method for ideating, specifying, and prototyping AI use cases in your product.
 
 ### [Predictive AI](/learn/ai/predictive)
 
@@ -75,6 +75,12 @@ Many of the key terms and concepts from this course.
 So, are you ready to learn AI? [Let's get started](/learn/ai/introduction).
 
 **Note:** This course was written by [Dr. Janna Lipenkova](https://www.google.com/books/edition/The_Art_of_AI_Product_Development/XHZmEQAAQBAJ), with feedback and editorial guidance from [Alexandra Klepper](https://alexandrascript.com). Special thanks to [Thomas Steiner](https://blog.tomayac.com/), Kenji Baheux, [Andre Bandarra](https://bandarra.me/), and Milica Mihajlija, whose support and reviews were instrumental in getting this published.
+
+[
+
+Next
+
+Introducing AI for web developers arrow\_forward](/learn/ai/introduction)
 
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 

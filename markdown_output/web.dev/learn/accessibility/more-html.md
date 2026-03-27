@@ -132,6 +132,18 @@ Set a primary `lang` for the `<html>`, and additional languages on any element w
 
 The AT will primarily rely on the `<html>` language attribute to read the document. If you have multi-language text, make sure to add a `lang` attribute to the corresponding element (such as a section or paragraph) with the correct two letter ISO code.
 
+[
+
+Previous
+
+arrow\_back Content structure](/learn/accessibility/structure)
+
+[
+
+Next
+
+Keyboard focus arrow\_forward](/learn/accessibility/focus)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2022-10-31 UTC.

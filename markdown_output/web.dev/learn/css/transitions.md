@@ -252,6 +252,18 @@ false
 
 Correct. A transition can be specified for incompatible properties, but they will transition discretely.
 
+[
+
+Previous
+
+arrow\_back Counters](/learn/css/counters)
+
+[
+
+Next
+
+View Transitions for SPAs arrow\_forward](/learn/css/view-transitions-spas)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2025-06-10 UTC.

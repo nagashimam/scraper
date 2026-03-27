@@ -105,6 +105,18 @@ It's also important to remember that one of the goals of end-to-end encryption i
 
 As well as encrypting your users' data in transit, it's also important to consider encrypting data that you have stored on the server. This helps to protect against data breaches, because anyone who obtains unauthorised access to your stored data will have encrypted data, which they will hopefully not have the keys to decrypt. There are two different and complementary approaches to encrypting data at rest: encryption that you add, and encryption that your cloud storage provider adds (if you're using a cloud storage provider). The storage provider encryption doesn't provide much protection against data breaches via your software (because storage provider encryption is usually transparent to you as a user of their service), but it does help against breaches that happen at the provider's infrastructure. It's often simple to turn on and so is worth considering. This field changes rapidly and your security team (or security-savvy engineers on your team) are the best to advise on it, but all cloud storage providers offer encryption at rest for block storage [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-encryption.html) by setting, [Azure Storage](https://docs.microsoft.com/en-us/azure/storage/common/storage-service-encryption), and [Google Cloud Storage](https://cloud.google.com/storage/docs/encryption) by default, and for database data storage [AWS RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.Encryption.html), [Azure SQL](https://docs.microsoft.com/en-us/azure/azure-sql/database/transparent-data-encryption-tde-overview?view=azuresql&tabs=azure-portal), [Google Cloud SQL](https://cloud.google.com/docs/security/encryption/default-encryption) among others. Check this out with your cloud storage provider, if you're using one. Handling encryption of data at rest yourself to help protect user data from data breaches is more difficult, because the logistics of securely managing encryption keys and making them available to code without also making them available to attackers is challenging. This isn't the best place to advise on security issues at that level; talk with your security-savvy engineers or dedicated team about this, or external security agencies.
 
+[
+
+Previous
+
+arrow\_back Fingerprinting](/learn/privacy/fingerprinting)
+
+[
+
+Next
+
+Best practices arrow\_forward](/learn/privacy/best-practices)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2023-02-22 UTC.

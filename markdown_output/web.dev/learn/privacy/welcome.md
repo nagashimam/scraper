@@ -67,6 +67,12 @@ Let's get started!
 
 **Note:** This course was written by [Stuart Langridge](https://twitter.com/sil), with input and review from [Maud Nalpas](https://twitter.com/maudnals), Martin Sramek, and [Rachel Andrew](https://twitter.com/rachelandrew). Special thanks to David Adrian for providing additional support for the encryption module, Rainhard Findling for providing additional support for the data module, and Annette McFadyen and [Aaron Forinton](https://github.com/aaronforinton) for supporting the publication process.
 
+[
+
+Next
+
+Use just the data you need arrow\_forward](/learn/privacy/data)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2023-01-24 UTC.

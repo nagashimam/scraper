@@ -144,6 +144,18 @@ Try again.
 
 Next up in our coverage of optimizing specific resource types is fonts. [Optimizing your website's fonts](/learn/performance/optimize-web-fonts) is something that is often overlooked, but can have a significant impact on your website's overall load speed, and metrics such as LCP and [Cumulative Layout Shift (CLS)](/articles/cls).
 
+[
+
+Previous
+
+arrow\_back Image performance](/learn/performance/image-performance)
+
+[
+
+Next
+
+Optimize web fonts arrow\_forward](/learn/performance/optimize-web-fonts)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2023-11-23 UTC.

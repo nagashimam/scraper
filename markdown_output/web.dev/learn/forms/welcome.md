@@ -127,6 +127,12 @@ So, are you ready to learn about forms? [Let's get started](/learn/forms/form-el
 **Note:**  
 This course is written and edited by forms community experts: [Michael Scharnagl](https://twitter.com/justmarkup), [Sam Dutton](https://twitter.com/sw12), and [Rachel Andrew](https://twitter.com/rachelandrew). [Rob Dodson](https://twitter.com/rob_dodson) and [Jiwoong Lee](https://twitter.com/jiwoong) shepherded the UX and production build, along with help from [Ewa Gasperowicz](https://twitter.com/devnook) and [Sam Thorogood](https://twitter.com/samthor).
 
+[
+
+Next
+
+Use forms to get data from users arrow\_forward](/learn/forms/form-element)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2021-11-03 UTC.

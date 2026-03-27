@@ -92,6 +92,18 @@ filter level:    |       8 |       6 |      19 |      16 |
 
 And if you're not inclined toward the command line, Squoosh will serve us just as well for encoding WebP. It gives us the option of side-by-side comparisons between different encodings, settings, quality levels, and differences in file size from JPEG encoding.
 
+[
+
+Previous
+
+arrow\_back Image formats: JPEG](/learn/images/jpeg)
+
+[
+
+Next
+
+Image formats: AVIF arrow\_forward](/learn/images/avif)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2023-02-01 UTC.

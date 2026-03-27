@@ -34,6 +34,12 @@ So, are you ready to learn accessibility? [Let's get started](/learn/accessibili
 
 **Note:** This course was written by [Carie Fisher](https://cariefisher.com/) ([LinkedIn](https://linkedin.com/in/cariefisher)), with input and review from [Alexandra Klepper](https://alexandrascript.com) and [Rachel Andrew](https://rachelandrew.co.uk/). Special thanks to [Mark Steadman](https://twitter.com/Steady5063) for his additional support in the [JavaScript module](/learn/accessibility/javascript), and [Aaron Forinton](https://github.com/aaronforinton) for supporting the publication process.
 
+[
+
+Next
+
+What is digital accessibility, and why does it matter? arrow\_forward](/learn/accessibility/why)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2022-09-30 UTC.

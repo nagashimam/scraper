@@ -76,6 +76,12 @@ The [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/) is a sub-group
 
 Web Content Accessibility Guidelines (commonly referred to as [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/)) is an international set of accessibility standards developed through the W3C, in cooperation with individuals and organizations. WCAG's goal is to provide a single, shared standard for digital accessibility that meets the needs of individuals, organizations, and governments worldwide.
 
+[
+
+Previous
+
+arrow\_back Conclusion and next steps](/learn/accessibility/conclusion)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2024-10-24 UTC.

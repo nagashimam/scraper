@@ -95,6 +95,18 @@ Learn more about doing an [accessibility review](/articles/how-to-review) and ho
 *   [WCAG: autocomplete accessibility benefits](https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html)
 *   [Focus Indicators](https://www.sarasoueidan.com/blog/focus-indicators/)
 
+[
+
+Previous
+
+arrow\_back Design basics](/learn/forms/design-basics)
+
+[
+
+Next
+
+Internationalization and localization arrow\_forward](/learn/forms/internationalization)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2021-11-03 UTC.

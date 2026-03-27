@@ -125,6 +125,18 @@ Try again!
 *   [`<input>` types](https://developer.mozilla.org/docs/Web/HTML/Element/input#input_types)
 *   [Custom form elements](/articles/more-capable-form-controls#form-associated_custom_elements)
 
+[
+
+Previous
+
+arrow\_back The form element in depth](/learn/forms/form)
+
+[
+
+Next
+
+Form attributes in depth arrow\_forward](/learn/forms/attributes)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2021-11-03 UTC.

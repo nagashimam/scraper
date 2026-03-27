@@ -152,6 +152,18 @@ This is a lot of information—both for you, the reader, and for the browser. `s
 
 `sizes` is a little more difficult to automate. As you know, the only way a system can calculate the size of an image in a rendered layout is to have _rendered_ the layout. Fortunately, a number of developer tools have popped up to abstract away the process of hand-writing `sizes` attributes—with an efficiency you could never match by hand. [respImageLint](https://github.com/ausi/respimagelint), for example, is a snippet of code intended to vet your `sizes` attributes for accuracy and provide suggestions for improvement. The [Lazysizes](https://github.com/aFarkas/lazysizes) project compromises some speed for efficiency by deferring image requests until after the layout has been established, allowing JavaScript to generate `sizes` values for you. If you're using a fully client-side rendering framework such as React or Vue, there are a number of solutions for authoring and/or generating `srcset` and `sizes` attributes, which we'll discuss further in [CMS and Frameworks](/cms).
 
+[
+
+Previous
+
+arrow\_back Responsive images](/learn/images/responsive-images)
+
+[
+
+Next
+
+Prescriptive syntaxes arrow\_forward](/learn/images/prescriptive)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2023-02-01 UTC.

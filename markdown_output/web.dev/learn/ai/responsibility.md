@@ -259,6 +259,18 @@ Change model behavior, but don't notify the user. Notifications are confusing.
 
 That's incorrect. You may need to notify the user if the change affects their experience.
 
+[
+
+Previous
+
+arrow\_back Generative AI](/learn/ai/generative)
+
+[
+
+Next
+
+Pick your platform arrow\_forward](/learn/ai/platform)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2026-01-29 UTC.

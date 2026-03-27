@@ -326,6 +326,18 @@ Try again.
 
 While images may be the [most prevalent](https://almanac.httparchive.org/en/2022/page-weight#fig-3) media type used on the web, they're far from the only one you need to keep in mind when it comes to performance. Video is another common type of media used across the web, and comes with its own performance considerations. In [the next module](/learn/performance/video-performance) of this course, explore some techniques around optimizing videos and how to load them efficiently.
 
+[
+
+Previous
+
+arrow\_back Assist the browser with resource hints](/learn/performance/resource-hints)
+
+[
+
+Next
+
+Video performance arrow\_forward](/learn/performance/video-performance)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2023-11-01 UTC.

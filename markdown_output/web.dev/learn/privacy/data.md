@@ -99,6 +99,18 @@ People have good reasons for not sharing data, or for sharing minimal data. At t
 
 Building a relationship with your users is about trust, and trust is about openness. If you can demonstrate that you're not just collecting as much data as possible about your users and concealing your uses for it, then that helps to build trust, which can be a competitive advantage for you over less scrupulous rivals.
 
+[
+
+Previous
+
+arrow\_back Welcome to Learn Privacy!](/learn/privacy/welcome)
+
+[
+
+Next
+
+Third parties arrow\_forward](/learn/privacy/third-parties)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2023-02-22 UTC.

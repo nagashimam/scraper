@@ -30,6 +30,18 @@ A single source image, cut to suit the largest possible space in your layout and
 
 For a long time, `<img>` largely did one thing— it "got image data and put it on the screen." It did that reasonably well, for certain, but `<img>` wasn't up to the task of accommodating the radical shifts in browsing context we were experiencing. While responsive web design became a mainstream development practice, browsers optimized the performance of `img` for nearly twenty years—but for all but the most privileged users, the image _content_ of pages was inefficient from the outset. No matter how quickly the browser managed to request, parse, and render an image source, that asset would likely be far bigger than the user needed.
 
+[
+
+Previous
+
+arrow\_back Welcome to Learn Images!](/learn/images/welcome)
+
+[
+
+Next
+
+Key performance issues arrow\_forward](/learn/images/performance-issues)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2023-02-01 UTC.

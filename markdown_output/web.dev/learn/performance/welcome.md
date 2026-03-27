@@ -70,6 +70,12 @@ Ready to get started with learning web performance? Get things kicked off by fir
 
 **Note:** The initial contents of this course were written chiefly by [Kevin Farrugia](https://imkev.dev/), with additional content by [Barry Pollard](https://twitter.com/tunetheweb). It was edited and produced by [Jeremy Wagner](https://jlwagner.net/), with additional review by [Rachel Andrew](https://rachelandrew.co.uk/) and Barry Pollard.
 
+[
+
+Next
+
+Why speed matters arrow\_forward](/learn/performance/why-speed-matters)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2023-11-27 UTC.

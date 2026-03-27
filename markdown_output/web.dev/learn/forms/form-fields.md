@@ -205,6 +205,18 @@ Correct, this is one option.
 *   [The fieldset element](https://developer.mozilla.org/docs/Web/HTML/Element/fieldset)
 *   [The button element](https://developer.mozilla.org/docs/Web/HTML/Element/button)
 
+[
+
+Previous
+
+arrow\_back Use forms to get data from users](/learn/forms/form-element)
+
+[
+
+Next
+
+Help users avoid re-entering data in forms arrow\_forward](/learn/forms/auto)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2021-11-03 UTC.

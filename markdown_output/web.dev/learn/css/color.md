@@ -321,6 +321,18 @@ This is a valid hsl value.
 *   [\[video\] An explainer on how to read hex codes](https://www.youtube.com/watch?v=eqZqx6lRPe0)
 *   [How hexadecimal codes work](https://medium.com/basecs/hexs-and-other-magical-numbers-9785bc26b7ee)
 
+[
+
+Previous
+
+arrow\_back Inheritance](/learn/css/inheritance)
+
+[
+
+Next
+
+Sizing Units arrow\_forward](/learn/css/sizing)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2015-06-17 UTC.

@@ -191,6 +191,18 @@ Correct!
 
 This module covered some of the theory behind how the browser renders a web page, and in particular what is necessary to complete a page's initial rendering. The next module looks at how this rendering path can be optimized by learning [how to optimize resource loading](/learn/performance/optimize-resource-loading).
 
+[
+
+Previous
+
+arrow\_back General HTML performance considerations](/learn/performance/general-html-performance)
+
+[
+
+Next
+
+Optimize resource loading arrow\_forward](/learn/performance/optimize-resource-loading)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2023-11-27 UTC.

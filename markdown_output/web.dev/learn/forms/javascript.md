@@ -105,6 +105,18 @@ Learn more about [implementing a show password option](https://technology.blog.g
 *   [Constraint Validation API](https://developer.mozilla.org/docs/Web/API/Constraint_validation)
 *   [`<input type="password">`](https://developer.mozilla.org/docs/Web/HTML/Element/input/password)
 
+[
+
+Previous
+
+arrow\_back Styling form controls](/learn/forms/styling-form-controls)
+
+[
+
+Next
+
+Identity arrow\_forward](/learn/forms/identity)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2021-11-03 UTC.

@@ -64,6 +64,18 @@ One way to convert your "clear box" code to be more opaque is to introduce confi
 *   [How to know what to test](https://kentcdodds.com/blog/how-to-know-what-to-test)
 *   [To test or not to test, a technical perspective](/articles/ta-what-to-test)
 
+[
+
+Previous
+
+arrow\_back Types of automated testing](/learn/testing/get-started/test-types)
+
+[
+
+Next
+
+Component testing in practice arrow\_forward](/learn/testing/get-started/component-testing)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2024-01-31 UTC.

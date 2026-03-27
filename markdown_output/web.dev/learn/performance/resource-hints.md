@@ -159,6 +159,18 @@ Correct!
 
 By now, you're probably starting to feel pretty confident about your knowledge of general performance considerations when it comes to page HTML, the `<head>` element, and resource hints. However, there are additional optimizations that are specific to different resource types that pages commonly load. Next up, [image performance](/learn/performance/image-performance) is covered in the next module, which can help you to get your website's images loading as fast as they possibly can, regardless of the user's device.
 
+[
+
+Previous
+
+arrow\_back Optimize resource loading](/learn/performance/optimize-resource-loading)
+
+[
+
+Next
+
+Image performance arrow\_forward](/learn/performance/image-performance)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2023-11-01 UTC.

@@ -114,6 +114,12 @@ The _system prompt_ is provided by the application developers and defines the mo
 
 The _user prompt_ contains the immediate request that leads to an output. The user provides some form of input variables (such as a text selection or expected style), and requests a specific task. For example, "Generate three titles for this post," "Continue this paragraph," or "Make this more formal."
 
+[
+
+Previous
+
+arrow\_back UX patterns for web AI](/learn/ai/ux-patterns)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2026-01-29 UTC.

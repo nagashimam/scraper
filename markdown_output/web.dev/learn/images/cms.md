@@ -126,6 +126,18 @@ Of course, there are countless WordPress plugins dedicated to making modern imag
 
 All of this is also true of hosted CMS solutions like Shopify, though the mechanisms themselves will differ somewhat: offering similar hooks for [generating alternate image sources and corresponding `srcset` attributes](https://performance.shopify.com/blogs/blog/responsive-images-on-shopify-with-liquid#provide-multiple-image-size-options-with-srcset) and [art direction through the `<picture>` element](https://performance.shopify.com/blogs/blog/responsive-images-on-shopify-with-liquid#art-direction).
 
+[
+
+Previous
+
+arrow\_back Automating compression and encoding](/learn/images/automating)
+
+[
+
+Next
+
+Image content delivery networks arrow\_forward](/learn/images/cdn)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2023-02-01 UTC.

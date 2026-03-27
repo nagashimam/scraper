@@ -118,6 +118,18 @@ Correct!
 
 In [the next module](/learn/performance/web-worker-demo), a concrete web worker use case is detailed and demonstrated. In that module, a web worker is used to fetch a JPEG file from a given URL, and read its [Exif metadata](https://en.wikipedia.org/wiki/Exif) in a web worker. That data is then sent back to the main thread to be displayed to the user.
 
+[
+
+Previous
+
+arrow\_back Prefetching and prerendering](/learn/performance/prefetching-prerendering-precaching)
+
+[
+
+Next
+
+A concrete web worker use case arrow\_forward](/learn/performance/web-worker-demo)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2023-11-01 UTC.

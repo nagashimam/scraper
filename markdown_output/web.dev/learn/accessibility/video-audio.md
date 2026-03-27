@@ -95,6 +95,18 @@ That said, sign language interpretation can be time-consuming and cost-prohibiti
 
 See how sign language interpreters narrated the story of Google sustainability in the video _Google Presents: Search On '22_.
 
+[
+
+Previous
+
+arrow\_back Typography](/learn/accessibility/typography)
+
+[
+
+Next
+
+Forms arrow\_forward](/learn/accessibility/forms)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2022-10-31 UTC.

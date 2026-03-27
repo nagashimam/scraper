@@ -180,6 +180,18 @@ Now that you know how prefetching, prerendering, and service worker precaching c
 
 Next up, [an overview of web workers is given](/learn/performance/web-worker-overview), and how they can take expensive work off of the main thread and give the main thread more breathing room for user interactions. If you've ever wondered what you could do to give the main thread more breathing room, then the next two modules are worth your time!
 
+[
+
+Previous
+
+arrow\_back Lazy load images and <iframe> elements](/learn/performance/lazy-load-images-and-iframe-elements)
+
+[
+
+Next
+
+An overview of web workers arrow\_forward](/learn/performance/web-worker-overview)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2023-11-01 UTC.

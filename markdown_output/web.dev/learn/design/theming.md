@@ -295,6 +295,18 @@ Write a bunch of CSS to change all the defaults of the input.
 
 This works too, but is a bit harder.
 
+[
+
+Previous
+
+arrow\_back Icons](/learn/design/icons)
+
+[
+
+Next
+
+Accessibility arrow\_forward](/learn/design/accessibility)
+
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
 Last updated 2021-12-09 UTC.

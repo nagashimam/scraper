@@ -8,7 +8,7 @@ Chrome is back at Google I/O May 19-20! [Register now](https://io.google/2026/?u
 
 In the previous modules, you learned how to optimize of HTML, CSS, JavaScript, and media resources. In this module, discover some methods to optimize web fonts.
 
-Web fonts can impact page performance at both load time and rendering time. Large font files can take a while to download and negatively affect [First Contentful Paint (FCP)](/articles/fcp), while the incorrect [`font-display` value](https://developer.mozilla.org/docs/Web/CSS/@font-face/font-display) could cause undesirable layout shifts that contribute to a page's [Cumulative Layout Shift (CLS)](/articles/cls).
+Web fonts can impact page performance at both load time and rendering time. Large font files can take a while to download and negatively affect [First Contentful Paint (FCP)](/articles/fcp), while the incorrect [`font-display` value](https://developer.mozilla.org/docs/Web/CSS/@font-face/font-display) could cause undesirable visual rendering shifts.
 
 Before optimizing web fonts can be discussed, knowing how they're discovered by the browser can be helpful, so that you can understand how CSS prevents the retrieval of unnecessary web fonts in certain situations.
 
@@ -40,7 +40,7 @@ If your `@font-face` declarations are defined in an external style sheet, the br
 You can initiate an early request for web font resources by using the `preload` directive. The `preload` directive makes web fonts discoverable early during page load, and the browser immediately begins downloading them without waiting for the style sheet to finish downloading and parsing. The `preload` directive does not wait until the font is needed on the page.
 
 ```
-<!-- The `crossorigin` attribute is required for fonts—even
+<!-- The `crossorigin` attribute is required for fonts-even
      self-hosted ones, as fonts are considered CORS resources. -->
 <link rel="preload" as="font" href="/fonts/OpenSans-Regular-webfont.woff2" crossorigin>
 ```
@@ -108,7 +108,9 @@ The default value for `font-display` is `block`. With `block`, the browser block
 
 [`swap` is the most widely used `font-display` value](https://almanac.httparchive.org/en/2022/fonts#fig-13). `swap` does not block rendering, and shows the text immediately in a fallback before swapping in the specified web font. This lets you show your content immediately without waiting for the web font to download.
 
-However, the downside of `swap` is that it causes a layout shift if the fallback web font and the web font specified in your CSS varies greatly in terms of line height, kerning, and other font metrics. This can affect your website's [CLS](/articles/cls) if you don't take care to use `preload` hint to load a web font resource as soon as possible, or if you don't consider other `font-display` values.
+However, the downside of `swap` is that it causes a visible shift in content if the fallback web font and the web font specified in your CSS varies greatly in terms of line height, kerning, and other font metrics.
+
+This usually doesn't lead to any worse [Cumulative Layout Shift (CLS)](/articles/cls) over `block` (since `block` requires laying out the page assuming the fallback fonts, even if the text itself is not shown, so both are subject to the content shifting), it can be more jarring visually.
 
 ### `fallback`
 
@@ -120,7 +122,7 @@ Using the `fallback` value can work well on fast networks where, if the web font
 
 `optional` is the most stringent `font-display` value, and only uses the web font resource if it downloads within 100 milliseconds. If a web font takes longer than that to load, it isn't used on the page, and the browser uses the fallback typeface for the current navigation while the web font is downloaded in the background and placed in the browser cache.
 
-As a result, subsequent page navigations can use the web font immediately, since it's already downloaded. `font-display: optional` avoids the layout shift seen with `swap`, but some users don't see the web font if it arrives too late on the initial page navigation.
+As a result, subsequent page navigations can use the web font immediately, since it's already downloaded. `font-display: optional` avoids the visual shift seen with `swap`, but some users don't see the web font if it arrives too late on the initial page navigation.
 
 ### Font demos
 

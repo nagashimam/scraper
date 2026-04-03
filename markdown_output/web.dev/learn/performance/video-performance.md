@@ -108,6 +108,12 @@ You can improve the user experience in this case by adding a `poster` image. Thi
 
 **Note:** If the video is not the largest element in the viewport, preloading the `poster` image may delay your LCP through bandwidth contention, where available bandwidth would otherwise be allocated to other more critical resources.
 
+## Lazy-loading
+
+A relatively new addition to Video performance is the `loading=lazy` attribute. Similar to [Browser-level image lazy loading](/articles/browser-level-image-lazy-loading) and [the same for iframes](/articles/iframe-lazy-loading), this attribute brings the same to videos for their `poster` and `preload` downloads.
+
+Using a `poster` attribute along with `preload="none"` or `preload="metadata"` can already avoid downloading the video by default, the `loading=lazy` attribute defers even downloading the poster image and metadata until the video is in or approaching the viewport.
+
 ## Embeds
 
 Given all the complexity in optimizing and serving video content efficiently, it makes sense to want to offload the problem to dedicated video services such as YouTube or Vimeo. Such services optimize the delivery of videos for you, but embedding a video from a third party service can have its own sort of effect on performance, as the embedded video players can often serve a lot of extra resources, such as JavaScript.
@@ -158,4 +164,4 @@ Optimize web fonts arrow\_forward](/learn/performance/optimize-web-fonts)
 
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2023-11-23 UTC.
+Last updated 2026-04-02 UTC.

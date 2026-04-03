@@ -31,7 +31,7 @@ A [parser-blocking](/articles/critical-rendering-path/adding-interactivity-with-
 <script src="/script.js"></script>
 ```
 
-When using external JavaScript files (without `async` or `defer`), the parser is blocked from when the file is discovered until it is downloaded, parsed, and executed. When using inline JavaScript, the parser is similarly blocked until the inline script is parsed and executed.
+When using external JavaScript files (without `async` or `defer`— or `type=module` which is `defer` by default), the parser is blocked from when the file is discovered until it is downloaded, parsed, and executed. When using inline JavaScript, the parser is similarly blocked until the inline script is parsed and executed.
 
 **Note:** A parser-blocking `<script>` must also wait for any in-flight render-blocking CSS resources to arrive and be parsed before the browser can execute it. This is also by design, as a script may access styles declared in the render-blocking style sheet (for example, by using `element.getComputedStyle()`).
 

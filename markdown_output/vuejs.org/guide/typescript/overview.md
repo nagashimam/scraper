@@ -1,3 +1,5 @@
+Are you an LLM? You can read better optimized documentation at /guide/typescript/overview.md for this page in Markdown format
+
 # Using Vue with TypeScript [​](#using-vue-with-typescript)
 
 A type system like TypeScript can detect many common errors via static analysis at build time. This reduces the chance of runtime errors in production, and also allows us to more confidently refactor code in large-scale applications. TypeScript also improves developer ergonomics via type-based auto-completion in IDEs.

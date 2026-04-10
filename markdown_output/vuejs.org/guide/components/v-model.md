@@ -1,3 +1,5 @@
+Are you an LLM? You can read better optimized documentation at /guide/components/v-model.md for this page in Markdown format
+
 # Component v-model [​](#component-v-model)
 
 [Watch an interactive video lesson on Scrimba](https://scrimba.com/links/vue-component-v-model "Free Vue.js Component v-model Lesson")

@@ -1,3 +1,5 @@
+Are you an LLM? You can read better optimized documentation at /guide/components/slots.md for this page in Markdown format
+
 # Slots [​](#slots)
 
 > This page assumes you've already read the [Components Basics](/guide/essentials/component-basics). Read that first if you are new to components.

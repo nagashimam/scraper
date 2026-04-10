@@ -1,3 +1,5 @@
+Are you an LLM? You can read better optimized documentation at /guide/essentials/forms.md for this page in Markdown format
+
 # Form Input Bindings [​](#form-input-bindings)
 
 [Watch a free video lesson on Vue School](https://vueschool.io/lessons/user-inputs-vue-devtools-in-vue-3?friend=vuejs "Free Lesson on User Inputs with Vue.js")

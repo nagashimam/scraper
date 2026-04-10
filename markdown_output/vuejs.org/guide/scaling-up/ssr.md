@@ -1,3 +1,5 @@
+Are you an LLM? You can read better optimized documentation at /guide/scaling-up/ssr.md for this page in Markdown format
+
 # Server-Side Rendering (SSR) [​](#server-side-rendering-ssr)
 
 ## Overview [​](#overview)

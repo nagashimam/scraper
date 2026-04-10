@@ -1,3 +1,5 @@
+Are you an LLM? You can read better optimized documentation at /guide/built-ins/teleport.md for this page in Markdown format
+
 # Teleport [​](#teleport)
 
 [Watch a free video lesson on Vue School](https://vueschool.io/lessons/vue-3-teleport?friend=vuejs "Free Vue.js Teleport Lesson")

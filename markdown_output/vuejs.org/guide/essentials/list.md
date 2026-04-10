@@ -1,3 +1,5 @@
+Are you an LLM? You can read better optimized documentation at /guide/essentials/list.md for this page in Markdown format
+
 # List Rendering [​](#list-rendering)
 
 [Watch a free video lesson on Vue School](https://vueschool.io/lessons/list-rendering-in-vue-3?friend=vuejs "Free Vue.js List Rendering Lesson")

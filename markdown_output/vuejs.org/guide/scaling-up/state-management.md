@@ -1,3 +1,5 @@
+Are you an LLM? You can read better optimized documentation at /guide/scaling-up/state-management.md for this page in Markdown format
+
 # State Management [​](#state-management)
 
 ## What is State Management? [​](#what-is-state-management)

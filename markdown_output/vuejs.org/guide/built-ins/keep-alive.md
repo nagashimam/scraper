@@ -1,3 +1,5 @@
+Are you an LLM? You can read better optimized documentation at /guide/built-ins/keep-alive.md for this page in Markdown format
+
 # KeepAlive [​](#keepalive)
 
 `<KeepAlive>` is a built-in component that allows us to conditionally cache component instances when dynamically switching between multiple components.

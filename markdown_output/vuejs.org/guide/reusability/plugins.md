@@ -1,3 +1,5 @@
+Are you an LLM? You can read better optimized documentation at /guide/reusability/plugins.md for this page in Markdown format
+
 # Plugins [​](#plugins)
 
 ## Introduction [​](#introduction)

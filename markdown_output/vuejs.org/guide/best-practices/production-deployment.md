@@ -1,3 +1,5 @@
+Are you an LLM? You can read better optimized documentation at /guide/best-practices/production-deployment.md for this page in Markdown format
+
 # Production Deployment [​](#production-deployment)
 
 ## Development vs. Production [​](#development-vs-production)

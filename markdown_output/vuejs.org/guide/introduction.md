@@ -1,3 +1,5 @@
+Are you an LLM? You can read better optimized documentation at /guide/introduction.md for this page in Markdown format
+
 # Introduction [​](#introduction)
 
 You are reading the documentation for Vue 3!

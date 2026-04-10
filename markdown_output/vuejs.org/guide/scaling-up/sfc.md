@@ -1,3 +1,5 @@
+Are you an LLM? You can read better optimized documentation at /guide/scaling-up/sfc.md for this page in Markdown format
+
 # Single-File Components [​](#single-file-components)
 
 ## Introduction [​](#introduction)

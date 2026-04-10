@@ -1,3 +1,5 @@
+Are you an LLM? You can read better optimized documentation at /guide/essentials/template-syntax.md for this page in Markdown format
+
 # Template Syntax [​](#template-syntax)
 
 [Watch an interactive video lesson on Scrimba](https://scrimba.com/links/vue-template-syntax "Free Vue.js Template Syntax Lesson")

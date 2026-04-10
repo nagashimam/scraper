@@ -1,3 +1,5 @@
+Are you an LLM? You can read better optimized documentation at /guide/essentials/application.md for this page in Markdown format
+
 # Creating a Vue Application [​](#creating-a-vue-application)
 
 ## The Application Instance [​](#the-application-instance)

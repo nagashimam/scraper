@@ -1,3 +1,5 @@
+Are you an LLM? You can read better optimized documentation at /guide/essentials/event-handling.md for this page in Markdown format
+
 # Event Handling [​](#event-handling)
 
 [Watch a free video lesson on Vue School](https://vueschool.io/lessons/user-events-in-vue-3?friend=vuejs "Free Vue.js Events Lesson")

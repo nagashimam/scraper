@@ -1,3 +1,5 @@
+Are you an LLM? You can read better optimized documentation at /guide/best-practices/security.md for this page in Markdown format
+
 # Security [​](#security)
 
 ## Reporting Vulnerabilities [​](#reporting-vulnerabilities)

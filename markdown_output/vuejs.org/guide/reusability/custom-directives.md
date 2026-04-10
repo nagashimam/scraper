@@ -1,3 +1,5 @@
+Are you an LLM? You can read better optimized documentation at /guide/reusability/custom-directives.md for this page in Markdown format
+
 # Custom Directives [​](#custom-directives)
 
 ## Introduction [​](#introduction)

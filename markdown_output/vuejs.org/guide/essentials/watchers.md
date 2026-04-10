@@ -1,3 +1,5 @@
+Are you an LLM? You can read better optimized documentation at /guide/essentials/watchers.md for this page in Markdown format
+
 # Watchers [​](#watchers)
 
 ## Basic Example [​](#basic-example)

@@ -1,3 +1,5 @@
+Are you an LLM? You can read better optimized documentation at /guide/built-ins/transition-group.md for this page in Markdown format
+
 # TransitionGroup [​](#transitiongroup)
 
 `<TransitionGroup>` is a built-in component designed for animating the insertion, removal, and order change of elements or components that are rendered in a list.

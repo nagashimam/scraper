@@ -1,3 +1,5 @@
+Are you an LLM? You can read better optimized documentation at /guide/scaling-up/routing.md for this page in Markdown format
+
 # Routing [​](#routing)
 
 ## Client-Side vs. Server-Side Routing [​](#client-side-vs-server-side-routing)

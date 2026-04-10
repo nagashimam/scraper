@@ -1,3 +1,5 @@
+Are you an LLM? You can read better optimized documentation at /guide/essentials/conditional.md for this page in Markdown format
+
 # Conditional Rendering [​](#conditional-rendering)
 
 [Watch a free video lesson on Vue School](https://vueschool.io/lessons/conditional-rendering-in-vue-3?friend=vuejs "Free Vue.js Conditional Rendering Lesson")

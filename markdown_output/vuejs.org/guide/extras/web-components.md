@@ -1,3 +1,5 @@
+Are you an LLM? You can read better optimized documentation at /guide/extras/web-components.md for this page in Markdown format
+
 # Vue and Web Components [​](#vue-and-web-components)
 
 [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components) is an umbrella term for a set of web native APIs that allows developers to create reusable custom elements.

@@ -1,3 +1,5 @@
+Are you an LLM? You can read better optimized documentation at /guide/scaling-up/tooling.md for this page in Markdown format
+
 # Tooling [​](#tooling)
 
 ## Try It Online [​](#try-it-online)

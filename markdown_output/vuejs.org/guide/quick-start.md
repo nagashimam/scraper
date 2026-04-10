@@ -1,3 +1,5 @@
+Are you an LLM? You can read better optimized documentation at /guide/quick-start.md for this page in Markdown format
+
 # Quick Start [​](#quick-start)
 
 ## Try Vue Online [​](#try-vue-online)

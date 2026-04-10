@@ -1,3 +1,5 @@
+Are you an LLM? You can read better optimized documentation at /guide/typescript/options-api.md for this page in Markdown format
+
 # TypeScript with Options API [​](#typescript-with-options-api)
 
 > This page assumes you've already read the overview on [Using Vue with TypeScript](/guide/typescript/overview).

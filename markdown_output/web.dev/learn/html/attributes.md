@@ -119,7 +119,7 @@ The hash-mark separator in the `href` isn't part of the fragment identifier. The
 
 #### CSS selectors
 
-In CSS, you can target each section using anselector, such as `#feedback`. For less [specificity](https://developer.mozilla.org/docs/Web/CSS/Specificity), use a case-sensitive [attribute selector](/learn/css/selectors#attribute_selector), `[id="feedback"]`.
+In CSS, you can target each section using a selector, such as `#feedback`. For less [specificity](https://developer.mozilla.org/docs/Web/CSS/Specificity), use a case-sensitive [attribute selector](/learn/css/selectors#attribute_selector), `[id="feedback"]`.
 
 #### Scripting
 

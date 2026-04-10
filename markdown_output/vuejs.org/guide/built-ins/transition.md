@@ -1,3 +1,5 @@
+Are you an LLM? You can read better optimized documentation at /guide/built-ins/transition.md for this page in Markdown format
+
 # Transition [​](#transition)
 
 Vue offers two built-in components that can help work with transitions and animations in response to changing state:

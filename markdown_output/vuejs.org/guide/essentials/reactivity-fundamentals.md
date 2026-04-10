@@ -1,3 +1,5 @@
+Are you an LLM? You can read better optimized documentation at /guide/essentials/reactivity-fundamentals.md for this page in Markdown format
+
 # Reactivity Fundamentals [​](#reactivity-fundamentals)
 
 API Preference

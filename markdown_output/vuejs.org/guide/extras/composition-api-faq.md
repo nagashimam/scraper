@@ -1,3 +1,5 @@
+Are you an LLM? You can read better optimized documentation at /guide/extras/composition-api-faq.md for this page in Markdown format
+
 # Composition API FAQ [​](#composition-api-faq)
 
 TIP

@@ -1,3 +1,5 @@
+Are you an LLM? You can read better optimized documentation at /guide/typescript/composition-api.md for this page in Markdown format
+
 # TypeScript with Composition API [​](#typescript-with-composition-api)
 
 [Watch an interactive video lesson on Scrimba](https://scrimba.com/links/vue-ts-composition-api "Free Vue.js TypeScript with Composition API Lesson")

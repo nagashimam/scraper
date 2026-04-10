@@ -1,3 +1,5 @@
+Are you an LLM? You can read better optimized documentation at /guide/extras/reactivity-transform.md for this page in Markdown format
+
 # Reactivity Transform [​](#reactivity-transform)
 
 Removed Experimental Feature

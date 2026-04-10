@@ -1,3 +1,5 @@
+Are you an LLM? You can read better optimized documentation at /guide/essentials/component-basics.md for this page in Markdown format
+
 # Components Basics [​](#components-basics)
 
 [Watch an interactive video lesson on Scrimba](https://scrimba.com/links/vue-component-basics "Free Vue.js Components Basics Lesson")

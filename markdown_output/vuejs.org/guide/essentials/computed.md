@@ -1,3 +1,5 @@
+Are you an LLM? You can read better optimized documentation at /guide/essentials/computed.md for this page in Markdown format
+
 # Computed Properties [​](#computed-properties)
 
 [Watch a free video lesson on Vue School](https://vueschool.io/lessons/computed-properties-in-vue-3?friend=vuejs "Free Vue.js Computed Properties Lesson")

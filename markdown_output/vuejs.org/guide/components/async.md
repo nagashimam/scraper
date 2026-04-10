@@ -1,3 +1,5 @@
+Are you an LLM? You can read better optimized documentation at /guide/components/async.md for this page in Markdown format
+
 # Async Components [​](#async-components)
 
 ## Basic Usage [​](#basic-usage)

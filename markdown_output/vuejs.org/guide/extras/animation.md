@@ -1,3 +1,5 @@
+Are you an LLM? You can read better optimized documentation at /guide/extras/animation.md for this page in Markdown format
+
 # Animation Techniques [​](#animation-techniques)
 
 Vue provides the [`<Transition>`](/guide/built-ins/transition) and [`<TransitionGroup>`](/guide/built-ins/transition-group) components for handling enter / leave and list transitions. However, there are many other ways of using animations on the web, even in a Vue application. Here we will discuss a few additional techniques.

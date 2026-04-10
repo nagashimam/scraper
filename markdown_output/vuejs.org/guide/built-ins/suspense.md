@@ -1,3 +1,5 @@
+Are you an LLM? You can read better optimized documentation at /guide/built-ins/suspense.md for this page in Markdown format
+
 # Suspense [​](#suspense)
 
 Experimental Feature

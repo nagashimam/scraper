@@ -210,24 +210,6 @@ There are many things to pay attention to, including but not limited to: keyboar
 
 Those warnings aside, digital accessibility is not an all-or-nothing situation—it's a spectrum that allows for some gray areas like this. Multiple coding solutions can be seen as "correct," depending on the situation. What is important is that you keep learning, testing, and trying to make our digital world more open to all.
 
-## Check your understanding
-
-Test your knowledge of ARIA and HTML
-
-Which of the following is the best practice for building an accessible button?
-
-`<div id="saveChanges" aria-role="button" aria-pressed="false" tabindex="0">Go to shop</div>`
-
-Not quite. ARIA shouldn't be used when a semantic HTML element is available.
-
-`<a id="saveChanges" aria-label="Some awesome article title">Go to shop</a>`
-
-Not quite. While you could style this link like a button with CSS, it's not the best practice.
-
-`<button id="saveChanges" type="button">Go to shop</button>`
-
-Great job! Use the correct semantic HTML as well as the type to create a button.
-
 [
 
 Previous

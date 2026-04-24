@@ -298,3 +298,9 @@ _subject_ Article
 Further resources to help you take your next steps.
 
 [Read article](https://web.dev/learn/forms/conclusion)
+
+## Quiz
+
+Confirm you've completed the Learn Forms course to claim your badge.
+
+[Take the quiz](/learn/quizzes/forms)

@@ -310,3 +310,9 @@ _subject_ Article
 Next steps and resources.
 
 [Read article](https://web.dev/learn/pwa/conclusion)
+
+## Quiz
+
+Confirm you've completed the Learn PWA course to claim your badge.
+
+[Take the quiz](/learn/quizzes/pwa)

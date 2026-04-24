@@ -82,3 +82,9 @@ _subject_ Article
 A list of key things to do in order to preserve privacy when developing for the web.
 
 [Read article](https://web.dev/learn/privacy/best-practices)
+
+## Quiz
+
+Confirm you've completed the Learn Privacy course to claim your badge.
+
+[Take the quiz](/learn/quizzes/privacy)

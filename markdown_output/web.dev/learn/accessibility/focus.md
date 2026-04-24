@@ -104,38 +104,6 @@ Watch what happens as a keyboard user tabs through each styled focus element.
 
 There is no rule about how many focus indicator styles you have on one page—but be sure to keep it to a reasonable number to avoid unnecessary confusion.
 
-## Check your understanding
-
-Test your knowledge of focus.
-
-Which example of `:focus` CSS style is the most accessible on a white background?
-
-`outline: 0.5rem solid yellow;`
-
-This wouldn't meet WCAG color contrast guidelines.
-
-`background-color:black;`
-
-While it's possible this may be accessible, this design requires additional consideration of text color and placement in the document.
-
-`text-decoration: dotted underline 2px blue;`
-
-This design is the most accessible option on this list. However, this is not the only accessible design choice. Remember that your design should adhere to the 3:1 color contrast ratio as set by WCAG.
-
-`outline: none; text-decoration:none; background:none;`
-
-A visual indicator is important for some keyboard users. Always include style for focus.
-
-What's the purpose of a skip link?
-
-Help a keyboard user skip over redundant or unuseful groups of links.
-
-This is especially helpful in long navigation menus, when a user may have already gone to the page of interest.
-
-Help a keyboard user skip over uninteresting content.
-
-It's not necessarily possible to know what content is or isn't interesting to any user. This is not a useful way of defining skip link usage.
-
 [
 
 Previous

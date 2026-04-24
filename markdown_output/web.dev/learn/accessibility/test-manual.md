@@ -231,28 +231,6 @@ Way to go! You have completed the automated and manual testing modules. You can 
 
 Now, head over to the last testing module focused on [assistive technology testing](/learn/accessibility/test-assistive-technology).
 
-## Check your understanding
-
-Test your knowledge of manual accessibility testing
-
-What elements need to meet WCAG color contrast standards?
-
-Icons
-
-Icons need to meet color contrast standards, but they're not the only option.
-
-Headings
-
-Headings need to meet color contrast standards, but they're not the only option.
-
-Body text
-
-Body text needs to meet color contrast standards, but that's not the only option.
-
-All of the above
-
-Every element should meet contrast standards written by WCAG.
-
 [
 
 Previous

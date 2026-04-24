@@ -45,8 +45,8 @@ However, you may want to disable the **Submit** button once the form is successf
 Imagine you have a checkout form with multiple steps. How do you ensure the previously entered values are still there when the user returns to a previous step? Use the `value` attribute to show values already completed.
 
 ```
-<label for=">name<">N<ame/label
-input value="Hilda" name="na>m
+<label for="name">Name</label>
+<input value="Hilda" name="name" id="name" type="text">
 ```
 
 There are multiple ways to retrieve the value of a form control in JavaScript. You can use the [`value`](https://developer.mozilla.org/docs/Web/HTML/Element/input#attr-value) property, or you can access the value with [`getAttribute('value')`](https://developer.mozilla.org/docs/Web/API/Element/getAttribute). There is one big difference, the `value` property always returns the current value, and using `getAttribute()` always returns the initial value.
@@ -64,8 +64,8 @@ For `<input>` elements of type `checkbox` or `radio` use the `checked` attribute
 The value of the `placeholder` attribute is a hint for what kind of information is expected.
 
 ```
-<label for=">name<">N<ame/label
-input type="text" name="name"> 
+<label for="name">Name</label>
+<input type="text" name="name" id="name" placeholder="Karin">
 ```
 
 This may confuse users, as it may seem illogical why a form control appears to be already prefilled. In addition, adding a placeholder can make it difficult to see which form fields still need to be completed. Furthermore, the default style of placeholder text can be hard to read.

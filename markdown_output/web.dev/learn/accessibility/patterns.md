@@ -14,7 +14,7 @@ Some perks to component-driven development include breaking things down into man
 
 However, when we look at patterns, components, and design systems with accessibility in mind, some questions arise. How do you know which patterns are best when it comes to accessibility? Should you use an established pattern or library, or create new ones? How do you know if these patterns will actually help your users?
 
-With the myriad of choices available, it's easy to become confused about patterns, components, and design systems. This module aims to give you general information on how to evaluate patterns, components, and design systems for accessibility and gives you a starting point to help you make more accessible choices.
+With the myriad of choices available, you might be confused about patterns, components, and design systems. This module aims to give you general information on how to evaluate patterns, components, and design systems for accessibility and gives you a starting point to help you make more accessible choices.
 
 ## Think critically
 
@@ -95,20 +95,6 @@ There are additional considerations to weigh when choosing a pattern, component,
 *   Third-party integrations
 
 These factors will undoubtedly play into your pattern choice, but you should also consider the people creating the content and code itself. The pattern you choose must be robust enough to handle any potential limitations around editor-generated or user-generated content, plus be built in a way that developers of all accessibility knowledge can use.
-
-## Check your understanding
-
-Test your knowledge of patterns
-
-Do accessible components always stay accessible for users?
-
-Yes, you can use these components without additional work.
-
-While a resource built for accessibility is more likely to work automatically than others, it's essential that you still perform accessibility testing to ensure these components work for your users.
-
-No, you must test your components first.
-
-Even components and patterns designed for accessibility should be tested. It's possible it could be inaccessible in combination with other existing components.
 
 [
 

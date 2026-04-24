@@ -127,42 +127,6 @@ The last category is Robust. This principle focuses on supporting assistive tech
 
 Remember, the whole point of POUR is not about rigidly adhering to hard and fast rules. Instead, it is a way to help you [understand and meet](https://alistapart.com/article/getting-to-the-heart-of-digital-accessibility/) the diverse needs of your users.
 
-## Check your understanding
-
-Test your knowledge of measuring accessibility.
-
-What is the top level of WCAG performance?
-
-AAA Level
-
-Yes!
-
-A Level
-
-A level is the most basic level of the WCAG standards, at 30 criteria.
-
-POUR
-
-POUR is a set of principles to help you focus on how your products are used. But, this is not the measurable standard.
-
-What are examples of operable?
-
-Users have enough time to complete a form.
-
-Yes!
-
-Simple language is used.
-
-Try again.
-
-All active elements have keyboard and touchscreen support.
-
-Yes!
-
-All videos have controls.
-
-Yes!
-
 [
 
 Previous

@@ -107,28 +107,6 @@ WCAG 2.2 introduced the following success criteria that focus on more accessible
 *   [Accessible Authentication](https://www.w3.org/TR/WCAG22/#accessible-authentication)
 *   [Redundant Entry](https://www.w3.org/TR/WCAG22/#redundant-entry).
 
-## Check your understanding
-
-Test your knowledge of accessible forms.
-
-Which of the following is the most accessible form input?
-
-`Email address: <input type="email" required>`
-
-There is no label which associates 'Email address' with the input.
-
-`<label>Email address: <input type="email" required></label>`
-
-This is missing the autocomplete attribute, which offers a definition or identification of purpose to user agents and assistive technologies (AT).
-
-`<label>Email address: <input type="email" required autocomplete="email"></label>`
-
-This is an accessible field label, however it is not the most accessible on this list.
-
-`<label>Email address (required): <input type="email" required aria-describedby="email-validation"> <span id="email-validation" class="validation-message">Please provide a valid email address using the format name@place.com</span></label>`
-
-The aria-describedby attribute adds additional context to an error the user may receive if the field is improperly filled in. While this attribute is not required, it may be useful for AT users.
-
 [
 
 Previous

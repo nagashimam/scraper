@@ -175,7 +175,7 @@ Now that we've fixed the decorative image, listen to the screen reader navigate 
 
 ### Issue 4: Bullet decoration
 
-You may have noticed that the screen reader reads the CSS bullet image under the rare diseases sections. While it isn't the traditional type of image we discussed in the [Images](/learn/accessibility/images) module, the image still must be modified as it disrupts the flow of the content and could distract or confuse a screen reader user.
+You may have noticed that the screen reader reads the CSS bullet image under the rare diseases sections. While this image isn't the same as what we discussed in the [Images](/learn/accessibility/images) module, the image still must be modified as it disrupts the flow of the content and could distract or confuse a screen reader user.
 
 ```
 <p class="bullet">...</p>
@@ -231,38 +231,6 @@ Congratulations! You have completed all of the testing for this demo. You can lo
 Now, you can use what you've learned to review the accessibility of your own websites and apps.
 
 The goal of all of this accessibility testing is to address as many possible issues as a user could potentially encounter. However, this doesn't mean that your website or app is perfectly accessible once you're finished. You'll find the most success by designing your website or app with accessibility throughout the process, and incorporating these tests with your other pre-launch testing.
-
-## Check your understanding
-
-Test your knowledge of automated accessibility testing.
-
-What's the best screen reader to use for testing accessibility?
-
-JAWS
-
-While JAWS is one of the most popular screen readers, it's not necessarily the best choice.
-
-VoiceOver
-
-VoiceOver is a tool for macOS and iOS users. If you're using a Windows PC, you will need to use a different tool.
-
-Orca
-
-Orca is for Linux Firefox users, which may mean you need to use a different tool.
-
-There isn't one
-
-Each screen reader is built for a specific device, operating system, or browser, so what's best for you depends on how you're testing. If you have analytics or research which tells you more about your users who use screen readers, it can be beneficial to test with the same screen readers they're using.
-
-What is the purpose of testing with assistive technology?
-
-To experience the same thing as people who use assistive technology.
-
-Your cannot truly emulate the experience of someone who uses AT. A test in one situation won't be the same as other experiences.
-
-To test for flaws in your website or app.
-
-Accessibility testing helps developers find and fix problems that AT users may experience on their website or app.
 
 [
 

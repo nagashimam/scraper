@@ -84,20 +84,6 @@ While it can be fun to build animation into our digital products to delight user
 
 You can use a number of different tools to allow the user to decide what's best for them, rather than guessing how much motion is too much. For example, add a toggle to turn on or off animation within your site or web app. Consider defaulting such a toggle to **off**.
 
-## Check your understanding
-
-Test your knowledge of motion and animation accessibility.
-
-What can we build which reflects the operating system settings for motion?
-
-`@prefers-reduced-motion`
-
-Yes! This media query lets you decide how much motion to use based on a user's Display settings. These settings differ across operating systems, so consider implementing choice for motion in addition to this media query.
-
-JavaScript toggles
-
-Not quite. Toggles allow the user to make a choice after arriving to your website, but cannot read the user's settings.
-
 [
 
 Previous

@@ -346,3 +346,9 @@ _subject_ Article _Optional_
 Additional information that might be helpful on your JavaScript journey.
 
 Skip [Read article](https://web.dev/learn/javascript/appendix)
+
+## Quiz
+
+Confirm you've completed the Learn JavaScript course to claim your badge.
+
+[Take the quiz](/learn/quizzes/javascript)

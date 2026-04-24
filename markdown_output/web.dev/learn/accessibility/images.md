@@ -136,28 +136,6 @@ Some additional [alternative text best practices](https://www.w3.org/WAI/tutoria
 *   Use proper punctuation whenever possible. Without it, the image descriptions will sound like one long, never-ending, run-on sentence.
 *   Write alternative text like a human and not a robot. Keyword stuffing does not benefit anyone—people using screen readers will be annoyed, and search engine algorithms will penalize you.
 
-## Check your understanding
-
-Test your knowledge.
-
-How can you make complex images accessible?
-
-Include an explanation later in the article.
-
-Not quite. This can be helpful, but only when used with a link to the longer description.
-
-Use a link for longer explanations.
-
-This method is a good choice for anyone who might benefit from having this additional image information readily available on the screen, instead of buried in the code.
-
-Add the `aria-describedby` attribute to the image.
-
-This method creates a strong association between the image and the full description.
-
-Add longform alt text with a full description.
-
-Avoid using alt text in this instance, as it won't be available to users without AT and may not be read in-full.
-
 [
 
 Previous

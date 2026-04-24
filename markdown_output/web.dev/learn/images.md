@@ -214,3 +214,9 @@ _subject_ Article
 Some additional resources.
 
 [Read article](https://web.dev/learn/images/conclusion)
+
+## Quiz
+
+Confirm you've completed the Learn Images course to claim your badge.
+
+[Take the quiz](/learn/quizzes/images)

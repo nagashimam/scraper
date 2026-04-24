@@ -114,24 +114,6 @@ Do
   scrolling="auto">
 </iframe>
 
-## Check your understanding
-
-Test your knowledge of document accessibility.
-
-Your site is a multi-language online textbook, where multiple languages are shown on one page. What's the best way to tell assistive technology the language of the copy?
-
-Don't worry about it, the AT can automatically read each language.
-
-While some AT may have language detection skills, you can't guarantee the AT will guess correctly.
-
-Include all languages in the `<html>` element. For example `<html lang="en,lt,pl,pt">`
-
-The `lang` attribute can only have one language associated with it.
-
-Set a primary `lang` for the `<html>`, and additional languages on any element which has content in a different language.
-
-The AT will primarily rely on the `<html>` language attribute to read the document. If you have multi-language text, make sure to add a `lang` attribute to the corresponding element (such as a section or paragraph) with the correct two letter ISO code.
-
 [
 
 Previous

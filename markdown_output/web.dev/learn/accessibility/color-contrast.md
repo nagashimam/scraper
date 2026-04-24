@@ -176,28 +176,6 @@ Light mode, high contrast preference.
 
 Dark mode, high contrast preference.
 
-## Check your understanding
-
-Test your knowledge of color and contrast
-
-Color alone isn't a sufficient identifier for documentation. What else will help readers identify UI elements?
-
-Pattern
-
-Not quite. Patterns alone isn't enough to help a user identify a UI element.
-
-Text
-
-Not quite. Text alone may not be enough to help a user identify a UI element.
-
-Icon
-
-Not quite. An icon alone isn't enough to help a user identify a UI element.
-
-All of the answers are correct
-
-Yes! Two or more identifiers will help your user identify a UI element.
-
 [
 
 Previous

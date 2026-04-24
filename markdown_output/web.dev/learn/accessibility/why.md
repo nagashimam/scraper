@@ -183,53 +183,7 @@ For many disabled people in the United States, filing a lawsuit is their only op
 
 Ecommerce websites and apps are typically the biggest targets, comprising over 74% of the lawsuits filed in 2021. If your company has both a physical location and an online presence, you are more likely to have been part of a lawsuit. In fact, of the top 500 ecommerce sites, 412 have been served with a lawsuit within the past four years. Often, the first lawsuit is for the company's website and the second for their mobile app.
 
-While avoiding lawsuits shouldn't be the only reason you focus on making sure your digital products are accessible, it is an important piece of the conversation.
-
-## Check your understanding
-
-Test your knowledge of why a11y matters.
-
-How many people globally self-identify as disabled?
-
-1.3 billion
-
-According to WHO, disability results from the interaction between individuals with a health condition, as well as personal and environmental factors.
-
-3 billion
-
-Not quite!
-
-10 million
-
-Not quite!
-
-What tools are commonly used to help disabled people use the web?
-
-Screen readers
-
-Screen readers allow people to relay information from a computer using speech or braille, with a Text-To-Speech engine.
-
-Braille output devices
-
-A Braille display is an electro-mechanical device which helps people with visual impairments read text output.
-
-Operating system settings
-
-A user with seizures or vestibular disorders may set preferences within their operating system to reduce motion.
-
-What is an effective way to enact change on the web?
-
-Complain on Twitter.
-
-If you have a large following or you say the right thing at the right time, your tweet may pick up conversation and possibly lead to change. However, for many, Twitter is a way to talk about a problem but not make lasting changes.
-
-File a lawsuit.
-
-This is an option available to people in countries with accessibility laws. Filing a lawsuit will bring the attention of a company's lawyers, who may decide it's worth the company's time to address the problem.
-
-Contact a company's developers directly.
-
-If you see something, say something. If you encounter accessibility problems online and are able to contact the developers, through the platform directly or by other methods, it's possible you'll draw their attention to a problem they were otherwise unaware of and therefore may fix. The more evidence you can offer, the more likely the developers will understand the problem.
+While avoiding lawsuits shouldn't be the only reason you focus on making sure your digital products are accessible, it's an important piece of the conversation.
 
 [
 

@@ -130,35 +130,7 @@ Here are some live packages for common JavaScript frameworks:
 
 Modern JavaScript is a powerful language that allows web developers to create robust web applications. This sometimes leads to over-engineering and, by extension, inaccessible patterns. By following the JavaScript patterns and tips in this module, you can make your apps more accessible to all users.
 
-**Note:** Special thanks to [Mark Steadman](https://twitter.com/Steady5063) for providing additional support on this module. Read more of his [accessibility articles](https://dev.to/steady5063).
-
-## Check your understanding
-
-Test your knowledge of Javascript
-
-Which way is best to change an element's style with JavaScript?
-
-Use JavaScript to apply dynamic style directly within an HTML element.
-
-This leads to bloated JavaScript files and is inefficient.
-
-Use JavaScript to toggle an element's class, and add the style to your CSS style sheet.
-
-Keep your style in the CSS style sheet and use lightweight JavaScript to change the class name.
-
-Can all JavaScript actions support keyboard users?
-
-Yes, but you may have to do some extra work.
-
-Semantic HTML supports keyboard users by default, but non-semantic elements with actions need additional JavaScript.
-
-Yes, all actions automatically support keyboard users.
-
-Only semantic HTML automatically supports keyboard focus.
-
-No, you can only support keyboard users with semantic HTML.
-
-All HTML elements can support keyboard users.
+**Note:** Special thanks to [Mark Steadman](https://x.com/Steady5063) for providing additional support on this module. Read more of his [accessibility articles](https://dev.to/steady5063).
 
 [
 

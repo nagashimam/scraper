@@ -154,3 +154,9 @@ _subject_ Article _Optional_
 Reference complex terms used in this course.
 
 Skip [Read article](https://web.dev/learn/ai/glossary)
+
+## Quiz
+
+Confirm you've completed the Learn AI course to claim your badge.
+
+[Take the quiz](/learn/quizzes/ai)

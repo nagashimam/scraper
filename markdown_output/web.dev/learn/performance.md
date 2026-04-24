@@ -178,3 +178,9 @@ _subject_ Article
 Now that you have a basic understanding of web workers and their capabilities and limitations, it's time to take a look at a concrete use case for a web worker. In this demo, a web worker is used to fetch a JPEG file, extract its metadata, and send it back to the main thread so the user can see it in the browser.
 
 [Read article](https://web.dev/learn/performance/web-worker-demo)
+
+## Quiz
+
+Confirm you've completed the Learn Performance course to claim your badge.
+
+[Take the quiz](/learn/quizzes/performance)

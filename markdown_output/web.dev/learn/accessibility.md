@@ -262,3 +262,9 @@ _subject_ Article _Optional_
 Learn common accessibility terms and concepts.
 
 Skip [Read article](https://web.dev/learn/accessibility/glossary)
+
+## Quiz
+
+Answer questions to test your knowledge of accessibility and collect a badge.
+
+[Take the quiz](/learn/quizzes/accessibility)

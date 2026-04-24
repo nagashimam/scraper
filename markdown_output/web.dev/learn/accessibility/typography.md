@@ -103,34 +103,6 @@ Accessible typography can be boiled down to common-sense design choices based on
 
 **Note:** Refer to the [Typography module for Learn CSS](/learn/design/typography) to learn how to implement certain rules and styles.
 
-## Check your understanding
-
-Test your knowledge of typographic accessibility.
-
-For readable copy, I should always use high-contrast between my copy and background.
-
-True.
-
-While high-contrast can be valuable for some people with visual impairments, others may suffer from disabilities which make high-contrast content difficult to read.
-
-False.
-
-Some people with disabilities won't be able to read your content if there is too high of a contrast. If you can, allow the user's operating system settings to determine the contrast.
-
-What fonts are the best for accessibility?
-
-System fonts like Arial and Verdana.
-
-Common typefaces lead to faster reading speeds and a deeper comprehension level when compared to uncommon typefaces.
-
-Accessible typefaces.
-
-Accessible typeface collections like the Google Foundry on Adobe Fonts can aid you in selecting the most inclusive typeface for your next design.
-
-It doesn't matter.
-
-You can have an impact on readability with your font selection. Avoid elaborate scripts and art fonts.
-
 [
 
 Previous

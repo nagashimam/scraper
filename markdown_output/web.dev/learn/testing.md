@@ -142,3 +142,9 @@ _subject_ Article _Optional_
 Stay tuned for more information about testing!
 
 Skip [Read article](https://web.dev/learn/testing/coming-soon)
+
+## Quiz
+
+Confirm you've completed the Learn Testing course to claim your badge.
+
+[Take the quiz](/courses/quizzes/learn/testing)

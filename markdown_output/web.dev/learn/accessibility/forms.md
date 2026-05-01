@@ -6,13 +6,13 @@ Chrome is back at Google I/O May 19-20! [Register now](https://io.google/2026/?u
 
 # Forms Stay organized with collections Save and categorize content based on your preferences.
 
-A form is an element that allows a user to provide data into a field or a group of fields. Forms can be as simple as a single field or as complicated as a multi-step form element with multiple fields per page, input validation, and sometimes a CAPTCHA.
+A form is an element that allows a user to provide data into a field or a group of fields. Forms can be a single field or a complex, multi-step form with multiple fields per page, input validation, and a CAPTCHA.
 
 Forms are considered one of the most difficult elements to get right from an accessibility perspective, as they require knowledge of all the elements we have already covered, as well as additional rules specific just to forms. With some understanding and time, you can make an accessible form to suit you and your users.
 
-Forms is the last component-specific module in this course. This module will focus on the form-specific guidelines, but all other guidelines you learned about in the earlier modules, such as [content structure](/learn/accessibility/structure), [keyboard focus](/learn/accessibility/focus), and [color contrast](/learn/accessibility/color-contrast), also apply to form elements.
+Forms are the last component-specific module in this course. This module focuses on form-specific guidelines, however, the previous guidelines found in earlier modules, such as [content structure](/learn/accessibility/structure), [keyboard focus](/learn/accessibility/focus), and [color contrast](/learn/accessibility/color-contrast), also apply to form elements.
 
-**Note:** Review our [Learn Forms](/learn/forms) course to learn how to create better forms. There is a [form accessibility](/learn/forms/accessibility) module in that course with additional accessibility-specific form content.
+**Note:** Review the [Learn Forms](/learn/forms) to learn additional, form-specific best practices. There is a [form accessibility](/learn/forms/accessibility) module in that course, with additional accessibility-specific form content.
 
 ## Fields
 
@@ -50,7 +50,7 @@ Autocomplete attributes allow users to personalize visual presentations, such as
 </form>
 ```
 
-Lastly, form fields should not produce contextual changes when they receive focus or user input unless the user has been warned about the behavior before using the component. For example, a form should not be automatically submitted when a field receives focus or once a user adds content to the field.
+Lastly, form fields shouldn't produce contextual changes when they receive focus or user input unless the user has been warned about the behavior before using the component. For example, a form shouldn't be automatically submitted when a field receives focus or once a user adds content to the field.
 
 ## Labels
 
@@ -76,7 +76,7 @@ However, there are situations in which adding additional information is useful t
 
 There are many different methods you can use to add field descriptions to your forms. One of the best methods is to add an [aria-describedby](https://developer.mozilla.org/docs/Web/Accessibility/ARIA/Attributes/aria-describedby) attribute to the form element, in addition to a `<label>` element. The screen reader will read both the description and the label.
 
-If you add the [aria-labelledby](https://developer.mozilla.org/docs/Web/Accessibility/ARIA/Attributes/aria-labelledby) attribute to your element, the attribute value overrides the text within your `<label>`. As always, be sure to test the final code with all of the ATs you plan to support.
+If you add the [aria-labelledby](https://developer.mozilla.org/docs/Web/Accessibility/ARIA/Attributes/aria-labelledby) attribute to your element, the attribute value overrides the text within your `<label>`. As always, test the final code with all of the ATs you intend to support.
 
 ## Errors
 
@@ -93,8 +93,8 @@ Be sure to pay attention to the [keyboard focus](/learn/accessibility/focus) and
 
 Whenever possible, offer the user a detailed suggestion on how to fix the error. There are two attributes available to notify users of errors.
 
-*   You can use the HTML [required](https://developer.mozilla.org/docs/Web/HTML/Attributes/required) attribute. The browser will supply a generic error message based on the filed validation parameters.
-*   Or you can use the [aria-required](https://developer.mozilla.org/docs/Web/Accessibility/ARIA/Attributes/aria-required) attribute to share a customized error message to ATs. Only ATs will receive the message unless you add additional code to make the message visible to all users.
+*   You can use the HTML [required](https://developer.mozilla.org/docs/Web/HTML/Attributes/required) attribute. The browser supplies a generic error message based on the file validation parameters.
+*   Or you can use the [aria-required](https://developer.mozilla.org/docs/Web/Accessibility/ARIA/Attributes/aria-required) attribute to share a customized error message to ATs. Only ATs receive this message, unless you add code to make the message visible to all users.
 
 Once a user thinks all of the errors have been resolved, allow them to resubmit the form and provide feedback about the results of their submission. An error message tells a user they have more updates to make, while a success message confirms that they have resolved all errors and successfully submitted the form.
 

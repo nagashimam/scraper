@@ -26,7 +26,7 @@ You may ask yourself:
 
 A visual flowchart, such as an [image decision tree](https://www.w3.org/WAI/tutorials/images/decision-tree/), can help you decide which category your image belongs to.
 
-Try hiding the images on your site or web app using a browser extension or other methods. Then ask yourself: "Do I understand the content that remains?" If the answer is yes, it is most likely a decorative image. If not, the image is instead informative in some way and contextually necessary. Once you determine the image's purpose, you can determine the most accurate way to code for it.
+Try hiding the images on your site or web app using a browser extension or other methods. Then ask yourself: "Do I understand the content that remains?" If the answer is yes, it's most likely a decorative image. If not, the image is instead informative in some way and contextually necessary. Once you determine the image's purpose, you can determine the most accurate way to code for it.
 
 ![Example image decision tree.](/static/learn/accessibility/images/image/example-image-decision-tr-89be5e5ab2c5a.png)
 
@@ -65,20 +65,21 @@ An [informative image](https://www.w3.org/WAI/tutorials/images/informative/) is 
 
 If your image is informative, you should include [programmatic alternative text](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html) describing the purpose of the image. Alternative image descriptions—often abbreviated as "alt text"—give AT users more context about an image and help them better understand an image's message or intent.
 
-Alternative descriptions for the [`<img>` elements](https://developer.mozilla.org/docs/Web/HTML/Element/img#attr-alt) are added by including the `alt` attribute, regardless of the file type it points to, such as `.jpg`, `.png`, `.svg`, and others.
+You can add alternative descriptions to [`<img>` elements](https://developer.mozilla.org/docs/Web/HTML/Element/img#attr-alt) by including the `alt` attribute. This applies to all file types, including JPG, PNG, or an SVG.
 
 ```
-<img src=".../Ladybug_Swarm.jpg" alt="A swarm of red ladybugs is resting on the leaves of my prize rose bush.">
+<img src=".../Ladybug_Swarm.jpg"
+  alt="A swarm of red ladybugs is resting on the leaves of my prize rose bush.">
 ```
 
-When you use `<svg>` elements inline, however, you need to pay attention to accessibility.
+When you use `<svg>` elements inline, however, you need to pay additional attention to accessibility. SVGs are semantically coded, so AT skips over them by default.
 
-First, since SVGs are semantically coded, AT will skip over them by default. If you have a decorative image, this is not an issue—the AT will ignore it as intended. But if you have an informative image, an ARIA `role="img"` needs to be added to the pattern for the AT to recognize it as an image.
+If the SVG is a decorative image, this is fine—the AT will ignore it as intended. But if your SVG is an informative image, add the ARIA `role="img"` to the element, so AT recognizes it as an image.
 
-Second, `<svg>` elements do not use the `alt` attribute, so [different coding methods](https://codepen.io/web-dot-dev/pen/dyezRBP) must be used instead to add alternative descriptions to your informative images.
+Second, `<svg>` elements don't use the `alt` attribute, so [different coding methods](https://codepen.io/web-dot-dev/pen/dyezRBP) must be used instead to add alternative descriptions to your informative images.
 
 ```
-<svg role="img" ...>
+<svg role="img">
   <title>Cartoon drawing of a red, black, and gray ladybug.</title>
 </svg>
 ```
@@ -87,11 +88,11 @@ Second, `<svg>` elements do not use the `alt` attribute, so [different coding me
 
 A [functional image](https://www.w3.org/WAI/tutorials/images/functional/) is connected to an action. An example of a functional image is a logo that links to the home page, a magnifying glass used as a search button, or a social media icon that directs you to a different website or app.
 
-Like informative images, functional images must include an alternative description to inform all users of their purpose. Unlike an informative image, each functional image needs to describe the image's action—not the visual aspects.
+Like informative images, functional images must include an alternative description to inform all users of their purpose. Unlike an informative image, each functional image needs to describe the image action—not the visual aspects.
 
-In the logo example, the image is both informative and actionable as it is both an image that conveys information and behaves as a link. In cases like these, you can add alternative descriptions to each element—but it is not a requirement.
+In the logo example, the image is both informative and actionable as it's both an image that conveys information and behaves as a link. In cases like these, you can add alternative descriptions to each element—but it's not a requirement.
 
-One way to add alternative descriptions to images is through visually hidden text. When you use this method, the text will be read by screen readers because it is in the DOM, but it is visually hidden with the help of custom CSS.
+One way to add alternative descriptions to images is through visually hidden text. When you use this method, the text is read by screen readers because it's in the DOM, but it's visually hidden with the help of custom CSS.
 
 You can see from the code snippet that "Navigate to the homepage" is the wrapper title, and the image alternative text is "Lovely Ladybugs for your Lawn." When you listen to the logo code with a screen reader, you hear both the visual and the action conveyed in one image.
 
@@ -126,7 +127,7 @@ Adding ARIA `role="group"` ensures backward compatibility with older web browser
 
 Of course, including alternate text is not enough. The text should also be meaningful. For example, if your image is about a swarm of ladybugs chewing the leaves of your prize rose bush, but your alternative text reads "bugs," would that convey the full message and intent of the image? Definitely not.
 
-Alternative descriptions need to capture as much relevant visual information as possible and be succinct. While there is no limit to the number of characters a screen reader can read, it is usually advised to cap your alternative text to 150 characters or less to avoid reader fatigue. If you need to add additional context to the image, you can use one of the complex image patterns, add caption text, or further describe the image in the main copy.
+Alternative descriptions need to capture as much relevant visual information as possible and be succinct. While there is no limit to the number of characters a screen reader can read, it's usually advised to cap your alternative text to 150 characters or less to avoid reader fatigue. If you need to add additional context to the image, you can use one of the complex image patterns, add caption text, or further describe the image in the main copy.
 
 Some additional [alternative text best practices](https://www.w3.org/WAI/tutorials/images/tips/) include:
 

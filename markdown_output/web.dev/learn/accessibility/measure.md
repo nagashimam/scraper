@@ -24,7 +24,7 @@ Perform an accessibility audit to capture the baseline accessibility compliance 
 
 The [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/standards-guidelines/wcag/) are an international set of accessibility standards developed through the W3C, in cooperation with individuals and organizations. The goal of WCAG is to provide a single shared standard for digital accessibility that meets the needs of individuals, organizations, and governments worldwide.
 
-WCAG is primarily intended for web-based and native mobile app designers and developers. However, many others, including software developers, content creators/editors, and all levels of management, benefit from understanding and applying WCAG-based techniques to their process. Additional W3C standards may apply to your role, including the [Authoring Tool Accessibility Guidelines (ATAG)](https://www.w3.org/WAI/standards-guidelines/atag/) and [User Agent Accessibility Guidelines (UAAG)](https://www.w3.org/WAI/standards-guidelines/uaag/), so make sure you review the [W3C list of standards](https://www.w3.org/standards/) and use the one(s) most applicable to your role and project.
+WCAG is primarily intended for web-based and mobile app designers and developers. However, many others, including software developers, content creators/editors, and all levels of management, benefit from understanding and applying WCAG-based techniques to their process. Additional W3C standards may apply to your role, including the [Authoring Tool Accessibility Guidelines (ATAG)](https://www.w3.org/WAI/standards-guidelines/atag/) and [User Agent Accessibility Guidelines (UAAG)](https://www.w3.org/WAI/standards-guidelines/uaag/), so make sure you review the [W3C list of standards](https://www.w3.org/standards/) and use the one(s) most applicable to your role and project.
 
 In terms of accessibility, WCAG is considered the "gold standard" for conformance testing. The [first draft of WCAG](https://www.w3.org/TR/WAI-WEBCONTENT/) was released in 1999. The current version is [WCAG 2.2](https://www.w3.org/TR/WCAG22/). [WCAG 3.0](https://www.w3.org/WAI/standards-guidelines/wcag/wcag3-intro/) has an exploratory draft as of May 2024, but is not expected to be a completed W3C standard for a few more years.
 
@@ -105,9 +105,9 @@ The third category of POUR is Understandable. For this principle, users must und
 
 #### Examples
 
-*   Write simply. Don't use a complex word when a simple one will do.
+*   Write [clear, concise, and unambiguous language](https://developers.google.com/style/translation). When possible, use a simpler word instead of a more complex word.
 *   Ensure your digital product has predictable navigation.
-*   Ensure error messages are clear and easy to resolve.
+*   Ensure error messages are clear, so the user knows what steps to take next.
 
 ### Robust
 

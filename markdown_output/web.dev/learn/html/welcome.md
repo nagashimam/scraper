@@ -16,6 +16,8 @@ Unless you're reading a PDF or a printed version of this page, this content is m
 
 This means writing HTML code with modern standards.
 
+[![Sign up for the web.dev newsletter.](/static/images/newsletter/opt2_banner.png)](/newsletter?nl_cta=true)
+
 ## What you'll learn
 
 This HTML course for web developers provides a solid overview for developers, from novice to expert level HTML. If you're completely new to HTML, you'll learn how to build structurally sound content. If you've been building websites for years, this course may fill in gaps in knowledge that you didn't even know you had.

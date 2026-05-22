@@ -1,4 +1,4 @@
-Chrome is back at Google I/O May 19-20! [Register now](https://io.google/2026/?utm_source=web&utm_medium=embedded_marketing&utm_campaign=web-dev&utm_content=)
+Thanks for tuning in to Google I/O. [Watch content on demand](https://io.google/2026/?utm_source=web&utm_medium=embedded_marketing&utm_campaign=hpp_ondemand_banner&utm_content=)
 
 *   [web.dev](https://web.dev/)
 *   [Resources](https://web.dev/learn)
@@ -147,4 +147,4 @@ Skip [Read article](https://web.dev/learn/testing/coming-soon)
 
 Confirm you've completed the Learn Testing course to claim your badge.
 
-[Take the quiz](/courses/quizzes/learn/testing)
+[Take the quiz](/learn/quizzes/testing)

@@ -1,10 +1,10 @@
 Stay organized with collections Save and categorize content based on your preferences.
 
-# Learn AI
+# Learn Testing
 
 Return to pathway
 
-1.  ## Confirm you've completed the Learn AI course to claim your badge.
+1.  ## Confirm you've completed the Learn Testing course to claim your badge.
     
      Yes, I'd like to claim my badge!
     

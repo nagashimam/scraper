@@ -397,7 +397,7 @@ some-lib/src/DefineCustomElement.ts
 ts
 
 ```
-// We can re-use this type helper per each element we need to define.
+// We can reuse this type helper for each element we need to define.
 type DefineCustomElement<
   ElementType extends HTMLElement,
   Events extends EventMap = {},

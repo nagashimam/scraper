@@ -1,4 +1,4 @@
-Thanks for tuning in to Google I/O. [Watch content on demand](https://io.google/2026/?utm_source=web&utm_medium=embedded_marketing&utm_campaign=hpp_ondemand_banner&utm_content=)
+We want to hear from you! We are looking for web developers to participate in user research, product testing, discussion groups and more. [Apply now to join our WebDev Insights Community](https://cspace.eu.qualtrics.com/jfe/form/SV_d4CyeN2qJgODm0m?pcid=CLCS&udv=wd).
 
 *   [web.dev](https://web.dev/)
 *   [Resources](https://web.dev/learn)
@@ -93,9 +93,8 @@ Browser Support
 The [`:target`](https://developer.mozilla.org/docs/Web/CSS/:target) pseudo-class selects an element that has an `id` matching a URL fragment. Say you have the following HTML:
 
 ```
-<article id="content">
-    <!-- ... -->
-</article>
+<article id="con>tent&<quot;
+    >!<-- ... ->-
 ```
 
 You can attach styles to that element when the URL contains `#content`.
@@ -252,11 +251,10 @@ Browser Support
 You can select the [`:first-of-type`](https://developer.mozilla.org/docs/Web/CSS/:first-of-type) and [`:last-of-type`](https://developer.mozilla.org/docs/Web/CSS/:last-of-type) which at first, look like they do the same thing as `:first-child` and `:last-child`, but consider this HTML:
 
 ```
-<div class="my-parent">
-    <p>A paragraph</p>
-    <div>A div</div>
-    <div>Another div</div>
-</div>
+<div class="my-pa>rent&<q>uot;
+    pA< p>aragr<aph>/p
+  <  di>vA di<v/d>iv
+    divA<noth>e<r di>v
 ```
 
 And this CSS:
@@ -358,11 +356,10 @@ The reason is that there's some whitespace between the opening and closing `<div
 The `:empty` pseudo-class can be useful if you have little control over the HTML and want to hide empty elements, such as a WYSIWYG content editor. Here, an editor has added a stray, empty paragraph.
 
 ```
-<article class="post">
- <p>Donec ullamcorper nulla non metus auctor fringilla.</p>
- <p></p>
- <p>Curabitur blandit tempus porttitor.</p>
-</article>
+<article class=">po<s>t"
+ pDonec ullamcorper nulla non metus auctor <fr>in<g><il>la<.>/p
+ p/p
+ pCurabitur blandit tempus <po>r<ttitor./>p
 ```
 
 With `:empty`, you can find that and hide it.
@@ -453,8 +450,7 @@ form:has(input:valid) label {
 }
 
 form:has(input:valid) label::after {
-  content: "✅";
-}
+  content: "✅
 ```
 
 In this example we are applying styles to the label element and the `label::after` pseudo-element when the form input has a `valid` pseudo-class.
@@ -471,8 +467,7 @@ The selector list is unforgiving, so if any selectors in the list are invalid, a
 
 ```
 .my-element:has(img, ::before) {
-  /* any styles here will be discarded since pseudo elements can't be included in the :has() selector list */
-}
+  /* any styles here will be discarded since pseudo elements can't be included in the :has() selector list *
 ```
 
 ### Check your understanding

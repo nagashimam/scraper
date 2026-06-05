@@ -1,4 +1,4 @@
-Thanks for tuning in to Google I/O. [Watch content on demand](https://io.google/2026/?utm_source=web&utm_medium=embedded_marketing&utm_campaign=hpp_ondemand_banner&utm_content=)
+We want to hear from you! We are looking for web developers to participate in user research, product testing, discussion groups and more. [Apply now to join our WebDev Insights Community](https://cspace.eu.qualtrics.com/jfe/form/SV_d4CyeN2qJgODm0m?pcid=CLCS&udv=wd).
 
 *   [web.dev](https://web.dev/)
 *   [Resources](https://web.dev/learn)

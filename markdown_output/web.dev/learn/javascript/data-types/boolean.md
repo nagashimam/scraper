@@ -1,4 +1,4 @@
-Thanks for tuning in to Google I/O. [Watch content on demand](https://io.google/2026/?utm_source=web&utm_medium=embedded_marketing&utm_campaign=hpp_ondemand_banner&utm_content=)
+We want to hear from you! We are looking for web developers to participate in user research, product testing, discussion groups and more. [Apply now to join our WebDev Insights Community](https://cspace.eu.qualtrics.com/jfe/form/SV_d4CyeN2qJgODm0m?pcid=CLCS&udv=wd).
 
 *   [web.dev](https://web.dev/)
 *   [Resources](https://web.dev/learn)
@@ -13,8 +13,7 @@ The boolean primitive is a logical data type with only two values: `true` and `f
 All values in JavaScript are implicitly `true` or `false`. The `Boolean` object can be used to [coerce](/learn/javascript/introduction#weak-typing) a value to a `true` or `false` boolean, based on the implicit true or false state of that value:
 
 ```
-Boolean( "A string literal" );
-> true
+Boolean( "A string literal>"
 ```
 
 Values that result in `false` include `0`, `null`, `undefined`, `NaN`, an empty string (`""`), an omitted value, and a `false` boolean. All other values result in `true`.
@@ -29,8 +28,7 @@ Boolean( -0 );
 Boolean( 5 );
 > true
 
-Boolean( "false" ); // the value `"false"` is a string, and therefore implicitly true.
-> true
+Boolean( "false" ); // the value `"false"` is a string, and therefo>re imp
 ```
 
 Avoid using the `Boolean` object as a constructor. It creates an _object_ containing a boolean value, not the boolean primitive you might expect:

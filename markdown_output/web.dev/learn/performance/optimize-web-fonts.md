@@ -6,7 +6,7 @@ We want to hear from you! We are looking for web developers to participate in us
 
 # Optimize web fonts Stay organized with collections Save and categorize content based on your preferences.
 
-In the previous modules, you learned how to optimize of HTML, CSS, JavaScript, and media resources. In this module, discover some methods to optimize web fonts.
+In the previous modules, you learned how to optimize HTML, CSS, JavaScript, and media resources. In this module, discover some methods to optimize web fonts.
 
 Web fonts can impact page performance at both load time and rendering time. Large font files can take a while to download and negatively affect [First Contentful Paint (FCP)](/articles/fcp), while the incorrect [`font-display` value](https://developer.mozilla.org/docs/Web/CSS/@font-face/font-display) could cause undesirable visual rendering shifts.
 
@@ -70,7 +70,7 @@ Web fonts can be served through third-party services, such as [Google Fonts](htt
 This overhead can be reduced using the `preconnect` resource hint. By using `preconnect`, you can tell the browser to open a connection to the cross-origin sooner than the browser ordinarily would:
 
 ```
-<link rel="preconnect" href="https://fonts.googleapis.com">  
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 ```
 

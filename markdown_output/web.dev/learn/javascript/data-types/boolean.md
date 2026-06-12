@@ -13,7 +13,8 @@ The boolean primitive is a logical data type with only two values: `true` and `f
 All values in JavaScript are implicitly `true` or `false`. The `Boolean` object can be used to [coerce](/learn/javascript/introduction#weak-typing) a value to a `true` or `false` boolean, based on the implicit true or false state of that value:
 
 ```
-Boolean( "A string literal>"
+Boolean( "A string literal" );
+> true
 ```
 
 Values that result in `false` include `0`, `null`, `undefined`, `NaN`, an empty string (`""`), an omitted value, and a `false` boolean. All other values result in `true`.
@@ -28,7 +29,8 @@ Boolean( -0 );
 Boolean( 5 );
 > true
 
-Boolean( "false" ); // the value `"false"` is a string, and therefo>re imp
+Boolean( "false" ); // the value `"false"` is a string, and therefore implicitly true.
+> true
 ```
 
 Avoid using the `Boolean` object as a constructor. It creates an _object_ containing a boolean value, not the boolean primitive you might expect:

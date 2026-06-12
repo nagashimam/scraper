@@ -16,7 +16,7 @@ Now that you [understand markup semantics](/learn/html/semantic-html) and are aw
 
 ## Site `<header>`
 
-Let's build a site header. You'll start with non-semantic markup, and work your way to a good solution so that you can learn the benefits of the HTML section and heading elements along the way.
+First, you should build a site header. Start with non-semantic markup, and work your way to a good solution so that you can learn the benefits of the HTML section and heading elements along the way.
 
 If you put little to no thought into the semantics for our header, you might use code like this:
 
@@ -53,7 +53,7 @@ You can include `role` attributes to provide semantics to create a good accessib
     <a href="#feedback">Testimonials</a>
   </div>
   <!-- end navigation bar -->
-<div>
+</div>
 <!-- end of header -->
 ```
 
@@ -85,7 +85,7 @@ You have written a header with very little HTML and no classes or ids. When usin
 
 ## Site `<footer>`
 
-Let's code the site footer.
+Code the site footer.
 
 ```
 <footer>
@@ -99,7 +99,7 @@ Similar to `<header>`, whether the footer is a landmark depends on where the foo
 
 In this screenshot, there are two footers: one in an `<article>` and one top level. The top level footer is a landmark with the implicit role of `contentinfo`. The other footer isn't a landmark. Chrome shows it as `FooterAsNonLandmark`; Firefox shows it as `section`.
 
-That doesn't mean you shouldn't use `<footer>`. Let's say you have a blog. The blog has a site footer with an implicit `contentinfo` role. Each blog post can also have a `<footer>`. On your blog's main landing page, the browser, search engine, and screen reader know the main footer is the top-level footer, and that all the other footers are related to the posts in which they are nested.
+That doesn't mean you shouldn't use `<footer>`. For example, if you have a blog, you could have a site footer with an implicit `contentinfo` role. Each blog post can also have a `<footer>`. On your blog's main landing page, the browser, search engine, and screen reader know the main footer is the top-level footer, and that all the other footers are related to the posts in which they are nested.
 
 When a `<footer>` is a descendant of an `<article>`, `<aside>`, `<main>`, `<nav>`, or `<section>`, it's not a landmark. If the post appears on its own, depending on the markup, that footer might get promoted.
 
@@ -114,7 +114,7 @@ Footers are often where you will find contact information, wrapped in `<address>
 
 ## Document structure
 
-This module starts with the `<header>` and `<footer>`, because they are unique in only sometimes being landmark, or "sectioning", elements. Let's cover the "full time" sectioning element by discussing the most common page layouts:
+This module starts with the `<header>` and `<footer>`, as they're only sometimes a landmark (or "sectioning") elements. There a several more frequent sectioning elements.
 
 ![A layout with a header, three columns, and a footer.](/static/learn/html/headings-and-sections/image/a-layout-a-header-three-31026f6b6c4b4.png)
 
@@ -145,7 +145,7 @@ If you are creating a blog, you might have a series of articles in `<main>`:
 </body>
 ```
 
-When employing semantic elements, browsers are able to create meaningful accessibility trees, enabling screen reader users to more easily navigate. Here, a `banner` and `contentinfo` are provided through a site `<header>` and `<footer>`. The new elements added here include `<main>`, `<aside>`, and `<article>`; also, `<h1>` and `<nav>` that you used earlier, and `<section>`, which you haven't used yet.
+When employing semantic elements, browsers can create meaningful accessibility trees. This helps improve how screen reader navigate. Here, a `banner` and `contentinfo` are provided through a site `<header>` and `<footer>`. The new elements added here include `<main>`, `<aside>`, and `<article>`; also, `<h1>` and `<nav>` that you used earlier, and `<section>`, which you haven't used yet.
 
 ### `<main>`
 
@@ -153,7 +153,7 @@ There's a single `<main>` landmark element. The `<main>` element identifies the 
 
 ### `<aside>`
 
-The `<aside>` is for content that is indirectly or tangentially related to the document's main content. For example, this article is about HTML. For a section on CSS selector specificity for the three site header examples (div, role, and semantic), the tangentially related aside could be contained in an `<aside>`; and, like most, the `<aside>` would likely be presented in a sidebar or a call-out box. The `<aside>` is also a landmark, with the implicit role of `complementary`.
+The `<aside>` is for content that is indirectly or tangentially related to the document's main content. For example, this document is about HTML. For a section on CSS selector specificity for the three site header examples (div, role, and semantic), the tangentially related aside could be contained in an `<aside>`; and, like most, the `<aside>` would likely be presented in a sidebar or a call-out box. The `<aside>` is also a landmark, with the implicit role of `complementary`.
 
 ### `<article>`
 
@@ -185,7 +185,7 @@ You now have enough knowledge to outline MachineLearningWorkshop.com:
 
 This is the outline for the visible content of the machine learning workshop site:
 
-**Note:** This code snippet only includes the content of the `<body>`. The [`<!doctype>`, `<html>`, `<body>`, and meta-information](/learn/html/metadata) were covered earlier.
+**Note:** This code snippet only includes the content of the `<body>`. The `<!doctype>`, `<html>`, `<body>` and meta-information were covered in the [Metadata module](/learn/html/metadata).
 
 As no piece of content is a standalone, complete piece of content, `<section>` is more appropriate than `<article>`; while each has a heading, no section is worthy of a `<footer>`.
 

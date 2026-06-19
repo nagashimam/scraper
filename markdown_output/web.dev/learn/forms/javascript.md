@@ -53,7 +53,8 @@ Your backend script can check if a `POST` request appears to be from the browser
 if (req.xhr || req.headers.accept.indexOf('json') !== -1) {
     // return JSON
 } else {
-    // return
+    // return HTML
+}
 ```
 
 Always notify screen reader users about dynamic content changes. Add an element with the `aria-live="polite"` attribute to your HTML, and update the content of the element after a change. For example, update the text to 'Your comment was successfully posted', after a user submits a comment.
@@ -89,8 +90,9 @@ It's important to make the **Show Password** button accessible. Connect the `<bu
 To notify screen reader users if the password is currently shown or hidden, use a hidden element with `aria-live="polite"`, and change its text accordingly. It's important to enable screen reader users to know when a password is displayed and visible to someone else looking at their screen.
 
 ```
-<span class="visually-hidden" aria-liv>e=&qu<ot;polite"
-    !-- Dynamically change this tex>t< with> 
+<span class="visually-hidden" aria-live="polite">
+    <!-- Dynamically change this text with JavaScript -->
+</span>
 ```
 
 **Note:** Microsoft Edge shows a built-in password reveal control for `<input type="password">`. To prevent having two reveal buttons, hide the built-in control with: `css ::-ms-reveal { display: none }` Learn more about [customizing the password reveal button](https://docs.microsoft.com/en-us/microsoft-edge/web-platform/password-reveal).

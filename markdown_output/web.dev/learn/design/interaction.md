@@ -154,23 +154,23 @@ Unlike a physical keyboard, virtual keyboards can be tailored to match the expec
 [HTML5 input types](https://developer.mozilla.org/docs/Learn/Forms/HTML5_input_types) are a great way of describing your `input` elements. The `type` attribute accepts values such as `email`, `number`, `tel`, `url`, and more.
 
   ```
-  <label for="email">Email</label>
-  <input type="email" id="email">
+  <label for="e>mail&<quot;E>mai<l/label
+  input type="em>a
 ```
 
   ```
-  <label for="number">Number</label>
-  <input type="number" id="number">
+  <label for="nu>mber&q<uot;Nu>mbe<r/label
+  input type="numb>e
 ```
 
   ```
-  <label for="tel">Tel</label>
-  <input type="tel" id="tel">
+  <label for=">;te<l">;Te<l/label
+  input type=&quo>t
 ```
 
   ```
-  <label for="url">URL</label>
-  <input type="url" id="url">
+  <label for=">;ur<l">;UR<L/label
+  input type=&quo>t
 ```
 
 ### Input modes
@@ -189,15 +189,15 @@ Browser Support
 If you’re asking for a whole number, like somebody’s age, use `inputmode="numeric"`.
 
 ```
-<label for="age">Age</label>
-<input type="number" id="age" inputmode="numeric">
+<label for=">;ag<e">;<Age/label
+input type="number" id=">;
 ```
 
 If you’re asking for a number that includes decimal places, like a price, use `inputmode="decimal"`.
 
 ```
-<label for="price">Price</label>
-<input type="number" id="price" inputmode="decimal">
+<label for="p>rice&<quot;P>r<ice/label
+input type="number" id="p>r
 ```
 
 ### Autocomplete
@@ -205,18 +205,18 @@ If you’re asking for a number that includes decimal places, like a price, use 
 Nobody likes filling in forms. As a designer, you can improve the experience for your users by enabling them to automatically fill in form fields. [The `autocomplete` attribute](https://developer.mozilla.org/docs/Web/HTML/Attributes/autocomplete) provides you with a host of options for improving contact forms, log-in forms, and checkout forms.
 
 ```
-<label for="name">Name</label>
-<input type="text" id="name" autocomplete="name">
+<label for=">name<">N<ame/label
+input type="text" id=">n
 ```
 
 ```
-<label for="country">Country</label>
-<input type="text" id="country" autocomplete="country">
+<label for="cou>ntry&qu<ot;Cou>n<try/label
+input type="text" id="countr>y
 ```
 
 ```
-<label for="email">Email</label>
-<input type="email" id="email" autocomplete="email">
+<label for="e>mail&<quot;E>m<ail/label
+input type="email" id="em>a
 ```
 
 These HTML attributes—`type`, `inputmode`, and `autocomplete`—are small additions to your form fields, but they can make a big difference to the user experience. By anticipating and responding to your user’s device capabilities, you are empowering your users. For more in-depth information, there’s a course dedicated to helping you [learn forms](/learn/forms).

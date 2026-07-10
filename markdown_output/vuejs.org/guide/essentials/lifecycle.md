@@ -52,7 +52,7 @@ Do note this doesn't mean that the call must be placed lexically inside `setup()
 
 Below is a diagram for the instance lifecycle. You don't need to fully understand everything going on right now, but as you learn and build more, it will be a useful reference.
 
-![Component lifecycle diagram](/assets/lifecycle.MuZLBFAS.png)
+![Diagram showing the full lifecycle of a Vue component, from creation to destruction, including all major lifecycle hooks and the internal processes like template compilation and mounting](/assets/lifecycle.MuZLBFAS.png)
 
 Consult the [Lifecycle Hooks API reference](/api/composition-api-lifecycle)[Lifecycle Hooks API reference](/api/options-lifecycle) for details on all lifecycle hooks and their respective use cases.
 

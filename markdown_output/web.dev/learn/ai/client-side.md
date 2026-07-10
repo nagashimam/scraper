@@ -16,7 +16,7 @@ Figure 1: With client-side AI, your web application integrates built-in AI APIs 
 
 ## Built-in AI
 
-A growing number of browsers now ship with compact, preloaded AI models that you can call directly from JavaScript. For example, [Google Chrome bundles Gemini Nano](https://developer.chrome.com/docs/ai), while [Microsoft Edge exposes Phi-4 mini](https://learn.microsoft.com/microsoft-edge/web-platform/prompt-api). The browsers expose high-level APIs so developers can access these models. Chrome offers [several task-based APIs](https://developer.chrome.com/docs/ai/built-in-apis), at varying stages of development, including APIs that support summarization, proofreading, and translation.
+A growing number of browsers now ship with compact, preloaded AI models that you can call directly from JavaScript. For example, [Google Chrome bundles a Google foundation model](https://developer.chrome.com/docs/ai), while [Microsoft Edge exposes a Microsoft foundation model](https://learn.microsoft.com/microsoft-edge/web-platform/prompt-api). The browsers expose high-level APIs so developers can access these models. Chrome offers [several task-based APIs](https://developer.chrome.com/docs/ai/built-in-apis), at varying stages of development, including APIs that support summarization, proofreading, and translation.
 
 From a developer's perspective, built-in models behave like any other browser capability: you call an API, receive a result, and continue building your interface. You don't need to load models, configure runtimes, or maintain an inference pipeline. Built-in AI can dramatically reduce the cost of a feature, because you don't need to pay for each API call. You can prototype, iterate, and discard ideas quickly, focusing on user experience and product behavior instead of infrastructure.
 
@@ -24,7 +24,7 @@ Built-in AI trades flexibility for simplicity. Here are some limitations you sho
 
 *   **Constrained output behavior**: Models are intentionally small and bounded in capability; they are less suitable for complex reasoning, long contexts, or open-ended conversation.
 *   **User-side download and storage cost**: Before the AI features become available, the user's browser must download and cache the model. This requires bandwidth, time, and local disk space, which may impede the first run.
-*   **Browser-specific availability**: Capabilities differ across browsers (such as Chrome and Gemini Nano; Edge and Phi-4-mini). There is no guarantee of uniform support, so you must implement server-side fallbacks for environments without support.
+*   **Browser-specific availability**: Capabilities might differ across browsers (such as Chrome and Edge). There is no guarantee of uniform support, so you must implement server-side fallbacks for environments without support.
 *   **No persistence guarantees**: Models hosted on devices can be removed by the operating system or browser at any time. Your application should be built to handle temporary gaps in model availability.
 
 As you may remember from [Choose a platform](/learn/ai/platform), built-in AI is best for smaller, task-specific features. If your application requires retrieval (RAG), agents, structured outputs, or custom workflows, you need a client-side runtime or server inference.

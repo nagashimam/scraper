@@ -296,50 +296,6 @@ We've applied all of these automated accessibility updates to a new [CodePen](ht
 
 Great job. You have accomplished a lot already, but we haven't finished yet! Next, we'll move on to manual checks, as detailed in the [manual accessibility testing](/learn/accessibility/test-manual) module.
 
-## Check your understanding
-
-Test your knowledge of automated accessibility testing.
-
-What kind of testing should you do to ensure that your site is accessible?
-
-Automated testing
-
-You can quickly find some accessibility errors with automated testing tools, such as Lighthouse.
-
-Manual testing
-
-Some accessibility testing must be done manually, as AI has not yet learned every aspect of accessibility.
-
-User testing
-
-The best way to know if users can use your product is to talk and test with people with disabilities. Not all people experience their disability in the same way, so we encourage you to have a diverse population of testers.
-
-Assistive technology testing
-
-If you have a lot of experience with AT, you may be able to address any of these issues in manual testing. For most developers, separate AT testing is critical to ensuring AT users can use your website or app with their chosen AT.
-
-What errors are caught in automated testing?
-
-ARIA errors
-
-Incorrect ARIA usage is often caught in automated testing. This is not related to the copy itself, just the usage of the attributes.
-
-Inclusive language
-
-While it's possible to build a linter which catches certain words, context is important for inclusive language. Some instances may be missed.
-
-Descriptive form labels
-
-Automated testing can determine if form labels exist but not if the form labels are properly descriptive.
-
-Missing alt text
-
-Automated testing can catch if there is no alt text.
-
-Color contrast issues
-
-Automated testing is one of the best ways to catch color contrast errors. Colors may not look problematic but still fail testing.
-
 [
 
 Previous

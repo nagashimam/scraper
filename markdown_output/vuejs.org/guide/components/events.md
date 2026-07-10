@@ -197,7 +197,7 @@ const emit = defineEmits<{
 
 More details: [Typing Component Emits](/guide/typescript/composition-api#typing-component-emits)
 
-js
+ts
 
 ```
 export default {

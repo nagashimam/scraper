@@ -314,6 +314,6 @@ You'll see other examples of modifiers later, [for `v-on`](/guide/essentials/eve
 
 And finally, here's the full directive syntax visualized:
 
-![directive syntax graph](/assets/directive.DtZKvoAo.png)
+![Diagram visualizing the full directive syntax, including directive name, argument, modifiers, and value](/assets/directive.DtZKvoAo.png)
 
 [Edit this page on GitHub](https://github.com/vuejs/docs/edit/main/src/guide/essentials/template-syntax.md)

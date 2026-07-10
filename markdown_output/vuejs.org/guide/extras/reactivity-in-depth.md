@@ -347,6 +347,8 @@ TIP
 
 `onTrack` and `onTrigger` computed options only work in development mode.
 
+Computed debugging options are only available via the Composition API `computed()` function.
+
 ### Watcher Debugging [​](#watcher-debugging)
 
 Similar to `computed()`, watchers also support the `onTrack` and `onTrigger` options:
@@ -371,6 +373,28 @@ watchEffect(callback, {
     debugger
   }
 })
+```
+
+Watchers declared with the object syntax also support the `onTrack` and `onTrigger` options:
+
+js
+
+```
+export default {
+  watch: {
+    source: {
+      handler() {
+        // ...
+      },
+      onTrack(e) {
+        debugger
+      },
+      onTrigger(e) {
+        debugger
+      }
+    }
+  }
+}
 ```
 
 TIP

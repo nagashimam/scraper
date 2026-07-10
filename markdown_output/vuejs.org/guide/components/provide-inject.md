@@ -8,13 +8,13 @@ Are you an LLM? You can read better optimized documentation at /guide/components
 
 Usually, when we need to pass data from the parent to a child component, we use [props](/guide/components/props). However, imagine the case where we have a large component tree, and a deeply nested component needs something from a distant ancestor component. With only props, we would have to pass the same prop across the entire parent chain:
 
-![prop drilling diagram](/assets/prop-drilling.XJXa8UE-.png)
+![Diagram showing props being passed through multiple levels of components just to reach a deeply nested child](/assets/prop-drilling.XJXa8UE-.png)
 
 Notice although the `<Footer>` component may not care about these props at all, it still needs to declare and pass them along just so `<DeepChild>` can access them. If there is a longer parent chain, more components would be affected along the way. This is called "props drilling" and definitely isn't fun to deal with.
 
 We can solve props drilling with `provide` and `inject`. A parent component can serve as a **dependency provider** for all its descendants. Any component in the descendant tree, regardless of how deep it is, can **inject** dependencies provided by components up in its parent chain.
 
-![Provide/inject scheme](/assets/provide-inject.C0gAIfVn.png)
+![Diagram showing the provide/inject mechanism where a parent component provides a dependency that can be directly injected by a deeply nested child, bypassing intermediate components](/assets/provide-inject.C0gAIfVn.png)
 
 ## Provide [​](#provide)
 

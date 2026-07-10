@@ -32,7 +32,7 @@ template
 
 The `<slot>` element is a **slot outlet** that indicates where the parent-provided **slot content** should be rendered.
 
-![slot diagram](/assets/slots.CKcE8XYd.png)
+![Diagram showing slot content from the parent being injected into the slot outlet in the child component](/assets/slots.CKcE8XYd.png)
 
 And the final rendered DOM:
 
@@ -216,7 +216,7 @@ template
 
 `v-slot` has a dedicated shorthand `#`, so `<template v-slot:header>` can be shortened to just `<template #header>`. Think of it as "render this template fragment in the child component's 'header' slot".
 
-![named slots diagram](/assets/named-slots.CCIb9Mo_.png)
+![Diagram showing multiple named slots in a layout component, with content from the parent being directed to the corresponding header, main, and footer slots](/assets/named-slots.CCIb9Mo_.png)
 
 Here's the code passing content for all three slots to `<BaseLayout>` using the shorthand syntax:
 
@@ -361,32 +361,35 @@ As discussed in [Render Scope](#render-scope), slot content does not have access
 
 However, there are cases where it could be useful if a slot's content can make use of data from both the parent scope and the child scope. To achieve that, we need a way for the child to pass data to a slot when rendering it.
 
-In fact, we can do exactly that - we can pass attributes to a slot outlet just like passing props to a component:
+In fact, we can do exactly that - we can pass attributes to a slot outlet just like passing props to a component. The parent template receives slot props with `v-slot`, while the child template passes props to the slot outlet when rendering:
 
 template
 
 ```
-<!-- <MyComponent> template -->
-<div>
-  <slot :text="greetingMessage" :count="1"></slot>
-</div>
+<!-- Parent template (usage) -->
+<ChildComponent v-slot="receivedProps">
+  {{ receivedProps.text }} {{ receivedProps.count }}
+</ChildComponent>
 ```
-
-Receiving the slot props is a bit different when using a single default slot vs. using named slots. We are going to show how to receive props using a single default slot first, by using `v-slot` directly on the child component tag:
 
 template
 
 ```
-<MyComponent v-slot="slotProps">
-  {{ slotProps.text }} {{ slotProps.count }}
-</MyComponent>
+<!-- Child template (slot definition) -->
+<!-- render with props! -->
+<slot
+  text="hello"
+  :count="1"
+/>
 ```
 
-![scoped slots diagram](/assets/scoped-slots.B67tIPc5.svg)
+Receiving the slot props is a bit different when using a single default slot vs. using named slots. The example above receives props using a single default slot, by using `v-slot` directly on the `ChildComponent` tag.
 
-[Try it in the Playground](https://play.vuejs.org/#eNp9kMEKgzAMhl8l9OJlU3aVOhg7C3uAXsRlTtC2tFE2pO++dA5xMnZqk+b/8/2dxMnadBxQ5EL62rWWwCMN9qh021vjCMrn2fBNoya4OdNDkmarXhQnSstsVrOOC8LedhVhrEiuHca97wwVSsTj4oz1SvAUgKJpgqWZEj4IQoCvZm0Gtgghzss1BDvIbFkqdmID+CNdbbQnaBwitbop0fuqQSgguWPXmX+JePe1HT/QMtJBHnE51MZOCcjfzPx04JxsydPzp2Szxxo7vABY1I/p)
+![Diagram showing a scoped slot where the child component passes data back to the parent-provided slot content](data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjc4IiBoZWlnaHQ9IjQyNSIgdmlld0JveD0iMCAwIDY3OCA0MjUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPGRlZnM+CiAgICA8bWFya2VyIGlkPSJhcnJvdyIgbWFya2VyV2lkdGg9IjgiIG1hcmtlckhlaWdodD0iOCIgcmVmWD0iNyIgcmVmWT0iNCIgb3JpZW50PSJhdXRvIiBtYXJrZXJVbml0cz0ic3Ryb2tlV2lkdGgiPgogICAgICA8cGF0aCBkPSJNMSAxTDcgNEwxIDdaIiBmaWxsPSIjNEI3RUZGIi8+CiAgICA8L21hcmtlcj4KICAgIDxzdHlsZT4KICAgICAgLmxhYmVsIHsKICAgICAgICBmb250OiA2MDAgMThweCAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsICJTZWdvZSBVSSIsIHNhbnMtc2VyaWY7CiAgICAgICAgZmlsbDogIzhFNjdDRDsKICAgICAgfQoKICAgICAgLmxlZ2VuZCB7CiAgICAgICAgZm9udDogNjAwIDE2cHggLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAiU2Vnb2UgVUkiLCBzYW5zLXNlcmlmOwogICAgICB9CgogICAgICAuY29kZSB7CiAgICAgICAgY29sb3I6ICM0MkI4ODM7CiAgICAgICAgZm9udDogNjAwIDE2cHggdWktbW9ub3NwYWNlLCBTRk1vbm8tUmVndWxhciwgTWVubG8sIE1vbmFjbywgQ29uc29sYXMsIG1vbm9zcGFjZTsKICAgICAgICBsaW5lLWhlaWdodDogMjdweDsKICAgICAgICB3aGl0ZS1zcGFjZTogbm93cmFwOwogICAgICB9CgogICAgICAuaW5kZW50IHsKICAgICAgICBwYWRkaW5nLWxlZnQ6IDIycHg7CiAgICAgIH0KCiAgICAgIC5yZWNlaXZlZCB7CiAgICAgICAgYm9yZGVyOiAycHggc29saWQgIzRCN0VGRjsKICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7CiAgICAgICAgYm94LXNpemluZzogYm9yZGVyLWJveDsKICAgICAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7CiAgICAgICAgbGluZS1oZWlnaHQ6IDI1cHg7CiAgICAgICAgcGFkZGluZzogMCA4cHg7CiAgICAgIH0KCiAgICAgIC5jb250ZW50LAogICAgICAucHJvcHMgewogICAgICAgIGJvcmRlci1yYWRpdXM6IDRweDsKICAgICAgICBjb2xvcjogI0ZGRkZGRjsKICAgICAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7CiAgICAgICAgbGluZS1oZWlnaHQ6IDI1cHg7CiAgICAgICAgcGFkZGluZzogMCA4cHg7CiAgICAgIH0KCiAgICAgIC5jb250ZW50IHsKICAgICAgICBiYWNrZ3JvdW5kOiAjRkY2NDY0OwogICAgICB9CgogICAgICAucHJvcHMgewogICAgICAgIGJhY2tncm91bmQ6ICM0QjdFRkY7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgoKICA8dGV4dCB4PSI1MiIgeT0iMzQiIGNsYXNzPSJsYWJlbCI+UGFyZW50IHRlbXBsYXRlICh1c2FnZSk8L3RleHQ+CiAgPHJlY3QgeD0iNTIiIHk9IjUyIiB3aWR0aD0iNTc0IiBoZWlnaHQ9IjE0NCIgcng9IjQiIHN0cm9rZT0iIzhFNjdDRCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtZGFzaGFycmF5PSI0IDQiLz4KICA8Zm9yZWlnbk9iamVjdCB4PSI3OCIgeT0iNjgiIHdpZHRoPSI1MjAiIGhlaWdodD0iMTEyIj4KICAgIDxkaXYgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiIGNsYXNzPSJjb2RlIj4KICAgICAgPGRpdj4mbHQ7Q2hpbGRDb21wb25lbnQgdi1zbG90PSI8c3BhbiBjbGFzcz0icmVjZWl2ZWQiPnJlY2VpdmVkUHJvcHM8L3NwYW4+IiZndDs8L2Rpdj4KICAgICAgPGRpdiBjbGFzcz0iaW5kZW50Ij48c3BhbiBjbGFzcz0iY29udGVudCI+e3sgcmVjZWl2ZWRQcm9wcy50ZXh0IH19PC9zcGFuPjwvZGl2PgogICAgICA8ZGl2IGNsYXNzPSJpbmRlbnQiPjxzcGFuIGNsYXNzPSJjb250ZW50Ij57eyByZWNlaXZlZFByb3BzLmNvdW50IH19PC9zcGFuPjwvZGl2PgogICAgICA8ZGl2PiZsdDsvQ2hpbGRDb21wb25lbnQmZ3Q7PC9kaXY+CiAgICA8L2Rpdj4KICA8L2ZvcmVpZ25PYmplY3Q+CgogIDx0ZXh0IHg9IjUyIiB5PSIyMjgiIGNsYXNzPSJsYWJlbCI+Q2hpbGQgdGVtcGxhdGUgKHNsb3QgZGVmaW5pdGlvbik8L3RleHQ+CiAgPHJlY3QgeD0iNTIiIHk9IjI0NiIgd2lkdGg9IjU3NCIgaGVpZ2h0PSIxNDAiIHJ4PSI0IiBzdHJva2U9IiM4RTY3Q0QiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWRhc2hhcnJheT0iNCA0Ii8+CiAgPGZvcmVpZ25PYmplY3QgeD0iNzgiIHk9IjI2MCIgd2lkdGg9IjUyMCIgaGVpZ2h0PSIxMTIiPgogICAgPGRpdiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCIgY2xhc3M9ImNvZGUiPgogICAgICA8ZGl2PiZsdDtzbG90PC9kaXY+CiAgICAgIDxkaXYgY2xhc3M9ImluZGVudCI+PHNwYW4gY2xhc3M9InByb3BzIj50ZXh0PSJoZWxsbyI8L3NwYW4+PC9kaXY+CiAgICAgIDxkaXYgY2xhc3M9ImluZGVudCI+PHNwYW4gY2xhc3M9InByb3BzIj46Y291bnQ9IjEiPC9zcGFuPjwvZGl2PgogICAgICA8ZGl2Pi8mZ3Q7PC9kaXY+CiAgICA8L2Rpdj4KICA8L2ZvcmVpZ25PYmplY3Q+CgogIDxwYXRoIGQ9Ik0yNDQgMzE2SDM5NFYxMDIiIHN0cm9rZT0iIzRCN0VGRiIgc3Ryb2tlLXdpZHRoPSIyLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZmlsbD0ibm9uZSIgbWFya2VyLWVuZD0idXJsKCNhcnJvdykiLz4KCiAgPGNpcmNsZSBjeD0iNzAiIGN5PSI0MDUiIHI9IjkiIGZpbGw9IiNGRjY0NjQiLz4KICA8dGV4dCB4PSI5MCIgeT0iNDExIiBjbGFzcz0ibGVnZW5kIiBmaWxsPSIjRkY2NDY0Ij5zY29wZWQgc2xvdCBjb250ZW50PC90ZXh0PgogIDxjaXJjbGUgY3g9IjQwNSIgY3k9IjQwNSIgcj0iOSIgZmlsbD0iIzRCN0VGRiIvPgogIDx0ZXh0IHg9IjQyNSIgeT0iNDExIiBjbGFzcz0ibGVnZW5kIiBmaWxsPSIjNEI3RUZGIj5zY29wZWQgc2xvdCBvdXRsZXQ8L3RleHQ+Cjwvc3ZnPgo=)
 
-[Try it in the Playground](https://play.vuejs.org/#eNqFkNFqxCAQRX9l8CUttAl9DbZQ+rzQD/AlJLNpwKjoJGwJ/nvHpAnusrAg6FzHO567iE/nynlCUQsZWj84+lBmGJ31BKffL8sng4bg7O0IRVllWnpWKAOgDF7WBx2em0kTLElt975QbwLkhkmIyvCS1TGXC8LR6YYwVSTzH8yvQVt6VyJt3966oAR38XhaFjjEkvBCECNcia2d2CLyOACZQ7CDrI6h4kXcAF7lcg+za6h5et4JPdLkzV4B9B6RBtOfMISmxxqKH9TarrGtATxMgf/bDfM/qExEUCdEDuLGXAmoV06+euNs2JK7tyCrzSNHjX9aurQf)
+[Try it in the Playground](https://play.vuejs.org/#eJxlj00Kg0AMha8SsnHTKt2KDhQv0ANkUzTFgfljJkpBvHsZhYK6fS+878uCzxDKeWKssUl91EEgsUxBkdM2+CjQjdoMnbfBO3YCn+gtFGV1jPNEQa6p9g1FjlwjbIN5CytyAM1pZ74n46UljNyznnl4RR8S4XYMsCxwKErhr8C6XoveTy43G+SkpbLSXwNveLXOjx9Fs9cukZkt4cjGeMI9qzdeS/jYk+rEWH9AQHet)
+
+[Try it in the Playground](https://play.vuejs.org/#eJxlkMEKgzAMhl8l5LLLpuwqKoy9wB4gl6GRCTUtNYogffdRywbq9f+Tfl+64sO5bJ4YCyzHxvdOa5J+cNYrPD+9aZ92cFZYFDpvB7hk+T6OyxcSEl62pZa792QUVhKA5jc1FimAw6MxCySBpMz/eJJSeXDmrVzHgfIgMt9GY7Ui9NxwP3P78taNhHUirCvsikx5UQjhXDR2kthskMNddVT6a+AVz2fHP9uLRq8kEZkV4YeNsYQpKzZeRXhPSX5ghC8NDY0G)
 
 The props passed to the slot by the child are available as the value of the corresponding `v-slot` directive, which can be accessed by expressions inside the slot.
 
@@ -395,37 +398,34 @@ You can think of a scoped slot as a function being passed into the child compone
 js
 
 ```
-MyComponent({
+ChildComponent({
   // passing the default slot, but as a function
-  default: (slotProps) => {
-    return `${slotProps.text} ${slotProps.count}`
+  default: (receivedProps) => {
+    return `${receivedProps.text} ${receivedProps.count}`
   }
 })
 
-function MyComponent(slots) {
-  const greetingMessage = 'hello'
-  return `<div>${
-    // call the slot function with props!
-    slots.default({ text: greetingMessage, count: 1 })
-  }</div>`
+function ChildComponent(slots) {
+  // call the slot function with props!
+  return slots.default({ text: 'hello', count: 1 })
 }
 ```
 
 In fact, this is very close to how scoped slots are compiled, and how you would use scoped slots in manual [render functions](/guide/extras/render-function).
 
-Notice how `v-slot="slotProps"` matches the slot function signature. Just like with function arguments, we can use destructuring in `v-slot`:
+Notice how `v-slot="receivedProps"` matches the slot function signature. Just like with function arguments, we can use destructuring in `v-slot`:
 
 template
 
 ```
-<MyComponent v-slot="{ text, count }">
+<ChildComponent v-slot="{ text, count }">
   {{ text }} {{ count }}
-</MyComponent>
+</ChildComponent>
 ```
 
 ### Named Scoped Slots [​](#named-scoped-slots)
 
-Named scoped slots work similarly - slot props are accessible as the value of the `v-slot` directive: `v-slot:name="slotProps"`. When using the shorthand, it looks like this:
+Named scoped slots work similarly - slot props are accessible as the value of the `v-slot` directive: `v-slot:name="receivedProps"`. When using the shorthand, it looks like this:
 
 template
 
@@ -450,7 +450,7 @@ Passing props to a named slot:
 template
 
 ```
-<slot name="header" message="hello"></slot>
+<slot name="header" message="hello" />
 ```
 
 Note the `name` of a slot won't be included in the props because it is reserved - so the resulting `headerProps` would be `{ message: 'hello' }`.
@@ -462,7 +462,7 @@ template
 ```
 <!-- <MyComponent> template -->
 <div>
-  <slot :message="hello"></slot>
+  <slot message="hello" />
   <slot name="footer" />
 </div>
 ```
@@ -521,7 +521,7 @@ template
 ```
 <ul>
   <li v-for="item in items">
-    <slot name="item" v-bind="item"></slot>
+    <slot name="item" v-bind="item" />
   </li>
 </ul>
 ```

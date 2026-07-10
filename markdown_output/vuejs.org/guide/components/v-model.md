@@ -567,7 +567,7 @@ For `v-model` bindings with both argument and modifiers, the generated prop name
 template
 
 ```
-<MyComponent v-model:title.capitalize="myText">
+<MyComponent v-model:title.capitalize="myText" />
 ```
 
 The corresponding declarations should be:

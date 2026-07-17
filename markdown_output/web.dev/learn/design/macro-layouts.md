@@ -27,7 +27,7 @@ When you arrange these individual page-level components, you're designing a macr
 
 ## Grid
 
-[CSS grid](/learn/css/grid) is an excellent tool for applying a layout to your page. In the example above, say you want a two-column layout once there's enough screen width available. To apply this two-column layout once the browser is wide enough, use a media query to define the grid styles above a specified breakpoint.
+[CSS grid](/learn/css/grid) is an excellent tool for applying a layout to your page. In the previous example, say you want a two-column layout once there's enough screen width available. To apply this two-column layout once the browser is wide enough, use a media query to define the grid styles above a specified breakpoint.
 
 ```
 @media (min-width: 45em) {
@@ -67,7 +67,7 @@ However, the flexbox version requires more CSS. Each column has a separate rule 
 
 You might not always need to use a media query. Media queries work fine when you're applying changes to a few elements, but if the layout needs to be updated a lot, your media queries could get out of hand with lots of breakpoints.
 
-Say you've got a page full of card components. The cards are never wider than `15em`, and you want to put as many cards on one line as will fit. You could write media queries with breakpoints of `30em`, `45em`, `60em`, and so on, but that's quite tedious and difficult to maintain.
+Say you've got a page full of card components. The cards are never wider than `15em`, and you want to put as many cards on one line as will fit. You could write media queries with breakpoints like `30em`, `45em`, and `60em` but that's quite tedious and difficult to maintain.
 
 Instead, you can apply rules so that the cards themselves automatically take up the right amount of space.
 

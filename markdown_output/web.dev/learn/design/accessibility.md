@@ -14,13 +14,13 @@ Different people perceive color differently. People with protanopia don't percei
 
 Some tools can give you a general idea of how your color schemes appear to people with different kinds of color vision.
 
-[Firefox's Accessibility tab](https://developer.mozilla.org/docs/Tools/Accessibility_inspector/Simulation) includes a dropdown labeled **Simulate** with a list of options.
+[Firefox's Accessibility tab](https://developer.mozilla.org/docs/Tools/Accessibility_inspector/Simulation) includes a drop-down labeled **Simulate** with a list of options.
 
 ![Simulated protanopia (no red).](/static/learn/design/accessibility/image/simulated-protanopia-re-1d45e86addd67.png) ![Simulated tritanopia (no blue)](/static/learn/design/accessibility/image/simulated-tritanopia-bl-84fb927cae768.png)
 
 Viewing a website with simulations of different kinds of color vision.
 
-In Chrome DevTools, the rendering tab allows you to [emulate vision deficiencies](https://developer.chrome.com/blog/new-in-devtools-83#vision-deficiencies).
+In Chrome DevTools, the rendering tab lets you [emulate vision deficiencies](https://developer.chrome.com/blog/new-in-devtools-83#vision-deficiencies).
 
 Those are browser-specific tools. It's also possible to emulate different vision types at the operating system level.
 
@@ -128,7 +128,7 @@ Try changing the default text size setting in your browser. You can do that in y
 
 Someone visiting your website on a desktop computer with their font size bumped up to 400% should get the same layout as someone visiting your site on a small-screen device.
 
-![Clearleft dot com.](/static/learn/design/accessibility/image/clearleft-dot-com-5486d64205cac.png)
+![Clearleft dot com website.](/static/learn/design/accessibility/image/clearleft-dot-com-5486d64205cac.png)
 
 The same website viewed on a desktop device and a mobile device. The desktop browser's font size has been increased to 400%.
 
@@ -187,13 +187,13 @@ a:hover {
 }
 ```
 
-The `prefers-reduced-motion` media query is specifically for movement on the screen. If you are using transitions on an element's color that shouldn't be affected by `prefers-reduced-motion`. It's also ok to transition opacity and cross-fade. Reduced motion doesn't have to mean no animation.
+The `prefers-reduced-motion` media query is specifically for movement on the screen. If you are using transitions on an element's color that shouldn't be affected by `prefers-reduced-motion`. It's also OK to transition opacity and cross-fade. Reduced motion doesn't have to mean no animation.
 
 ## Voice
 
 People experience the web differently. Not everyone is seeing your website on a screen. Assistive technologies such as screen readers convert the information output to a screen into spoken words.
 
-Screen readers work with all kinds of applications including web browsers. In order for a web browser to communicate usefully with a screen reader, there needs to be useful semantic information in the web page currently being accessed.
+Screen readers work with all kinds of applications including web browsers. In order for a web browser to communicate usefully with a screen reader, there needs to be useful semantic information in the web page being accessed.
 
 Previously, you learned how [icon-only buttons](/learn/design/icons) need to include an attribute to specify the button's purpose to non-sighted users. This is just one example of the importance of strong foundational HTML.
 
@@ -301,13 +301,13 @@ Do
 
 Using sensible semantic HTML will make your web pages more accessible to assistive technologies like screen readers and also to other audio outputs like voice assistants.
 
-Some interface widgets that don't have a corresponding HTML element: carousels, tabs, accordions, and so on. Those need to be built from scratch with a combination of HTML, CSS, JavaScript, and ARIA.
+Some interface widgets that don't have a corresponding HTML element including carousels, tabs, and accordions. Those need to be built from scratch with a combination of HTML, CSS, JavaScript, and ARIA.
 
-ARIA stands for Accessible Rich Internet Applications. Its vocabulary allows you to provide semantic information when there isn't a suitable HTML element available.
+ARIA stands for Accessible Rich Internet Applications. Its vocabulary lets you provide semantic information when there isn't a suitable HTML element available.
 
 If you need to create interface elements that aren't yet available as HTML elements, [familiarize yourself with ARIA](https://developer.mozilla.org/docs/Learn/Accessibility/WAI-ARIA_basics).
 
-The more bespoke functionality you add with JavaScript, the more you'll need to understand ARIA. If you stick with native HTML elements, you may not need any ARIA.
+The more bespoke functionality you add with JavaScript, the more you'll need to understand ARIA. If you stick with standard HTML elements, you may not need any ARIA.
 
 If it's at all possible, test with real users of screen readers. Not only will this give you a better understanding of how they navigate the web, it will also take the guesswork out of designing with accessibility in mind.
 
@@ -331,7 +331,7 @@ To avoid overwriting a user's font size preference, use?
 
 Absolute units like `px`.
 
-These do not consider user font size preference when used.
+These don't consider user font size preference when used.
 
 Relative units like `rem`.
 

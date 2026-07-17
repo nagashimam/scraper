@@ -219,40 +219,6 @@ By excluding the `href` fallback, you can make sure browsers without `srcset` su
 
 You can't preload images in different formats based on browser support of certain formats. Attempting this can result in extra downloads that waste users' data.
 
-### Image decoding
-
-There's also a `decoding` attribute you can add to `img` elements. You can tell the browser that the image can be decoded asynchronously, so it can prioritize processing other content.
-
-```
-<img
- src="image.png"
- alt="A description of the image."
- width="300"
- height="200"
- loading="lazy"
- decoding="async"
->
-```
-
-You can use the `sync` value if the image itself is the most important piece of content to prioritize.
-
-```
-<img
- src="hero.jpg"
- alt="A description of the image."
- width="1200"
- height="800"
- loading="eager"
- decoding="sync"
->
-```
-
-The `decoding` attribute doesn't change how fast the image decodes. It affects only whether the browser waits for this image decoding to happen before rendering other content.
-
-In most cases this doesn't have much impact, but sometimes it can let the browser display your image or other content slightly faster. For example, for a large document with lots of elements that take time to render, and with large images that take a long time to decode, setting `sync` on important images tells the browser to wait for the image and render both at once. Alternatively, you can set `async` to let the browser display content faster and without waiting for the image to decode.
-
-However, the better option is usually to try to [avoid excessive DOM sizes](https://developer.chrome.com/docs/lighthouse/performance/dom-size) and use responsive images to reduce decoding time, instead of using `decoding`.
-
 ## Responsive images with `srcset`
 
 Thanks to that `max-inline-size: 100%` declaration, your images can't break out of their containers. However, if a user has a small screen and a low-bandwidth network, making them download the same size images as users with larger screens wastes data.

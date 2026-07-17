@@ -18,7 +18,7 @@ Some browsers allow you to suggest a theme color based on your website's palette
 
 **Note:** It feels a little strange to put styling information like this in HTML rather than CSS, but this allows the browser to update its interface as soon as the page is loading rather than waiting for the CSS.
 
-![Clearleft dot com.](/static/learn/design/theming/image/clearleft-dot-com-fc330772c30d.png) ![Resilient Web Design dot com.](/static/learn/design/theming/image/resilient-web-design-dot-79ec7ad52532.png) ![The Session dot org.](/static/learn/design/theming/image/the-session-dot-org-138442c2e4689.png)
+![The Clearleft dot com website.](/static/learn/design/theming/image/clearleft-dot-com-fc330772c30d.png) ![The Resilient Web Design dot com website.](/static/learn/design/theming/image/resilient-web-design-dot-79ec7ad52532.png) ![The Session dot org website.](/static/learn/design/theming/image/the-session-dot-org-138442c2e4689.png)
 
 Three websites are viewed in the Safari browser. Each one has its own theme color that extends into the browser interface.
 

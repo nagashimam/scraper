@@ -152,7 +152,7 @@ A media query applies a grid layout to the `main` and `aside` elements when the 
 
 The container query rule for the media objects remains the same: only apply a horizontal flexbox layout if the containing element is wider than `25em`.
 
-![A two column layout, one wide and one narrow. 
+![A two column layout, one wide and one narrow.
 The media objects are laid out differently depending on whether they're in the wide or narrow column.](/static/learn/design/micro-layouts/image/a-column-layout-wide-d26ea1e0030e.png)
 
 Container queries are a game-changer for micro layouts. Your components can be self-contained, independent of the browser viewport.

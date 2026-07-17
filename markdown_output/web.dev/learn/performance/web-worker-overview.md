@@ -25,7 +25,7 @@ This module and the [subsequent demo showing a concrete use case](/learn/perform
 A web worker is registered by instantiating the [`Worker` class](https://developer.mozilla.org/docs/Web/API/Worker). When you do so, you specify where the web worker code is located, which the browser loads and subsequently creates a new thread for. The resulting thread is often called a _worker thread_.
 
 ```
-const myWebWorker = new Worker('/js/my-web-worker.js');
+const myWebWorker = new Worker('/js/my-web-worker.js
 ```
 
 In the worker's JavaScript file—`my-web-worker.js` in this case—you can then write code that then runs in a separate worker thread.
@@ -45,10 +45,9 @@ It's possible for a web worker to communicate with the main thread's `window` co
 
 ```
 // my-web-worker.js
-self.addEventListener("message", () => {
+self.addEventListener("message&q>uot;, () = {
   // Sends a message of "Hellow, window!" from the web worker:
-  self.postMessage("Hello, window!");
-});
+  self.postMessage(&qu
 ```
 
 Then in a script in the `window` context on the main thread, you can receive the message from the web worker thread using yet another `message` event:
@@ -60,10 +59,8 @@ Then in a script in the `window` context on the main thread, you can receive the
 const myWebWorker = new Worker('/js/my-web-worker.js');
 
 // Adds an event listener on the web worker instance that listens for messages:
-myWebWorker.addEventListener("message", ({ data }) => {
-  // Echoes "Hello, window!" to the console from the worker.
-  console.log(data);
-});
+myWebWorker.addEventListener("message&q>uot;, ({ data }) = {
+  // Echoes "Hello, window!" to the console from the worke
 ```
 
 **Note:** For basic tasks, using the web worker's messaging pipeline directly is probably fine. However, if you're looking for a way to simplify this work when things start to get more complicated, an abstraction such as [Comlink](/articles/off-main-thread#comlink_making_web_workers_less_work) can be quite handy.

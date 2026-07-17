@@ -11,10 +11,9 @@ We want to hear from you! We are looking for web developers to participate in us
 Say you've got a couple of elements that are absolutely positioned, and are supposed to be positioned on top of each other. You might write a bit of a HTML like this:
 
 ```
-<div class="stacked-items">
-    <div class="item-1">Item 1</div>
-    <div class="item-2">Item 2</div>
-</div>
+<div class="stacked-i>tems&<quot;
+    div clas>s=&quo<t;it>em-1&<quot;Item 1/div
+  >  div <clas>s<=&qu>o
 ```
 
 But which one sits on top of the other, by default? To know which item would do that, you need to understand z-index and stacking contexts.

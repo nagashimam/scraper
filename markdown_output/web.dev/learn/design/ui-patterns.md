@@ -16,7 +16,7 @@ Here are some common challenges that you might face.
 
 Displaying a list of navigation links is quite straightforward on a large screen. There's plenty of space to accommodate those links.
 
-On a small screen, space is at a premium. When you're designing for this situation, it's tempting to hide navigation behind a button. The problem with this solution is that users have to then take two steps to get anywhere: open the menu, then choose an option. Until the menu is opened, the user is left wondering "where can I go?”
+On a small screen, space is at a premium. When you're designing for this situation, it's tempting to hide navigation behind a button. The problem with this solution is that users have to then take two steps to get anywhere: open the menu, then choose an option. Until the menu is opened, the user is left wondering "where can I go?"
 
 Try to find a strategy that avoids hiding your navigation. If you have a relatively small number of items, you can style the navigation to look good on small screens.
 
@@ -36,7 +36,7 @@ Make sure the button that toggles the display of the navigation is labeled. Don'
 
 ![Three unlabelled icons: the first is three horizontal lines; the second is three by three grid; the third is three circles arranged vertically.](/static/learn/design/ui-patterns/image/three-unlabelled-icons-8ad9bd0609ab9.png)
 
-An unlabelled icon is "mystery meat” navigation—users won't know what's in there until they bite into it. Provide a text label to let users know what the button will reveal.
+An unlabelled icon is "mystery meat" navigation—users won't know what's in there until they bite into it. Provide a text label to let users know what the button will reveal.
 
 ## Carousels
 
@@ -101,7 +101,7 @@ You can apply the overflow pattern to tables. In this example, the table is wrap
   scroll-snap-type: inline mandatory;
   scroll-behavior: smooth;
 }
-.table-container th, 
+.table-container th,
 .table-container td {
   scroll-snap-align: start;
   padding: var(--metric-box-spacing);

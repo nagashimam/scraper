@@ -6,7 +6,7 @@ We want to hear from you! We are looking for web developers to participate in us
 
 # The picture element Stay organized with collections Save and categorize content based on your preferences.
 
-[The previous module](/learn/design/responsive-images) demonstrated how the `srcset` attribute allows you to provide different-sized versions of the same image. The browser can then decide which is the right version to use. If you want to change the image completely, you'll need the [`picture`](https://developer.mozilla.org/docs/Web/HTML/Element/picture) element.
+[The previous module](/learn/design/responsive-images) demonstrated how the `srcset` attribute lets you provide different-sized versions of the same image. The browser can then decide which is the right version to use. If you want to change the image completely, you'll need the [`picture`](https://developer.mozilla.org/docs/Web/HTML/Element/picture) element.
 
 In the same way that `srcset` builds upon the `src` attribute, the `picture` element builds upon the `img` element. The `picture` element wraps around an `img` element.
 
@@ -32,8 +32,8 @@ In this example, there are three different images in three different formats:
 <picture>
   <source srcset="image.avif" type="image/avif">
   <source srcset="image.webp" type="image/webp">
-  <img src="image.jpg" alt="A description of the image." 
-    width="300" height="200" loading="lazy" decoding="async">
+  <img src="image.jpg" alt="A description of the image."
+    width="300" height="200">
 </picture>
 ```
 
@@ -55,8 +55,8 @@ As well as switching between image formats, you can switch between image sizes. 
 <picture>
   <source srcset="large.png" media="(min-width: 75em)">
   <source srcset="medium.png" media="(min-width: 40em)">
-  <img src="small.png" alt="A description of the image." 
-    width="300" height="200" loading="lazy" decoding="async">
+  <img src="small.png" alt="A description of the image."
+    width="300" height="200">
 </picture>
 ```
 
@@ -70,7 +70,7 @@ You can also use the pixel density descriptor inside the `srcset` attribute of a
 <picture>
   <source srcset="large.png 1x" media="(min-width: 75em)">
   <source srcset="medium.png 1x, large.png 2x" media="(min-width: 40em)">
-  <img src="small.png" alt="A description of the image." width="300" height="200" loading="lazy" decoding="async"
+  <img src="small.png" alt="A description of the image." width="300" height="200"
     srcset="small.png 1x, medium.png 2x, large.png 3x">
 </picture>
 ```
@@ -89,7 +89,7 @@ Here's an example of a hero image that changes its contents and its shape based 
 <picture>
   <source srcset="full.jpg" media="(min-width: 75em)" width="1200" height="500">
   <source srcset="regular.jpg" media="(min-width: 50em)" width="800" height="400">
-  <img src="cropped.jpg" alt="A description of the image." width="400" height="400" loading="eager" decoding="sync">
+  <img src="cropped.jpg" alt="A description of the image." width="400" height="400" fetchpriority="high">
 </picture>
 ```
 
@@ -149,4 +149,4 @@ Icons arrow\_forward](/learn/design/icons)
 
 Except as otherwise noted, the content of this page is licensed under the [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/), and code samples are licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). For details, see the [Google Developers Site Policies](https://developers.google.com/site-policies). Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2021-12-09 UTC.
+Last updated 2026-07-16 UTC.

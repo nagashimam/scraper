@@ -56,7 +56,7 @@ You can use media queries to change the `font-size` property as the screen size 
 
 Switching between fixed text sizes at specific breakpoints is quite jumpy. A more responsive approach is to let the user's device width influence the text size.
 
-The `vw` unit in CSS stands for “viewport width.” Connecting font sizes to the viewport's width means that the text will grow and shrink in proportion to the browser width. This makes it difficult to predict what the text size will be at any specific width, but you know that the text size will be appropriate for the user's browser width.
+The `vw` unit in CSS stands for "viewport width." Connecting font sizes to the viewport's width means that the text will grow and shrink in proportion to the browser width. This makes it difficult to predict what the text size will be at any specific width, but you know that the text size will be appropriate for the user's browser width.
 
 It's important that you don't use the `vw` by itself in a font-size declaration.
 
@@ -80,7 +80,7 @@ But now there's a possibility that the text will get _too_ small on narrow scree
 
 ## Clamping text
 
-You probably don't want your text to shrink and grow to extremes. You can control where the scaling starts and ends using the CSS [`clamp()`](https://developer.mozilla.org/docs/Web/CSS/clamp\(\)) function. This “clamps” the scaling to a specific range.
+You probably don't want your text to shrink and grow to extremes. You can control where the scaling starts and ends using the CSS [`clamp()`](https://developer.mozilla.org/docs/Web/CSS/clamp\(\)) function. This "clamps" the scaling to a specific range.
 
 The `clamp()` function is like the `calc()` function but it takes three values. The middle value is the same as what you pass to `calc()`. The opening value specifies the minimum size, in this case 1rem so as to not go below the user's preferred font size. The closing value specifies the maximum size.
 
@@ -90,7 +90,7 @@ html {
 }
 ```
 
-Now the text size shrinks and grows in proportion to the user's screen but the text size will never go below `1rem` or above `2rem`.
+Now the text size shrinks and grows in proportion to the user's screen but the text size will never be smaller than `1rem` or larger than `2rem`.
 
 ## Line length
 
@@ -169,10 +169,10 @@ But every web font file you add could potentially degrade the user experience as
 
 ## Font loading
 
-You can request that browsers start downloading a font file as soon as possible. Add a `link` element to the `head` of your document that references your web font file. A `rel` attribute with a value of `preload` tells the browser to prioritize that file. An `as` attribute with a value of `font` tells the browser what kind of file this is. The `type` attribute allows you to be even more specific.
+You can request that browsers start downloading a font file as soon as possible. Add a `link` element to the `head` of your document that references your web font file. A `rel` attribute with a value of `preload` tells the browser to prioritize that file. An `as` attribute with a value of `font` tells the browser what kind of file this is. The `type` attribute lets you be even more specific.
 
 ```
-<link href="/fonts/roboto-regular.woff2" type="font/woff2" 
+<link href="/fonts/roboto-regular.woff2" type="font/woff2"
   rel="preload" as="font" crossorigin>
 ```
 
@@ -206,9 +206,9 @@ body {
 
 If you are using lots of different weights or styles of the same typeface, you may end up using lots of separate font files—a separate font file for each weight or style.
 
-[Variable fonts](/articles/variable-fonts) solve this problem by using one file. Instead of having separate files for regular, bold, extra bold, and so on, a variable font file is responsive. It contains all the information it needs to be displayed across a spectrum of weights or styles.
+[Variable fonts](/articles/variable-fonts) solve this problem by using one file. Instead of having separate files for regular, bold, extra bold, and other variants, a variable font file is responsive. It contains all the information it needs to be displayed across a spectrum of weights or styles.
 
-![The letter 'A' shown in different weights.](/static/learn/design/typography/image/the-letter-shown-diff-ddf0d3e19bf74.png)
+![The letter A shown in different weights.](/static/learn/design/typography/image/the-letter-shown-diff-ddf0d3e19bf74.png)
 
 This means that a single variable font file is larger than a single regular font file, but a single variable font file will probably be smaller than multiple regular font files. If you're using lots of different weights, a variable font could give you a big performance gain.
 
@@ -234,7 +234,7 @@ Text will wrap by default without any additional styles.
 
 `clamp()` is useful for fluid typography because
 
-It allows easy embedding of `calc()` functions
+It allows easier embedding of `calc()` functions
 
 While this is true, it's not a good reason to use `clamp()` for typography.
 
@@ -246,7 +246,7 @@ It allows locking the font size between sensible minimums and maximums while als
 
 Exactly, prevent too small or too large text, while also providing a smooth scaling font size.
 
-It makes the math easy.
+It makes the math easier.
 
 Try again.
 

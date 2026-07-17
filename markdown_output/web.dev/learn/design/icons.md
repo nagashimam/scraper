@@ -35,7 +35,7 @@ XML is used to write the instructions in an SVG file. This is a markup language,
 </svg>
 ```
 
-![Smiley face.](/static/learn/design/icons/image/smiley-face-c6edfc71214c.svg)
+![A yellow smiley face emoji that scales up without pixalation.](/static/learn/design/icons/image/smiley-face-c6edfc71214c.svg)
 
 You can even put SVG inside HTML.
 
@@ -102,7 +102,7 @@ If you put the SVG inside your HTML, use the `aria-hidden` attribute to hide it 
 </button>
 ```
 
-**Note:** If you use the same icon multiple times in one page, it would be inefficient to repeat the entire SVG markup each time. There's an element in SVG called [`use`](https://developer.mozilla.org/docs/Web/SVG/Element/use) which allows you to “clone” part of an SVG, even from a different SVG element.
+**Note:** If you use the same icon multiple times in one page, it would be inefficient to repeat the entire SVG markup each time. There's an element in SVG called [`use`](https://developer.mozilla.org/docs/Web/SVG/Element/use) which lets you "clone" part of an SVG, even from a different SVG element.
 
 ## Standalone icons
 
@@ -112,7 +112,7 @@ If you decide to use an icon without any accompanying text, the icon is no longe
 
 If you use an `img` element, the icon gets its accessible name from the `alt` attribute.
 
-**Note:** Usually the `alt` attribute describes the contents of the image (“Three horizontal lines.”) but with standalone icons, the `alt` attribute describes the meaning of the image (“Menu”).
+**Note:** Usually the `alt` attribute describes the contents of the image ("Three horizontal lines.") but with standalone icons, the `alt` attribute describes the meaning of the image ("Menu").
 
 ```
 <button>

@@ -36,13 +36,13 @@ Personas also offer a quick and inexpensive way to test and prioritize those fea
 
 ### Incorporate disabilities
 
-![Disabilities may be permanent, temporary, or situational. These disabilities can affect touch, seeing, hearing, and speaking.](/static/learn/accessibility/design-ux/image/disabilities-may-permane-d1e443afed737.png)
-
-The Persona Spectrum from [Microsoft's Inclusive 101 Toolkit](https://www.microsoft.com/design/inclusive/).
-
 > "People are all different. I can only speak from my experience. When you meet one Deaf person, then you've met one Deaf person—not all of us."
 > 
 > Meryl Evans from the ID24 talk [Deaf Tech: Travel Through Time from Past to Future](https://youtu.be/yrwKWtJdZ_c/).
+
+![Disabilities may be permanent, temporary, or situational. Disabilities can affect touch, seeing, hearing, and speaking.](/static/learn/accessibility/design-ux/image/disability-persona_seetouch.jpg)
+
+Part of the Persona Spectrum from [Microsoft's Inclusive 101 Toolkit](https://www.microsoft.com/design/inclusive/).
 
 Personas can be used as an inclusive design tool when you incorporate people with disabilities into your personas. There are many different ways to do this. You may create [disability-specific personas](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility), add disabilities to existing user personas, or even create a persona spectrum to reflect the dynamic reality of situational, temporary, and permanent disabilities.
 
@@ -64,7 +64,7 @@ Check out an example of a persona that supports specific use cases.
 
 As a UX engineer, Jane designs and builds pages that are vital to keeping her company's site relevant. She supports a lot of team members throughout the day. She's the queen of putting out technical fires, and everyone's go-to in the department when anything goes down unexpectedly.
 
-Losing her fine motor skills to tremors is making it increasingly difficult for her to use a mouse. She's been steadily relying on the keyboard more and more to navigate the web. Jane has always been dedicated to her physical fitness. She loves road racing and BMX. This made it all the more of a blow when she was diagnosed with Young Onset Parkinson's disease last year.
+Losing her fine motor skills to tremors is making it increasingly difficult for her to use a mouse. She's been increasingly relying on the keyboard to navigate the web. Jane has always been dedicated to her physical fitness. She loves road racing and BMX. This made it all the more of a blow when she was diagnosed with Young Onset Parkinson's disease last year.
 
 ### Disability simulators
 

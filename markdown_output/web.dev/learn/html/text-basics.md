@@ -12,20 +12,23 @@ This section covers the main ways of marking up text, or text basics. We will th
 
 ## Headings, revisited
 
-There are six section heading elements, `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, and `<h6>`, with `<h1>` being most important and `<h6>` the least. For many years, developers were told that headings were used by browsers to outline documents. That was originally a goal, but browsers haven't implemented outlining features. However, screen reader users do use headings as an exploration strategy to learn about the content of the page, navigating through headings with the `h` key. So ensuring that heading levels are implemented as you would outline a document makes your content accessible and is still very much encouraged.
+There are six section heading elements, `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, and `<h6>`, with `<h1>` being most important and `<h6>` the least. For many years, developers were told that headings were used by browsers to outline documents. That was originally a goal, but browsers never implemented document outlining features, and the proposed outline algorithm was officially removed from the HTML specification. However, screen reader users do rely heavily on headings as an exploration strategy to learn about the content of a page, navigating through headings with the `h` key. Ensuring that heading levels are implemented logically—as you would outline a document—makes your content accessible and is strongly recommended.
 
-By default, browsers style `<h1>` the largest, `<h2>` slightly smaller, with each subsequent heading level being smaller by default. Interestingly, browsers by default also decrement the `<h1>` font size based on how many `<article>`, `<aside>`, `<nav>`, or `<section>` elements it is nested in.
+By default, browsers style `<h1>` the largest, `<h2>` slightly smaller, with each subsequent heading level being smaller by default. Historically, user agent stylesheets also decremented the font size of `<h1>` elements nested inside sectioning elements such as `<article>`, `<aside>`, `<nav>`, or `<section>`.
 
-![Nested H1 examples.](/static/learn/html/text-basics/image/nested-h1-examples-cc207f75ad01d.png)
-
-Some user agent stylesheets include the following selectors, or similar, to style nested `<h1>` elements as if they were of a less important level:
+Some user agent stylesheets included the following selectors (or similar) to style nested `<h1>` elements as if they were lower heading levels:
 
 ```
+/* Legacy UA stylesheet behavior (now removed from browsers and the HTML spec) */
 h2, :is(article, aside, nav, section) h1 {}
 h3, :is(article, aside, nav, section) :is(article, aside, nav, section) h1 {}
 ```
 
-But the Accessibility Object Model, or AOM, still reports the level of the element correctly; in this case, "heading, level 1". Note that the browser doesn't do this for other heading levels. That said, don't use heading level-based browser styling. Even though browsers don't support outlining, pretend they do; mark up your content headings as if they do. That will make your content make sense to search engines, screen readers, and future maintainers (which just might well be you).
+However, the Accessibility Object Model (AOM) and screen readers never modified heading levels based on nesting; a nested `<h1>` was always reported as "heading, level 1". This created a mismatch where nested headings appeared visually smaller while remaining top-level headings to assistive technologies.
+
+Because the HTML specification removed the document outline algorithm, browsers have removed these legacy user agent stylesheet rules. As a result, nested `<h1>` elements retain their standard `<h1>` font size rather than automatically shrinking.
+
+Don't rely on nesting `<h1>` elements inside sectioning elements for visual styling or structural hierarchy. Always mark up your content using sequential heading elements (`<h1>` through `<h6>`) based on document structure. This ensures your content is clear and accessible to search engines, screen readers, and future maintainers.
 
 Outside of headings, most structured text is made up of a series of paragraphs. In HTML, paragraphs are marked up with the `<p>` tag; the closing tag is optional but always advised.
 
@@ -48,7 +51,7 @@ The `#feedback` section contains a header and three reviews; these reviews are b
 
 The information about the quote author, or citation, is not part of the quote and therefore not in the `<blockquote>`, but comes after the quote. While these are citations in the lay sense of the term, they are not actually citing a specific resource, so are encapsulated in a `<p>` paragraph element.
 
-The citation appears over three lines, including the author's name, previous role, and professional aspiration. The `<br>` line break creates a line break in a block of text. It can be used in physical addresses, in poetry, and in signature blocks. Line breaks should not be used as a carriage return to separate paragraphs. Instead, close the prior paragraph and open a new one. Using paragraphs for paragraphs is not only good for accessibility but enables styling. The `<br>` element is just a line break; it is impacted by very few CSS properties.
+The citation appears over three lines, including the author's name, previous role, and professional aspiration. The `<br>` line break creates a line break in a block of text. It can be used in physical addresses, in poetry, and in signature blocks. Line breaks shouldn't be used as a carriage return to separate paragraphs. Instead, close the prior paragraph and open a new one. Using paragraphs for paragraphs is not only good for accessibility but enables styling. The `<br>` element is just a line break; it is impacted by very few CSS properties.
 
 While we provided citation information in a paragraph following each blockquote, the quotes shown earlier are coded this way because they didn't come from an external source. If they did, the source can (should?) be cited.
 
@@ -81,7 +84,7 @@ Like `<blockquote>`, the `<q>` element supports the `cite` attribute.
 
 You may have noticed the escape sequence or "entity". Because the `<` is used in HTML, you have to escape it using either `&lt;` or a less easy-to-remember encoding `&#60;`. There are four reserved entities in HTML: `<`, `>`, `&`, and `"`. Their character references are `&lt;`, `&gt;`, `&amp;` and `&quot;` respectively.
 
-A few other entities you will often use are `&copy;` for copyright (©),`&trade;` for Trademark (™), and `&nbsp;` for non-breaking space. Non-breaking spaces are useful when you want to include a space between two characters or words while preventing a line break from occurring there. There are over 2,000 [named character references](https://html.spec.whatwg.org/multipage/named-characters.html#named-character-references). But, if needed, every single character, including emojis, has an encoded equivalent that starts with `&#`.
+A few other entities you will often use are `&copy;` for copyright (©),`&trade;` for Trademark (™), and `&nbsp;` for non-breaking space. Non-breaking spaces are useful when you want to include a space between two characters or words while preventing a line break from occurring there. There are over 2,000 [named character references](https://html.spec.whatwg.org/multipage/named-characters.html#named-character-references). But, if needed, every single character, including emoji, has an encoded equivalent that starts with `&#`.
 
 If you take a look at ToastyMcToastface's workshop review (not included in the code sample above), there are some unusual text characters:
 
@@ -103,7 +106,7 @@ There are a few unescaped characters and a few named character references in thi
 
 Even when you specify the character set as UTF-8, you still have to escape the `<` when you want to print that character to the screen. Generally, you don't need to include the named character references for `>`, `"`, or `&`; but if you want to write a tutorial on HTML entities, you do need to write `&lt;` when teaching someone how to code a `<`. 😀
 
-Oh, and that smiley emoji is `&#x1F600;`, but this doc is declared as UTF-8, so it isn't escaped.
+Oh, and that smiley emoji is `&#x1F600;`, but this document is declared as UTF-8, so it isn't escaped.
 
 ### Check your understanding
 

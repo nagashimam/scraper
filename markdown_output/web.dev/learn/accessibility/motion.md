@@ -27,7 +27,7 @@ These flashes may, at best, cause an inability to use a web page or, at worst, l
 
 For any extreme movement, it is imperative that you test it using the [Photosensitive Epilepsy Analysis Tool (PEAT)](https://trace.umd.edu/peat/). PEAT is a free tool to identify if the screen's content, video, or animations are likely to cause seizures. Not all content needs to be evaluated by PEAT, but content that contains flashing or rapid transitions between light and dark background colors should be evaluated, just to be safe.
 
-Another question you should ask yourself about animation and motion is whether the element's movement is essential to understanding the content or actions on the screen. If it is not essential, consider removing all movement—even micro-movements—from the element you are building or designing.
+Another question you should ask yourself about animation and motion is whether the element's movement is essential to understanding the content or actions on the screen. If it's not essential, consider removing all movement—even micro-movements—from the element you are building or designing.
 
 Suppose you believe the element's movement is not essential but could enhance the user's overall experience, or you cannot remove the movement for another reason. In that case, you should follow WCAG's [guidelines on motion](https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide.html). The guidelines state that you must build an option for users to pause, stop or hide movement for: non-essential moving, blinking, or scrolling elements that start automatically, last more than five seconds, and are part of other page elements.
 
@@ -76,7 +76,7 @@ We cannot predict what level of movement will cause issues for people with seizu
 
 ### Layered media queries
 
-You can use multiple media queries to give your users even more choices. Let's use `@prefers-color-scheme`, `@prefers-contrast`, and `@prefers-reduced-motion` all together.
+You can use multiple media queries to give your users even more choices. You can use `@prefers-color-scheme`, `@prefers-contrast`, and `@prefers-reduced-motion` all together.
 
 ## Allow your users to choose
 

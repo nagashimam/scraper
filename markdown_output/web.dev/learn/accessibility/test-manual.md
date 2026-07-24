@@ -32,7 +32,7 @@ Compare what accessibility elements and details can be detected by an automated 
 
 | Can be automated | Can't be automated |
 | --- | --- |
-| Color contrast of text on solid backgrounds | [Color contrast](/learn/accessibility/color-contrast) of text on gradients/images |
+| Color contrast of text on solid backgrounds | [Color contrast](/learn/accessibility/color-contrast) of text on gradients and images |
 | Image alternative text exists | [Image alternative text](/learn/accessibility/images) is accurate and is properly assigned |
 | Headings, lists, and landmarks exist | [Headings, lists, and landmarks](/learn/accessibility/structure) are correctly marked-up and all elements are accounted for |
 | ARIA is present | [ARIA](/learn/accessibility/aria-html) is being used appropriately and applied to the correct element(s) |
@@ -99,7 +99,7 @@ Content checks answer questions such as:
 *   Are page titles, headings, and form labels clear and descriptive?
 *   Are image alternatives concise, accurate, and useful?
 *   Is color alone used as the only way of conveying meaning or information?
-*   Are links descriptive or do you use generic text such as "read more" or "click here"?
+*   Are links descriptive, or do you use generic text such as "read more" or "click here"?
 *   Are there any changes to the language within a page?
 *   Is [plain language](https://www.w3.org/WAI/GL/WCAG3/2021/how-tos/clear-words/) used and are all acronyms spelled out when first referenced?
 

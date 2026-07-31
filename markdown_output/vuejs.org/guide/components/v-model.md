@@ -142,6 +142,8 @@ const myRef = ref()
 </template>
 ```
 
+Also, when using `withDefaults` with `defineProps`, default values for mutable reference types (like arrays or objects) should be wrapped in functions in `defineModel` to avoid accidental modification and external side effects.
+
 First let's revisit how `v-model` is used on a native element:
 
 template

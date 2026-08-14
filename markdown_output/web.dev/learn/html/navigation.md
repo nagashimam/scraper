@@ -23,13 +23,13 @@ If you visit this page on web.dev, you can spot a few navigational features. The
 Some sites feature a "skip to content" link, often as the first element in the focus order. It may look something like:
 
 ```
-<a href="#main" class="skip-link button">Skip to main</a>
+<a href="#main" class="sk>ip-link butt<on>&
 ```
 
 When clicked or when it has focus and the user hits `Enter`, it scrolls the page and gives focus to the element with a `main` ID, presumably the main content.
 
 ```
-<main id="main">
+<main id=">m
 ```
 
 For improved usability and accessibility, it's important to let users bypass the blocks of content that are repeated on every page, such as a shared heading and main navigation items. With a skip link, when a keyboard user hits `tab`, they can quickly go to the new content on the page. This lets them avoid having to tab through an extensive menu.
@@ -57,10 +57,8 @@ Include the [`aria-label`](https://developer.mozilla.org/docs/Web/Accessibility/
 Using an [`id`](/learn/html/attributes#id), that could look as follows:
 
 ```
-<nav aria-labelledby="tocTitle">
-  <p id="tocTitle">On this page</p>
-...
-</nav>
+<nav aria-labelledby="tocT>itl<e"
+  p id=>"tocTit<le>"<;On >t
 ```
 
 In addition to reducing redundancy, visible text gets translated by translation services, whereas attribute values may not. When possible, if text is present that provides for an adequate label, refer to that text instead of using attribute text.
@@ -68,10 +66,8 @@ In addition to reducing redundancy, visible text gets translated by translation 
 The "On this page" navigation is the table of contents. If you want to use `aria-label`, provide that context rather than repeating visible text:
 
 ```
-<nav aria-label="Table of Contents">
-  <p>On this page</p>
-...
-</nav>
+<nav aria-label="Table of Cont>ent<s>"
+  pOn< t>his p<age/>p
 ```
 
 To provide an accessible name on an element, you should _not_ include the name of the element. Screen readers provide the name of the element to the user. For example, when using the `<nav>` element, don't include the word "navigation," as that information is already included with semantic elements.
@@ -79,26 +75,21 @@ To provide an accessible name on an element, you should _not_ include the name o
 While navigation items don't have to be nested in a list, using a list enables screen reader users to know how many list items, and therefore links, are in the navigation.
 
 ```
-<nav aria-labelledby="tocTitle">
-  <p id="tocTitle">On this page</p>
-  <ul role="list">
-    <li>
-      <a href="#skip">Skip to content link</a>
-    </li>
-    <li>
-      <a href="#toc">Table of contents</a>
-    </li>
-    <li>
-      <a href="#bc">Page breadcrumbs</a>
-    </li>
-    <li>
-      <a href="#ln">Local navigation</a>
-    </li>
-    <li>
-      <a href="#global">Global navigation</a>
-    </li>
-  </ul>
-</nav>
+<nav aria-labelledby="tocT>itl<e"
+  p id=>"tocTit<le>&qu<ot;On this pag>e/p
+ < u>l role=<"list&quo>t;
+    li
+      a hr<ef>=&quo<t;#>skip&<qu>ot;Skip< to content l>ink/a
+    /li
+   < l>i
+   <   >a hre<f=>"#<toc"Tab>le of contents/a<
+ >   /l<i
+ >   li<
+ >     a <href="#>bc"Page bre<ad>crumb<s/a>
+    </l>i
+    l<i
+      a href=&>quot;#ln"Loc<al> navi<gat>ion</a
+> <   />l
 ```
 
 ### Avoid changing tab order
@@ -122,7 +113,7 @@ If the site has a hierarchical directory structure, as is the case with web.dev,
 ```
 const url = new URL("https://web.dev/learn/html/navigation");
 const sections = url.hostname + url.pathname.split('/');
-// "web.dev,learn,html,navigation"
+// "web.dev,
 ```
 
 The sections of the breadcrumb show the path from the current page back to the home page, showing each level in-between.
@@ -134,19 +125,16 @@ Every Learn HTML module page has the same breadcrumb navigation, displaying the 
 The code should be similar to the following:
 
 ```
-<nav aria-label="breadcrumbs">
-  <ol role="list">
-    <li>
-      <a href="/">web.dev</a>
-    </li>
-    <li>
-      <a href="/learn">Learn</a>
-    </li>
-    <li>
-      <a href="/learn/html">HTML</a>
-    </li>
-  </ol>
-</nav>
+<nav aria-label="breadcr>umb<s"
+  ol r>ole=&<qu>ot;list<"
+   > li
+   <  > a hr<ef=>"<;/>"w<eb.dev/a
+    /l>i
+   < l>i
+   <   >a hre<f=>"/<learn"Learn/a
+ >   /<li>
+    <li
+>   <   >a< hre>f
 ```
 
 **Note:** This is not a direct reflection of our current site code. However, it is an ideal, recommended version that follows best practices.
@@ -163,9 +151,7 @@ Between each link is a content separator. These separators could be generated wi
   height: 8px;
   border-top: 2px solid currentColor;
   border-right: 2px solid currentColor;
-  rotate: 45deg;
-  opacity: .8
-}
+  rotate: 45d
 ```
 
 Screen readers don't "see" these icons, which is best practice. The separators between breadcrumb links should be hidden from screen readers. They must also have enough contrast against their background, the same as any other text and visual element on the page.
@@ -183,22 +169,18 @@ When the current page is included in a breadcrumb, the text should preferably no
 Take a look at an alternative version of the breadcrumb with this practice:
 
 ```
-<nav aria-label="breadcrumbs">
-  <ol role="list">
+<nav aria-label="breadcr>umb<s"
+  ol r>ole=&<qu>ot;list<"
+   > li
+<  >    a< hr>ef=&q<uo>t;/&quo<t;Home/a
+    /l>i
+   < l>i
+   <   >a hre<f=>"/<learn"Learn/a
+ >   /li
     <li>
-      <a href="/">Home</a>
-    </li>
-    <li>
-      <a href="/learn">Learn</a>
-    </li>
-    <li>
-      <a href="/learn/html">Learn HTML!</a>
-    </li>
-    <li aria-current="page">
-      Navigation
-    </li>
-  </ol>
-</nav>
+    <  a> href<="/learn/html&quo>t;Learn HTML!/a
+    /l<i
+ >   <li >a<ria->c
 ```
 
 Breadcrumbs may not be the same as the linear steps a user followed to get to the current page. The list of steps followed up to this point can be nested within a `<nav>`, but shouldn't be labeled as a breadcrumb.
@@ -221,10 +203,7 @@ Ideally, the HTML for this list item within local navigation would look similar 
 
 ```
 <li>
-  <a aria-current="page" aria-selected="true" href="/learn/html/navigation">
-    Navigation
-  </a>
-</li>
+  <a aria-current="page" aria-selected="true" href=&quo>t;/learn/html/navi<ga>t<ion>&
 ```
 
 ## Global navigation

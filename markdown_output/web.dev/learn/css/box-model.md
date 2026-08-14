@@ -63,7 +63,7 @@ It's important to remember that intrinsic sizing is the browser's default behavi
 
 Boxes are made up of distinct box model areas that all do a specific job.
 
-![A diagram showing the four main areas of the box model - content box, padding box, border box and margin box](/static/learn/css/box-model/image/a-diagram-showing-four-m-af72960a9e79a.svg)
+![Diagram of the four main areas of the box model.](/static/learn/css/box-model/image/a-diagram-showing-four-m-af72960a9e79a.svg)
 
 The four main areas of the box model: content box, padding box, border box and margin box.
 
@@ -83,9 +83,7 @@ A wide outline doesn't affect the size of the rest of the element.
 
 The box model is complex to understand, so here's an analogy for what you've learned so far.
 
-![Three picture frames.](/static/learn/css/box-model/image/three-photo-frames-610a106217f8d.jpg)
-
-The box model illustrated using physical picture frames.
+![Illustrating the box model with a picture frame.](/static/learn/css/box-model/image/three-photo-frames-610a106217f8d.jpg)
 
 In this diagram, you have three picture frames mounted next to each other on a wall. Elements of the framed image correspond to the box model as follows:
 
@@ -117,7 +115,7 @@ The user agent style sheet sets the default value for elements that take `displa
 
 An `inline` element has a block margin, but other elements don't respect it. With `inline-block`, other elements respect the block margin, but the first element keeps most of the same behaviors it had as an `inline` element. A `block` item fills the available **inline space** by default, whereas `inline` and `inline-block` elements are only as large as their content.
 
-The user agent style sheet also sets defaults for `box-sizing`, which tells a box how to calculate its size. By default, all elements have are set to `box-sizing: content-box;`. This means that when you set dimensions such as `width` and `height`, those dimensions apply to the **content box**. If you then set `padding` and `border`, these values are added to the content box's size.
+The user agent style sheet also sets defaults for `box-sizing`, which tells a box how to calculate its size. By default, all elements are set to `box-sizing: content-box;`. This means that when you set dimensions such as `width` and `height`, those dimensions apply to the **content box**. If you then set `padding` and `border`, these values are added to the content box size.
 
 ### Check your understanding
 
@@ -168,7 +166,7 @@ Compare the effects of content-box and border-box sizing.
 
 This CSS rule selects every element in the document and every `::before` and `::after` pseudo element and applies `box-sizing: border-box`. This means that every element now uses this alternative box model.
 
-Because the alternative box model can be more predictable, developers often add this rule to resets and normalizers, [like this one](https://piccalil.li/blog/a-modern-css-reset).
+Because the alternative box model can be more predictable, developers often add this rule to resets and normalizers, such as [A (more) Modern CSS Reset](https://piccalil.li/blog/a-modern-css-reset).
 
 ## Resources
 

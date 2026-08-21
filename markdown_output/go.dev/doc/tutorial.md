@@ -12,6 +12,7 @@ If you haven't installed Go yet, see [Download and install](/doc/install).
 | [Getting started](/doc/tutorial/getting-started.html) | Say Hello, World with Go. |
 | [Create a module](/doc/tutorial/create-module.html) | A multi-part tutorial that introduces common programming language features from the Go perspective. |
 | [Getting started with multi-module workspaces](/doc/tutorial/workspaces.html) | Introduces the basics of creating and using multi-module workspaces in Go. Multi-module workspaces are useful for making changes across multiple modules. |
+| [Working with JSON](/doc/tutorial/json) | Introduces the basics of working with JSON using the standard library. |
 | [Accessing a relational database](/doc/tutorial/database-access) | Introduces the basics of accessing a database using the standard library. |
 | [Developing a RESTful API with Go and Gin](/doc/tutorial/web-service-gin) | Introduces the basics of writing a RESTful web service API with Go and the Gin Web Framework. |
 | [Getting started with generics](/doc/tutorial/generics) | Introduces the basics of generics in Go. With generics, you can declare and use functions or types that are written to work with any of a set of types provided by calling code. |

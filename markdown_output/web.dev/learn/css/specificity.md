@@ -136,7 +136,7 @@ In the following example, the specificity is `(1,0,0)`
 
 CSS has many selectors. Not all of them add specificity. For example, the [`:not()`](https://developer.mozilla.org/docs/Web/CSS/:not) pseudo-class itself adds nothing to the specificity calculation.
 
-However, the selectors passed in as arguments do get added to the specificity calculation.
+The specificity of the `:not()` pseudo-class is replaced by the specificity of the most specific selector in its comma-separated argument of selectors; providing the same specificity as if it had been written `:not(:is(argument))`.
 
 ```
 div:not(.my-class) {
@@ -307,7 +307,7 @@ Elements add element-like specificity (\`C\` component) and classes add class-li
 
 `article:hover a[href]`
 
-Elements add element-like specificity (\`C\` component), pseudo-classes and attributes add class-like specificity (\`B\` component). There are 2 element selectors (2 × `(0,0,1)`), an attribute selector (worth `(0,0,1)`), and a class selector (worth `(0,0,1)`). This makes this selector have a total specificity of **`(0,2,2)`**.
+Elements add element-like specificity (\`C\` component), pseudo-classes and attributes add class-like specificity (\`B\` component). There are 2 element selectors (2 × `(0,0,1)`), an attribute selector (worth `(0,1,0)`), and a class selector (worth `(0,1,0)`). This makes this selector have a total specificity of **`(0,2,2)`**.
 
 ## Pragmatically increasing specificity
 

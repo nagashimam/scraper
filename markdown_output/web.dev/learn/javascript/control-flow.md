@@ -280,6 +280,7 @@ console.log( "Loop ended." );
 > "Loop 2."
 > "Loop 4."
 > "Loop 5."
+> "Loop 6."
 > "Loop ended."
 ```
 
@@ -330,7 +331,7 @@ let iterationCount = 1;
 do {
   console.log( `Loop ${ iterationCount }.` );
   iterationCount++;
-} while ( iterationCount < 3 );
+} while ( iterationCount < 4 );
 > "Loop 1."
 > "Loop 2."
 > "Loop 3."

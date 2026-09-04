@@ -89,7 +89,7 @@ const myMap = new Map();
 myMap.set( "myKey", "A string value" );
 
 myMap;
-> Map(1) {'myKey' => 500}
+> Map(1) {'myKey' => "A string value"}
 ```
 
 ### WeakMap

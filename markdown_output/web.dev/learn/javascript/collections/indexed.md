@@ -171,8 +171,8 @@ Destructuring assignment uses an array- or object-like list of identifiers to ke
 const myArray = [ "A string", "A second string" ];
 const [ myFirstElement, mySecondElement ] = myArray;
 
-const myObject = { firstValue: false, secondValue: true };
-const { myProp, mySecondProp } = myObject;
+const myObject = { myFirstProp: false, mySecondProp: true };
+const { myFirstProp, mySecondProp } = myObject;
 
 myFirstElement;
 > "My string"
@@ -180,7 +180,7 @@ myFirstElement;
 mySecondElement;
 > "Second string"
 
-myProp;
+myFirstProp;
 > false
 
 mySecondProp;

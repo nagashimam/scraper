@@ -28,8 +28,8 @@ This can also be done with the [`<picture>`](https://developer.mozilla.org/docs/
 
 ```
 <picture>
-  <source src="images/eve.png" media="(max-width: 800px)" />
-  <source src="images/eve-xl.jpg" />
+  <source srcset="images/eve.png" media="(max-width: 800px)" />
+  <source srcset="images/eve-xl.jpg" />
   <img src="images/eve.png" alt="Eve" />
 </picture>
 ```

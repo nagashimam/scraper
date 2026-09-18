@@ -56,4 +56,8 @@ Below is a diagram for the instance lifecycle. You don't need to fully understan
 
 Consult the [Lifecycle Hooks API reference](/api/composition-api-lifecycle)[Lifecycle Hooks API reference](/api/options-lifecycle) for details on all lifecycle hooks and their respective use cases.
 
+And that's the end of Vue's _Essentials_. Congratulations! There's still more to learn, but first, we recommend taking a break to play with Vue yourself - build something fun, or check out some of the [Examples](/examples/) if you haven't already.
+
+Once you feel comfortable with the knowledge you've just digested, move on with the guide to learn more about components in depth.
+
 [Edit this page on GitHub](https://github.com/vuejs/docs/edit/main/src/guide/essentials/lifecycle.md)

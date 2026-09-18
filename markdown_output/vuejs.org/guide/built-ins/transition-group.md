@@ -8,7 +8,7 @@ Are you an LLM? You can read better optimized documentation at /guide/built-ins/
 
 `<TransitionGroup>` supports the same props, CSS transition classes, and JavaScript hook listeners as `<Transition>`, with the following differences:
 
-*   By default, it doesn't render a wrapper element. But you can specify an element to be rendered with the `tag` prop.
+*   It accepts a `tag` prop, which specifies an element to be rendered as a wrapper around the list. By default it doesn't render a wrapper element, same as `<Transition>`.
     
 *   [Transition modes](/guide/built-ins/transition#transition-modes) are not available, because we are no longer alternating between mutually exclusive elements.
     

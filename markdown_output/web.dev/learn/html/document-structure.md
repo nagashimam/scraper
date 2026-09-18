@@ -252,6 +252,8 @@ There are two attributes that can reduce the blocking nature of JavaScript downl
 
 ![loading when using async and defer.](/static/learn/html/document-structure/image/loading-using-async-def-1bd40cbd444a2.png)
 
+Various loading strategies for scripts, illustrated. Some scripts benefit from deferring their execution, and some can execute immediately when loaded with the `async` attribute. **Note:** Module scripts loaded wirth using `<script type="module">` have `defer` enabled by default.
+
 To include MLW's JavaScript in an external file, you could write:
 
 ```

@@ -1,5 +1,3 @@
-We want to hear from you! We are looking for web developers to participate in user research, product testing, discussion groups and more. [Apply now to join our WebDev Insights Community](https://cspace.eu.qualtrics.com/jfe/form/SV_d4CyeN2qJgODm0m?pcid=CLCS&udv=wd).
-
 *   [web.dev](https://web.dev/)
 *   [Resources](https://web.dev/learn)
 *   [Responsive Design](https://web.dev/learn/design)

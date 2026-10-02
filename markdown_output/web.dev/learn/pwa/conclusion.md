@@ -23,7 +23,7 @@ Congratulations! You've made it to the end! We hope that you have enjoyed this c
 
 ## Brought to you by
 
-.wd-author\_\_links { display: flex; }
+.wd-author\_\_links { display: flex; } /\* Name, title and links stacked in a column centred against the avatar. \*/ .wd-author--with-title > div { display: flex; flex-direction: column; justify-content: center; line-height: 1.3; } .wd-author\_\_title { color: var(--devsite-secondary-text-color); font-size: 0.875em; } .wd-author--with-title .wd-author\_\_links { margin-block-start: 4px; }
 
 ![Adriana Jara](https://web.dev/images/authors/ajara.jpg)
 
@@ -31,7 +31,7 @@ Adriana Jara
 
 [X](https://twitter.com/tropicadri) [GitHub](https://github.com/tropicadri) [LinkedIn](https://www.linkedin.com/in/adrianajara) [Mastodon](https://hachyderm.io/@tropicadri)
 
-.wd-author\_\_links { display: flex; }
+.wd-author\_\_links { display: flex; } /\* Name, title and links stacked in a column centred against the avatar. \*/ .wd-author--with-title > div { display: flex; flex-direction: column; justify-content: center; line-height: 1.3; } .wd-author\_\_title { color: var(--devsite-secondary-text-color); font-size: 0.875em; } .wd-author--with-title .wd-author\_\_links { margin-block-start: 4px; }
 
 ![Maximiliano Firtman](https://web.dev/images/authors/firt.jpg)
 
@@ -39,7 +39,7 @@ Maximiliano Firtman
 
 [X](https://twitter.com/firt) [GitHub](https://github.com/firtman) [Homepage](https://firt.dev)
 
-.wd-author\_\_links { display: flex; }
+.wd-author\_\_links { display: flex; } /\* Name, title and links stacked in a column centred against the avatar. \*/ .wd-author--with-title > div { display: flex; flex-direction: column; justify-content: center; line-height: 1.3; } .wd-author\_\_title { color: var(--devsite-secondary-text-color); font-size: 0.875em; } .wd-author--with-title .wd-author\_\_links { margin-block-start: 4px; }
 
 ![Joe Medley](https://web.dev/images/authors/joemedley.jpg)
 
@@ -47,7 +47,7 @@ Joe Medley
 
 [GitHub](https://github.com/jpmedley)
 
-.wd-author\_\_links { display: flex; }
+.wd-author\_\_links { display: flex; } /\* Name, title and links stacked in a column centred against the avatar. \*/ .wd-author--with-title > div { display: flex; flex-direction: column; justify-content: center; line-height: 1.3; } .wd-author\_\_title { color: var(--devsite-secondary-text-color); font-size: 0.875em; } .wd-author--with-title .wd-author\_\_links { margin-block-start: 4px; }
 
 ![Pete LePage](https://web.dev/images/authors/petelepage.jpg)
 
@@ -55,11 +55,11 @@ Pete LePage
 
 [X](https://twitter.com/petele) [GitHub](https://github.com/petele) [Mastodon](https://techhub.social/@petele) [Homepage](https://petelepage.com/)
 
-.wd-author\_\_links { display: flex; }
+.wd-author\_\_links { display: flex; } /\* Name, title and links stacked in a column centred against the avatar. \*/ .wd-author--with-title > div { display: flex; flex-direction: column; justify-content: center; line-height: 1.3; } .wd-author\_\_title { color: var(--devsite-secondary-text-color); font-size: 0.875em; } .wd-author--with-title .wd-author\_\_links { margin-block-start: 4px; }
 
 ![Rachel Andrew](https://web.dev/images/authors/rachelandrew.jpg)
 
-Rachel Andrew
+Rachel Andrew Technical Writer
 
 [GitHub](https://github.com/rachelandrew) [LinkedIn](https://www.linkedin.com/in/rachelandrew) [Mastodon](https://front-end.social/@rachelandrew) [Bluesky](https://bsky.app/profile/rachelandrew.bsky.social) [Homepage](https://rachelandrew.co.uk)
 

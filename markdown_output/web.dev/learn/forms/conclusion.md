@@ -25,7 +25,7 @@ What's next? One of the best ways to learn is to try out what you've learned: im
 
 ## Brought to you by
 
-.wd-author\_\_links { display: flex; }
+.wd-author\_\_links { display: flex; } /\* Name, title and links stacked in a column centred against the avatar. \*/ .wd-author--with-title > div { display: flex; flex-direction: column; justify-content: center; line-height: 1.3; } .wd-author\_\_title { color: var(--devsite-secondary-text-color); font-size: 0.875em; } .wd-author--with-title .wd-author\_\_links { margin-block-start: 4px; }
 
 ![Jiwoong Lee](https://web.dev/images/authors/jiwoong.jpg)
 
@@ -33,7 +33,7 @@ Jiwoong Lee
 
 [X](https://twitter.com/jiwoong) [GitHub](https://github.com/jimoong)
 
-.wd-author\_\_links { display: flex; }
+.wd-author\_\_links { display: flex; } /\* Name, title and links stacked in a column centred against the avatar. \*/ .wd-author--with-title > div { display: flex; flex-direction: column; justify-content: center; line-height: 1.3; } .wd-author\_\_title { color: var(--devsite-secondary-text-color); font-size: 0.875em; } .wd-author--with-title .wd-author\_\_links { margin-block-start: 4px; }
 
 ![Michael Scharnagl](https://web.dev/images/authors/michaelscharnagl.jpg)
 
@@ -41,15 +41,15 @@ Michael Scharnagl
 
 [X](https://twitter.com/justmarkup) [Homepage](https://justmarkup.com)
 
-.wd-author\_\_links { display: flex; }
+.wd-author\_\_links { display: flex; } /\* Name, title and links stacked in a column centred against the avatar. \*/ .wd-author--with-title > div { display: flex; flex-direction: column; justify-content: center; line-height: 1.3; } .wd-author\_\_title { color: var(--devsite-secondary-text-color); font-size: 0.875em; } .wd-author--with-title .wd-author\_\_links { margin-block-start: 4px; }
 
 ![Rachel Andrew](https://web.dev/images/authors/rachelandrew.jpg)
 
-Rachel Andrew
+Rachel Andrew Technical Writer
 
 [GitHub](https://github.com/rachelandrew) [LinkedIn](https://www.linkedin.com/in/rachelandrew) [Mastodon](https://front-end.social/@rachelandrew) [Bluesky](https://bsky.app/profile/rachelandrew.bsky.social) [Homepage](https://rachelandrew.co.uk)
 
-.wd-author\_\_links { display: flex; }
+.wd-author\_\_links { display: flex; } /\* Name, title and links stacked in a column centred against the avatar. \*/ .wd-author--with-title > div { display: flex; flex-direction: column; justify-content: center; line-height: 1.3; } .wd-author\_\_title { color: var(--devsite-secondary-text-color); font-size: 0.875em; } .wd-author--with-title .wd-author\_\_links { margin-block-start: 4px; }
 
 ![Rob Dodson](https://web.dev/images/authors/robdodson.jpg)
 
@@ -57,7 +57,7 @@ Rob Dodson
 
 [X](https://twitter.com/rob_dodson) [GitHub](https://github.com/robdodson) [Homepage](https://robdodson.me)
 
-.wd-author\_\_links { display: flex; }
+.wd-author\_\_links { display: flex; } /\* Name, title and links stacked in a column centred against the avatar. \*/ .wd-author--with-title > div { display: flex; flex-direction: column; justify-content: center; line-height: 1.3; } .wd-author\_\_title { color: var(--devsite-secondary-text-color); font-size: 0.875em; } .wd-author--with-title .wd-author\_\_links { margin-block-start: 4px; }
 
 ![Sam Dutton](https://web.dev/images/authors/samdutton.jpg)
 

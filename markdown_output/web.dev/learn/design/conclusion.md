@@ -17,7 +17,7 @@ Congratulations! You've made it to the end! We hope that you have enjoyed this o
 
 ## Brought to you by
 
-.wd-author\_\_links { display: flex; }
+.wd-author\_\_links { display: flex; } /\* Name, title and links stacked in a column centred against the avatar. \*/ .wd-author--with-title > div { display: flex; flex-direction: column; justify-content: center; line-height: 1.3; } .wd-author\_\_title { color: var(--devsite-secondary-text-color); font-size: 0.875em; } .wd-author--with-title .wd-author\_\_links { margin-block-start: 4px; }
 
 ![Jeremy Keith](https://web.dev/images/authors/adactio.jpg)
 
@@ -25,7 +25,7 @@ Jeremy Keith
 
 [X](https://twitter.com/adactio) [GitHub](https://github.com/adactio) [Homepage](https://adactio.com/)
 
-.wd-author\_\_links { display: flex; }
+.wd-author\_\_links { display: flex; } /\* Name, title and links stacked in a column centred against the avatar. \*/ .wd-author--with-title > div { display: flex; flex-direction: column; justify-content: center; line-height: 1.3; } .wd-author\_\_title { color: var(--devsite-secondary-text-color); font-size: 0.875em; } .wd-author--with-title .wd-author\_\_links { margin-block-start: 4px; }
 
 ![Adam Argyle](https://web.dev/images/authors/adamargyle.jpg)
 
@@ -33,7 +33,7 @@ Adam Argyle
 
 [X](https://twitter.com/argyleink) [GitHub](https://github.com/argyleink) [Homepage](https://nerdy.dev)
 
-.wd-author\_\_links { display: flex; }
+.wd-author\_\_links { display: flex; } /\* Name, title and links stacked in a column centred against the avatar. \*/ .wd-author--with-title > div { display: flex; flex-direction: column; justify-content: center; line-height: 1.3; } .wd-author\_\_title { color: var(--devsite-secondary-text-color); font-size: 0.875em; } .wd-author--with-title .wd-author\_\_links { margin-block-start: 4px; }
 
 ![Camden Bickel](https://web.dev/images/authors/cambickel.jpg)
 
@@ -41,15 +41,15 @@ Camden Bickel
 
 [X](https://twitter.com/camdenbickel) [GitHub](https://github.com/camden) [Homepage](https://cambickel.com)
 
-.wd-author\_\_links { display: flex; }
+.wd-author\_\_links { display: flex; } /\* Name, title and links stacked in a column centred against the avatar. \*/ .wd-author--with-title > div { display: flex; flex-direction: column; justify-content: center; line-height: 1.3; } .wd-author\_\_title { color: var(--devsite-secondary-text-color); font-size: 0.875em; } .wd-author--with-title .wd-author\_\_links { margin-block-start: 4px; }
 
 ![Rachel Andrew](https://web.dev/images/authors/rachelandrew.jpg)
 
-Rachel Andrew
+Rachel Andrew Technical Writer
 
 [GitHub](https://github.com/rachelandrew) [LinkedIn](https://www.linkedin.com/in/rachelandrew) [Mastodon](https://front-end.social/@rachelandrew) [Bluesky](https://bsky.app/profile/rachelandrew.bsky.social) [Homepage](https://rachelandrew.co.uk)
 
-.wd-author\_\_links { display: flex; }
+.wd-author\_\_links { display: flex; } /\* Name, title and links stacked in a column centred against the avatar. \*/ .wd-author--with-title > div { display: flex; flex-direction: column; justify-content: center; line-height: 1.3; } .wd-author\_\_title { color: var(--devsite-secondary-text-color); font-size: 0.875em; } .wd-author--with-title .wd-author\_\_links { margin-block-start: 4px; }
 
 ![Una Kravets](https://web.dev/images/authors/una.jpg)
 

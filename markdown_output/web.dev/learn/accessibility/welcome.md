@@ -4,7 +4,7 @@
 
 # Welcome to Learn Accessibility! Stay organized with collections Save and categorize content based on your preferences.
 
-.wd-author\_\_links { display: flex; }
+.wd-author\_\_links { display: flex; } /\* Name, title and links stacked in a column centred against the avatar. \*/ .wd-author--with-title > div { display: flex; flex-direction: column; justify-content: center; line-height: 1.3; } .wd-author\_\_title { color: var(--devsite-secondary-text-color); font-size: 0.875em; } .wd-author--with-title .wd-author\_\_links { margin-block-start: 4px; }
 
 ![Carie Fisher](https://web.dev/images/authors/cariefisher.jpg)
 

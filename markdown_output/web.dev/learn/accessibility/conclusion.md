@@ -39,7 +39,7 @@ We conducted several interviews with accessibility practitioners in 2022. Read a
 
 ## Brought to you by
 
-.wd-author\_\_links { display: flex; }
+.wd-author\_\_links { display: flex; } /\* Name, title and links stacked in a column centred against the avatar. \*/ .wd-author--with-title > div { display: flex; flex-direction: column; justify-content: center; line-height: 1.3; } .wd-author\_\_title { color: var(--devsite-secondary-text-color); font-size: 0.875em; } .wd-author--with-title .wd-author\_\_links { margin-block-start: 4px; }
 
 ![Carie Fisher](https://web.dev/images/authors/cariefisher.jpg)
 
@@ -53,7 +53,7 @@ Alexandra Klepper
 
 [GitHub](https://github.com/alexandrascript) [Bluesky](https://bsky.app/profile/alexandrascript.com)
 
-.wd-author\_\_links { display: flex; }
+.wd-author\_\_links { display: flex; } /\* Name, title and links stacked in a column centred against the avatar. \*/ .wd-author--with-title > div { display: flex; flex-direction: column; justify-content: center; line-height: 1.3; } .wd-author\_\_title { color: var(--devsite-secondary-text-color); font-size: 0.875em; } .wd-author--with-title .wd-author\_\_links { margin-block-start: 4px; }
 
 ![Mark Steadman](https://web.dev/images/authors/marksteadman.jpg)
 
@@ -63,7 +63,7 @@ Mark Steadman
 
 ![Rachel Andrew](https://web.dev/images/authors/rachelandrew.jpg)
 
-Rachel Andrew
+Rachel Andrew Technical Writer
 
 [GitHub](https://github.com/rachelandrew) [LinkedIn](https://www.linkedin.com/in/rachelandrew) [Mastodon](https://front-end.social/@rachelandrew) [Bluesky](https://bsky.app/profile/rachelandrew.bsky.social) [Homepage](https://rachelandrew.co.uk)
 

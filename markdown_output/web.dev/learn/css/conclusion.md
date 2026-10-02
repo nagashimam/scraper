@@ -21,7 +21,7 @@ You might be wondering where you can go from here. One of the best ways to learn
 
 ## Brought to you by
 
-.wd-author\_\_links { display: flex; }
+.wd-author\_\_links { display: flex; } /\* Name, title and links stacked in a column centred against the avatar. \*/ .wd-author--with-title > div { display: flex; flex-direction: column; justify-content: center; line-height: 1.3; } .wd-author\_\_title { color: var(--devsite-secondary-text-color); font-size: 0.875em; } .wd-author--with-title .wd-author\_\_links { margin-block-start: 4px; }
 
 ![Adam Argyle](https://web.dev/images/authors/adamargyle.jpg)
 
@@ -29,7 +29,7 @@ Adam Argyle
 
 [X](https://twitter.com/argyleink) [GitHub](https://github.com/argyleink) [Homepage](https://nerdy.dev)
 
-.wd-author\_\_links { display: flex; }
+.wd-author\_\_links { display: flex; } /\* Name, title and links stacked in a column centred against the avatar. \*/ .wd-author--with-title > div { display: flex; flex-direction: column; justify-content: center; line-height: 1.3; } .wd-author\_\_title { color: var(--devsite-secondary-text-color); font-size: 0.875em; } .wd-author--with-title .wd-author\_\_links { margin-block-start: 4px; }
 
 ![Andy Bell](https://web.dev/images/authors/andybell.jpg)
 
@@ -37,7 +37,7 @@ Andy Bell
 
 [X](https://twitter.com/piccalilli_) [GitHub](https://github.com/andy-piccalilli) [Homepage](https://piccalil.li/)
 
-.wd-author\_\_links { display: flex; }
+.wd-author\_\_links { display: flex; } /\* Name, title and links stacked in a column centred against the avatar. \*/ .wd-author--with-title > div { display: flex; flex-direction: column; justify-content: center; line-height: 1.3; } .wd-author\_\_title { color: var(--devsite-secondary-text-color); font-size: 0.875em; } .wd-author--with-title .wd-author\_\_links { margin-block-start: 4px; }
 
 ![Camden Bickel](https://web.dev/images/authors/cambickel.jpg)
 
@@ -45,7 +45,7 @@ Camden Bickel
 
 [X](https://twitter.com/camdenbickel) [GitHub](https://github.com/camden) [Homepage](https://cambickel.com)
 
-.wd-author\_\_links { display: flex; }
+.wd-author\_\_links { display: flex; } /\* Name, title and links stacked in a column centred against the avatar. \*/ .wd-author--with-title > div { display: flex; flex-direction: column; justify-content: center; line-height: 1.3; } .wd-author\_\_title { color: var(--devsite-secondary-text-color); font-size: 0.875em; } .wd-author--with-title .wd-author\_\_links { margin-block-start: 4px; }
 
 ![Emma Twersky](https://web.dev/images/authors/emmatwersky.jpg)
 
@@ -53,7 +53,7 @@ Emma Twersky
 
 [X](https://twitter.com/twerske) [GitHub](https://github.com/twerske) [Homepage](https://twerske.dev)
 
-.wd-author\_\_links { display: flex; }
+.wd-author\_\_links { display: flex; } /\* Name, title and links stacked in a column centred against the avatar. \*/ .wd-author--with-title > div { display: flex; flex-direction: column; justify-content: center; line-height: 1.3; } .wd-author\_\_title { color: var(--devsite-secondary-text-color); font-size: 0.875em; } .wd-author--with-title .wd-author\_\_links { margin-block-start: 4px; }
 
 ![Jiwoong Lee](https://web.dev/images/authors/jiwoong.jpg)
 
@@ -61,7 +61,7 @@ Jiwoong Lee
 
 [X](https://twitter.com/jiwoong) [GitHub](https://github.com/jimoong)
 
-.wd-author\_\_links { display: flex; }
+.wd-author\_\_links { display: flex; } /\* Name, title and links stacked in a column centred against the avatar. \*/ .wd-author--with-title > div { display: flex; flex-direction: column; justify-content: center; line-height: 1.3; } .wd-author\_\_title { color: var(--devsite-secondary-text-color); font-size: 0.875em; } .wd-author--with-title .wd-author\_\_links { margin-block-start: 4px; }
 
 ![Kayce Basques](https://web.dev/images/authors/kaycebasques.jpg)
 
@@ -69,7 +69,7 @@ Kayce Basques
 
 [X](https://twitter.com/kaycebasques) [GitHub](https://github.com/kaycebasques)
 
-.wd-author\_\_links { display: flex; }
+.wd-author\_\_links { display: flex; } /\* Name, title and links stacked in a column centred against the avatar. \*/ .wd-author--with-title > div { display: flex; flex-direction: column; justify-content: center; line-height: 1.3; } .wd-author\_\_title { color: var(--devsite-secondary-text-color); font-size: 0.875em; } .wd-author--with-title .wd-author\_\_links { margin-block-start: 4px; }
 
 ![Kevin Lozandier](https://web.dev/images/authors/lozandier.jpg)
 
@@ -77,15 +77,15 @@ Kevin Lozandier
 
 [X](https://twitter.com/KevinLozandier) [GitHub](https://github.com/lozandier) [LinkedIn](https://www.linkedin.com/in/KevinLozandier)
 
-.wd-author\_\_links { display: flex; }
+.wd-author\_\_links { display: flex; } /\* Name, title and links stacked in a column centred against the avatar. \*/ .wd-author--with-title > div { display: flex; flex-direction: column; justify-content: center; line-height: 1.3; } .wd-author\_\_title { color: var(--devsite-secondary-text-color); font-size: 0.875em; } .wd-author--with-title .wd-author\_\_links { margin-block-start: 4px; }
 
 ![Rachel Andrew](https://web.dev/images/authors/rachelandrew.jpg)
 
-Rachel Andrew
+Rachel Andrew Technical Writer
 
 [GitHub](https://github.com/rachelandrew) [LinkedIn](https://www.linkedin.com/in/rachelandrew) [Mastodon](https://front-end.social/@rachelandrew) [Bluesky](https://bsky.app/profile/rachelandrew.bsky.social) [Homepage](https://rachelandrew.co.uk)
 
-.wd-author\_\_links { display: flex; }
+.wd-author\_\_links { display: flex; } /\* Name, title and links stacked in a column centred against the avatar. \*/ .wd-author--with-title > div { display: flex; flex-direction: column; justify-content: center; line-height: 1.3; } .wd-author\_\_title { color: var(--devsite-secondary-text-color); font-size: 0.875em; } .wd-author--with-title .wd-author\_\_links { margin-block-start: 4px; }
 
 ![Rob Dodson](https://web.dev/images/authors/robdodson.jpg)
 
@@ -93,7 +93,7 @@ Rob Dodson
 
 [X](https://twitter.com/rob_dodson) [GitHub](https://github.com/robdodson) [Homepage](https://robdodson.me)
 
-.wd-author\_\_links { display: flex; }
+.wd-author\_\_links { display: flex; } /\* Name, title and links stacked in a column centred against the avatar. \*/ .wd-author--with-title > div { display: flex; flex-direction: column; justify-content: center; line-height: 1.3; } .wd-author\_\_title { color: var(--devsite-secondary-text-color); font-size: 0.875em; } .wd-author--with-title .wd-author\_\_links { margin-block-start: 4px; }
 
 ![Una Kravets](https://web.dev/images/authors/una.jpg)
 

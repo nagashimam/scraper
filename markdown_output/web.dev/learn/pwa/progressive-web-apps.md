@@ -22,15 +22,19 @@ Web applications can reach anyone, anywhere, on any device with a single codebas
 
 ## Platform-specific apps
 
-Platform-specific apps, on both mobile and desktop, are known for being rich and reliable. They're ever-present, on home screens, docks, and taskbars. They work regardless of network connection, and launch in their own standalone experience. They can read and write files from the local file system, access hardware connected via USB, serial, or Bluetooth, and interact with data stored on your devices, such as contacts and calendar events. In platform-specific applications, you can take pictures, play songs listed on the home screen, or control media playback while in another app. These applications feel like part of the device they run on.
+Platform-specific apps, on both mobile and desktop, are known for being rich and reliable. They're ever-present, on home screens, docks, and taskbars. They work regardless of network connection, and launch in their own standalone experience. They can read and write files from the local file system, access hardware connected using USB, serial, or Bluetooth, and interact with data stored on your devices, such as contacts and calendar events.
 
-**Note:** In modern mobile operating systems, platform-specific apps are installed mostly from app stores, with rules and limitations on who can publish and what can be published for their users. These apps are typically shipped as a large, indivisible package, and every update needs re-packaging, re-signing, re-approval, and on-device re-installation.
+In platform-specific applications, you can take pictures, play songs listed on the home screen, or control media playback while in another app. These applications feel like part of the device they run on.
+
+**Note:** In mobile operating systems, platform-specific apps are installed mostly from app stores, with rules and limitations on who can publish and what can be published for their users. These apps are typically shipped as a large, indivisible package, and every update needs re-packaging, re-signing, re-approval, and on-device re-installation.
 
 A challenge for platform-specific apps is that they are not compatible with multiple platforms and devices, so it's not easy, if even possible, to move an Android app to iOS or an iOS to Windows or ChromeOS without creating a new app from scratch.
 
 ## Bringing the best of both worlds
 
-If you think about platform apps and web apps in terms of capabilities and reach, platform apps represent the best of capabilities, whereas web apps represent the best of reach. Progressive Web Apps sit at the intersection of the capabilities of platform apps and the reach of web apps. A Progressive Web App includes features from both worlds.
+If you think about platform apps and web apps in terms of capabilities and reach, platform apps represent the best of capabilities, whereas web apps represent the best of reach. Progressive Web Apps sit at the intersection of the capabilities of platform apps and the reach of web apps.
+
+A Progressive Web App includes features from both worlds.
 
 ### Web
 
@@ -50,25 +54,25 @@ If you think about platform apps and web apps in terms of capabilities and reach
 *   Installed Icon
 *   Rich and reliable
 
-**Note:** People tend to think of Progressive Web Apps as an app that the user can install from a browser instead of an app store. However, a PWA can be listed in many app stores today as an optional distribution channel, including Google Play Store (for Android and ChromeOS), Microsoft Store (for Windows 10 and 11), and Apple AppStore (for iOS, iPadOS, and macOS). For these cases, you must follow all store rules and requirements, but you will still get some of the advantages of a PWA.
+**Note:** A PWA can be listed in app stores as an optional distribution channel, including Google Play Store (for Android and ChromeOS), Microsoft Store, and the Apple App Store (for iOS, iPadOS, and macOS). For these cases, you must follow all store rules and requirements, but you will still get some of the advantages of a PWA.
 
 ## Adoption has its benefits
 
-Hulu, a video streaming service in the USA, created a Progressive Web App version of their experience to replace their desktop apps which had poor user reviews and poor usage. As shared at [Google I/O 2019](https://blog.chromium.org/2019/05/google-io-2019-whats-new-with-chrome.html), one developer could research and implement this experience from their existing web application in two weeks.
+Hulu, a video streaming service, created a Progressive Web App to replace their desktop apps which had poor user reviews and poor usage. As shared at [Google I/O 2019](https://blog.chromium.org/2019/05/google-io-2019-whats-new-with-chrome.html), one developer could research and implement this experience from their existing web application in two weeks.
 
 Within five months, 96% of their legacy app users had adopted the PWA, with a 27% increase in return visits and a 5.5% increase in engagement. Because it's in the launcher and on taskbars, PWAs are easier to return to than if they just lived in a tab.
 
-[JD.ID](/case-studies/jdid), an e-commerce platform in Indonesia providing delivery services for many products, wanted to expand its online presence by focusing on performance and a network-independent solid experience for their PWA. With this enhanced experience, they increased their overall mobile conversion rate by 53%, 200% for installed users, and increased their daily active users by 26%.
+[JD.ID](/case-studies/jdid), an ecommerce platform in Indonesia providing delivery services for many products, wanted to expand its online presence by focusing on performance and a network-independent solid experience for their PWA. With this enhanced experience, they increased their overall mobile conversion rate by 53%, 200% for installed users, and increased their daily active users by 26%.
 
 [Clipchamp](/case-studies/clipchamp) is an in-browser, desktop-class online video editor that empowers anyone to tell stories worth sharing through video. They saw 9% higher user retention with their PWA versus their standard desktop app users and have seen their PWA installations increasing at a rate of 97% each month in its first five months launched.
 
 Corel Corporation's [Gravit Designer](/case-studies/gravit-designer) is a powerful, desktop-class vector design tool that serves tens of thousands of daily active users demanding rich, affordable, accessible vector illustration software. Since adding a PWA as an install option for users, they've seen PWA users are 24% more active, the PWA accounts for 31% more repeat users, and PWA users are 2.5 times more likely to purchase Gravit Designer PRO, as compared to their other platforms and install options.
 
-**Note:** Many other companies have implemented PWA and seen a benefit. Large companies have already published PWAs on various products, including Apple (AppStore Connect, Feedback Assistant), Microsoft (Office 365, Windows 365), Google (Duo, YouTube Music, Drive), Amazon (Luna), Facebook (Instagram Lite, Gaming).
+**Note:** Many other companies have implemented PWA and seen a benefit. Large companies have already published PWAs on various products, including Apple (AppStore Connect, Feedback Assistant), Microsoft (Office 365, Windows 365), Google (Duo, YouTube Music, Drive), Amazon (Luna), and Facebook (Instagram Lite, Gaming).
 
 ### The streaming game changer
 
-A great example of the power of Progressive Web Apps is the industry of streaming platforms, including cloud gaming and remote computing. Since 2021, most cloud game providers have launched Progressive Web Apps, letting you play console games from any device and just a browser or a PWA installation: iPhone, Android, iPad, laptops, Macs, or PCs. Amazon Luna, Microsoft Xbox Cloud Gaming, Facebook Gaming, Google Stadia, Nvidia GeForce Now, and BlueStacks X offer cloud gaming solutions over the browser as PWAs. They all provide a great experience with performance close to native on all platforms thanks to web technologies such as WebRTC, WebAssembly, and GamePad APIs.
+A great example of the power of Progressive Web Apps is the industry of streaming platforms, including cloud gaming and remote computing. Since 2021, most cloud game providers have launched Progressive Web Apps, letting you play console games from any device and just a browser or a PWA installation: iPhone, Android, iPad, laptops, Macs, or PCs. Amazon Luna, Microsoft Xbox Cloud Gaming, Facebook Gaming, Google Stadia, Nvidia GeForce Now, and BlueStacks X offer cloud gaming solutions over the browser as PWAs. They all provide a great experience with performance close to native on all platforms thanks to WebRTC, WebAssembly, and GamePad APIs.
 
 ## Challenges
 
@@ -76,9 +80,9 @@ Having covered the advantages of using the web platform to publish PWAs, it's al
 
 ### Cross-browser compatibility
 
-Apple is a crucial company for the multi-device world, owning iOS, iPadOS, macOS, and Safari. While Apple has never used the term PWA in public, they've been supporting the technologies to make a PWA installable and offline-capable since 2018 on Safari for iPhones and iPads.
+While Apple has never publicly used the term PWA, they've supported the technologies to make a PWA installable and offline-capable since 2018 on Safari for iPhones and iPads.
 
-However, Apple's implementation of the PWA specs misses many features possessed by other browsers, in particular browsers powered by the Chromium engine.
+However, Apple's implementation of the PWA specs misses many features possessed by other browsers, particularly those powered by the Chromium engine.
 
 In the middle, we also have Firefox and its Gecko engine with implementations including more PWA specs on Android, and fewer installation capabilities on desktop.
 
@@ -88,9 +92,9 @@ As with all web development, testing your experience on every platform is mandat
 
 ### Awareness of PWAs
 
-As a PWA developer, you will probably encounter an awareness problem, both on the business and user sides. Some business owners won't know about PWAs or will have misconceptions about the power and challenges of Progressive Web Apps.
+It's likely that people on the business side and users may be unaware of PWAs, or will have misconceptions about the power and challenges of Progressive Web Apps.
 
-When you publish a PWA, your next challenge is ensuring users understand that the website is installable, leading to an installed app experience.
+When you publish a PWA, your next challenge is to help users understand that the website is installable, leading to an installed app experience.
 
 The installation challenge is more significant on some platforms, such as iOS and iPadOS, and sometimes UX designers include screens that explain to the user how to install the app.
 
@@ -98,11 +102,11 @@ The installation challenge is more significant on some platforms, such as iOS an
 
 You need to remember that a Progressive Web App is just a web app, so content and services are running on top of standard specs and protocols. Therefore, a PWA technically runs everywhere the web runs; you don't need the platform to be compatible with any "PWA spec."
 
-However, when we are talking about PWA and compatibility, typically, we are thinking about the capabilities to cross the boundaries of the browser and online-only contexts: icon installation and offline support.
+However, when talking about PWA and compatibility, typically, we're thinking about the capabilities to cross the boundaries of the browser and online-only contexts: icon installation and offline support.
 
 **Note:** A PWA should work everywhere, even when the icon installation or the offline support capabilities are unavailable. Always plan your PWA to work without capabilities by checking support and offering fallback solutions.
 
-On top of the classic web platform support, let's check the support for basic app functionality, such as icon installation and offline capabilities.
+On top of the classic web platform support, you should check the support for basic app functionality, such as icon installation and offline capabilities.
 
 97 %
 
@@ -130,9 +134,9 @@ macOS, Linux, and Windows 7 and 8.x
 
 Google Chrome (from version 73), Microsoft Edge
 
-In the following video the user installs a PWA from the browser on a desktop computer, and then accesses it like any other app with its standalone window.
+In the following video, the user installs a PWA from a desktop browser, then accesses it in a standalone window.
 
-**Caution:** On desktop, Safari and Firefox do not support PWA installation. They do support offline capabilities, but the experience will always start within the browser user interface. It may get fullscreen, but never a standalone window on desktop.
+**Caution:** Safari and Firefox on desktop don't support PWA installation. They do support offline capabilities, but the experience will always start within the browser user interface. It may get fullscreen, but never a standalone window on desktop.
 
 ### Mobile devices
 
@@ -152,7 +156,7 @@ In the following video the user installs a PWA from the browser on a mobile devi
 
 ### Other devices
 
-Some other small devices support PWAs, such as game consoles (Xbox with Microsoft Store) or XR devices (Microsoft Hololens, plans for Facebook's Oculus). However, the rest of the devices with a browser do not typically accept PWAs, including:
+Some other small devices support PWAs, such as game consoles (Xbox with Microsoft Store) or XR devices (Microsoft Hololens, plans for Facebook's Oculus). However, the rest of the devices with a browser don't typically accept PWAs, including:
 
 *   Game consoles
 *   Smart TVs
@@ -163,7 +167,7 @@ Your PWA will always work in the browser of all devices with their specific limi
 
 ## Resources
 
-*   [Introduction to Progressive Web Apps on MDN](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Introduction)
+*   [MDN's Introduction to Progressive Web Apps](https://developer.mozilla.org/docs/Web/Progressive_web_apps/Introduction)
 *   [Progressive Web Apps Compatibility list](https://firt.dev/notes/pwa)
 *   [How Progressive Web Apps can drive business success](/articles/drive-business-success)
 *   [Clipchamp's video editor PWA installs see a 97% monthly growth](/case-studies/clipchamp)

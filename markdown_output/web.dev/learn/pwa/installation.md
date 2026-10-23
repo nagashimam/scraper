@@ -4,42 +4,46 @@
 
 # Installation Stay organized with collections Save and categorize content based on your preferences.
 
-Once the user installs your PWA, it will:
+Once the user installs your PWA:
 
-*   Have an icon in the launcher, home screen, start menu, or launchpad.
-*   Appear as a result when a user searches for the app on their device.
-*   Have a separate window within the operating system.
-*   Have support for specific capabilities.
+*   The user can find an app icon in the launcher, home screen, start menu, or launchpad.
+*   The app appears as a result when a user searches for the app on their device.
+*   The app has a separate window within the operating system.
+*   The app supports for specific capabilities.
 
-**Note:** While installation differs per browser and operating system, you don't need to create any kind of package or executable for your PWA to be installed from a browser.
+**Note:** While installation differs per browser and operating system, you don't need to customize a package or executable for your PWA to be installed.
 
 ## Installation criteria
 
-Every browser has a criterion that marks when a website or web app is a Progressive Web App and can be installed for a standalone experience. The metadata for your PWA is set by a JSON-based file known as the Web App Manifest, which we will cover in detail in the [next module](/learn/pwa/web-app-manifest).
+Every browser has a criterion that marks when a website or web app is a Progressive Web App and can be installed for a standalone experience. The metadata for your PWA is set by a JSON-based file known as the Web App Manifest, which we share in the [next module](/learn/pwa/web-app-manifest).
 
 As a minimum requirement for installability, most browsers that support it use the Web App Manifest file and certain properties such as the name of the app, and configuration of the installed experience. An exception to this is Safari for macOS, which does not support installability.
 
-The requirements to allow installation differ among the different browsers, [this article](/articles/install-criteria) details the criteria for Google Chrome and includes links to requirements for other browsers. Users can install your web app even if it doesn't meet the installability criteria in Chrome. Check out [How Chrome helps users install the apps they value](https://developer.chrome.com/blog/how_chrome_helps_users_install_the_apps_they_value#manual_installation_of_any_app) to learn more.
+The requirements to allow installation differ among the different browsers, here we detail the criteria for Google Chrome and includes links to requirements for other browsers. Users can install your web app even if it doesn't meet the installability criteria in Chrome. Check out [How Chrome helps users install the apps they value](https://developer.chrome.com/blog/how_chrome_helps_users_install_the_apps_they_value#manual_installation_of_any_app) to learn more.
 
-Because the test that a PWA meets installability requirements can take several seconds, installability itself may not be available as soon as a URLs response is received.
+Because the test that a PWA meets installability requirements can take several seconds, installability itself may not be available as soon as a URL's response is received.
 
 **Note:** The process for uninstalling a PWA is different on each combination of operating system and browser. In most situations, the app can be uninstalled the same as any other platform-specific app; in other situations, the PWA window offers a menu with an uninstall option. Deleting the icon may not clear the storage that a PWA is using.
 
 ### Desktop installation
 
-Desktop PWA installation is currently supported by Google Chrome and Microsoft Edge on Linux, Windows, macOS, and Chromebooks. These browsers will show an install badge (icon) in the URL bar (see the image below), stating that the current site is installable.
+Desktop PWA installation is supported by Google Chrome and Microsoft Edge on Linux, Windows, macOS, and Chromebooks. These browsers show an install badge (icon) in the address bar, stating that the current site is installable.
 
-![Chrome and Edge on desktop with the install badge in the URL bar](/static/learn/pwa/installation/image/chrome-edge-desktop-th-e88db78e0ba4d.png)
+![Chrome on desktop with the install badge in the URL bar.](/static/learn/pwa/installation/image/chrome-step1.jpg)
 
-When a user is engaged with a site, they may see a popup such as the one below inviting users to install it as an app.
+In Chrome, after clicking the install badge.
+
+![Once the user clicks next, the user is presented with the opportunty to install the PWA.](/static/learn/pwa/installation/image/chrome-step2.jpg)
+
+Step 2, once the user clicked next.
+
+When a user is engaged with a site, they may see a module inviting them to install the site as an app.
 
 ![Google chrome in-product help suggesting the PWA installation.](/static/learn/pwa/installation/image/google-chrome-product-he-9238ca86bdc87.png)
 
-The browser's drop-down menu also includes an "Install " item that the user can use:
+The browser's drop-down menu may also include an "Install " item that the user can use.
 
-![Chrome and Edge menu items for PWA installation.](/static/learn/pwa/installation/image/chrome-edge-menu-items-27db25e4de818.png)
-
-**Note:** Chromium-based browsers on desktop let you see all the installed PWAs with that browser using `about:apps`.
+**Note:** Chromium-based browsers on desktop let you see all installed PWAs with that browser using `about:apps`.
 
 Only standalone and minimal-ui [display modes](/learn/pwa/app-design#display_modes) are supported on desktop operating systems.
 
@@ -52,30 +56,34 @@ PWAs installed on desktops:
 *   Can set a contextual menu for the icon with [App Shortcuts](https://developer.mozilla.org/docs/Web/Manifest/shortcuts).
 *   Can't be installed twice with the same browser.
 
-**Note:** Installation may unlock other capabilities that are not available for PWAs running within the browser's tab. We'll talk more about this in the [Capabilities Chapter](/learn/pwa/capabilities).
+**Note:** Installation may unlock [additional capabilities](/learn/pwa/capabilities) that are unavailable to PWAs running in a browser tab. not available for PWAs running within the browser's tab.
 
 After installing an app on the desktop, users can navigate to `about:apps`, right-click on a PWA, and select "Start App when you Sign In" if they want your app to open automatically on startup.
 
 ### iOS and iPadOS installation
 
-A browser prompt to install your PWA doesn't exist On iOS and iPadOS. On these platforms PWAs are also known as _home screen web apps_. These apps have to be added manually to the home screen via a browser share menu. It is recommended that you add the [`apple-touch-icon`](https://developer.chrome.com/docs/lighthouse/pwa/apple-touch-icon) tag to your html. To define the icon, include the path to your icon to your HTML `<head>` section, like this:
+A browser prompt to install your PWA doesn't exist On iOS and iPadOS. On these platforms PWAs are also known as _home screen web apps_. These apps have to be added manually to the home screen using a browser share menu. We recommend that you add the [`apple-touch-icon`](https://developer.chrome.com/docs/lighthouse/pwa/apple-touch-icon) tag to your html.
+
+To define the icon, include the path to your icon to the page `<head>`:
 
 ```
 <link rel="apple-touch-icon" href="/icons/ios.png">
 ```
 
-The browser will use that information to create the shortcut and if you don't provide a specific icon for Apple devices, the icon on the home screen will be a screenshot of your PWA when the user installed it.
+The browser uses that information to create the shortcut, and if you don't provide a specific icon for Apple devices, the icon on the home screen will be a screenshot of your PWA when the user installed it.
 
 The steps to add apps to the home screen are:
 
 1.  Open the Share menu, available at the bottom or top of the browser.
 2.  Click **Add to Home Screen**.
 3.  Confirm the name of the app; the name is user-editable.
-4.  Click **Add**. On iOS and iPadOS, bookmarks to websites and PWAs look the same on the home screen.
+4.  Click **Add**.
+
+On iOS and iPadOS, bookmarks to websites and PWAs look the same on the home screen.
 
 On iOS and iPadOS, only the standalone [display mode](/learn/pwa/app-design) is supported. Therefore, if you use minimal UI mode, it will fall back to a browser shortcut; if you use fullscreen, it will fall back to standalone.
 
-**Caution:** On Apple devices, you can install the same PWA multiple times; each installation will have its own isolated storage, and it will be treated as a different app.
+**Caution:** On Apple devices, you can install the same PWA multiple times. Each installation has its own isolated storage and is treated as a different application.
 
 PWAs installed on iOS and iPadOS:
 
@@ -83,9 +91,9 @@ PWAs installed on iOS and iPadOS:
 *   Don't appear in App Gallery's categories folders.
 *   Lack support for capabilities such as badging and app shortcuts.
 
-Incidentally, a native technology known as [Web Clips](https://developer.apple.com/documentation/devicemanagement/webclip) is used to create the PWA icons in the operating system. They are just XML files in Apple's Property List format stored in the filesystem.
+Incidentally, Apple's [Web Clips](https://developer.apple.com/documentation/devicemanagement/webclip) is used to create the PWA icons in the operating system. They are just XML files in Apple's Property List format stored in the file system.
 
-When users use the PWA, they are not using an instance of the browser app, they are using something known as _Web.app_, so you should expect slight differences between your PWA rendered in a browser and a PWA window. Both browser and Web.app use the same core from WebKit and the same JavaScript runtime, but they run in different processes and may have different implementations, such as having isolated storage.
+**Tip:** When users use the PWA, they are not using an instance of the browser app, they are using something known as _Web.app_, so you should expect slight differences between your PWA rendered in a browser and a PWA window. Both browser and Web.app use the same core from WebKit and the same JavaScript runtime, but they run in different processes and may have different implementations, such as having isolated storage.
 
 ### Android installation
 
@@ -94,7 +102,7 @@ On Android, PWA install prompts differ by device and browser. Users may see:
 *   Variations in the wording of the menu item for install such as **Install** or **Add to Home Screen**.
 *   Detailed installation dialogs.
 
-In the following image you can see two different versions of an installation dialog, a simple mini-infobar (left) and a detailed installation dialog (right).
+In the following image you can see two different versions of an installation dialog, a mini-infobar (left) and a detailed installation dialog (right).
 
 ![Mini info bar and installation dialogs on Android.](/static/learn/pwa/installation/image/mini-info-bar-installati-ccdb28e301b54.png)
 
@@ -102,19 +110,19 @@ Depending on the device and browser, your PWA will either be installed as a WebA
 
 #### WebAPKs
 
-A WebAPK is an Android package (APK) created by a trusted provider of the user's device, typically in the cloud, on a WebAPK _minting server_. This method is used by Google Chrome on devices with Google Mobile Services (GMS) installed, and by Samsung Internet browser, but only on Samsung-manufactured devices, such as a Galaxy phone or tablet. Together, this accounts for the majority of Android users.
+A WebAPK is an Android package (APK) created by a trusted provider of the user's device, typically in the cloud, on a WebAPK _minting server_. This method is used by Google Chrome on devices with Google Mobile Services (GMS) installed, and by Samsung Internet browser, but only on Samsung-manufactured devices. Together, this accounts for the majority of Android users.
 
 When a user installs a PWA from Google Chrome and a WebAPK is used, the minting server "mints" (packages) and signs an APK for the PWA. That process takes time, but when the APK is ready, the browser installs that app silently on the user's device. Because trusted providers (Play Services or Samsung) signed the APK, the phone installs it without disabling security, as with any app coming from the store. There is no need for sideloading the app.
 
-PWAs installed via WebAPK:
+PWAs installed using WebAPK:
 
 *   Have an icon in the app launcher and home screen.
 *   Appear on Settings, Apps.
-*   Can have several capabilities, such as [badging](/badging-api), [app shortcuts](/articles/app-shortcuts), and [capture links within the OS](/declarative-link-capturing).
-*   Can [update](/manifest-update) the icon and app's metadata.
+*   Can have several capabilities, such as [badging](/badging-api), [app shortcuts](/articles/app-shortcuts), and [capture links within the OS](/articles/declarative-link-capturing).
+*   Can [update](/articles/manifest-update) the icon and app's metadata.
 *   Can't be installed twice.
 
-You, as a PWA developer, don't need to build or sign any package when a WebAPK is used. It's all handled transparently between the browser, device, and minting server.
+**Tip:** You don't need to build or sign any package when a WebAPK is used. It's all handled transparently between the browser, device, and minting server.
 
 #### Shortcuts
 
@@ -140,9 +148,9 @@ When your PWA is installed as a QuickApp, users will get a similar experience to
 
 ## Prompting for installation
 
-In Chromium-based browsers on desktop and Android devices, it's possible to trigger the browser's installation dialog from your PWA. The [Installation Prompt chapter](/learn/pwa/installation-prompt), will cover [patterns for doing so](/articles/promote-install) and how to implement them.
+In Chromium-based browsers on desktop and Android devices, it's possible to trigger the browser's installation dialog from your PWA. The [Installation Prompt chapter](/learn/pwa/installation-prompt), covers patterns and how to implement them.
 
-**Warning:** If you provide instructions to the user, remember that menu items' names vary by language.
+**Caution:** If you write instructions for the user, remember to localize the instructions, as menu items' names may vary by language.
 
 ## App catalogs and stores
 
@@ -152,13 +160,13 @@ The app catalogs and stores that support publishing a PWA are:
 
 *   [Google Play Store for Android and ChromeOS](https://chromeos.dev/en/publish/pwa-in-play), using a [Trusted Web Activity](https://developer.chrome.com/docs/android/trusted-web-activity).
 *   Apple App Store for iOS, macOS, and iPadOS, using WKWebView and [App-Bound Domains](https://webkit.org/blog/10882/app-bound-domains/).
-*   [Microsoft Store for Windows 10 and 11](https://docs.microsoft.com/en-us/windows/uwp/publish/pwa/overview), using APPX packages.
+*   [Microsoft Store for Windows 10 and 11](https://docs.microsoft.com/windows/uwp/publish/pwa/overview), using APPX packages.
 *   [Samsung Galaxy Store](https://samsunginternet.github.io/introducing-progressive-web-apps-to-samsung-galaxy-store/), using the Samsung WebAPK minting server.
 *   Huawei AppGallery, using a [QuickApp container for your HTML application](https://developer.huawei.com/consumer/en/doc/development/quickApp-Guides/quickapp-h5-to-quickapp-introduction-0000001150075595).
 
 If you want to learn more about how to publish a PWA to app catalogs and stores, check out [BubbleWrap CLI](https://github.com/GoogleChromeLabs/bubblewrap) and [PWA Builder](https://pwabuilder.com).
 
-**Warning:** Some app catalogs and stores have technical or business requirements that before your PWA is accepted for publication. Check each store's requirements before starting.
+**Caution:** Some app catalogs and stores have technical or business requirements that before your PWA is accepted for publication. Check each store's requirements before starting.
 
 ## Resources
 

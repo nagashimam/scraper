@@ -198,7 +198,7 @@ Try again!
 
 ## Resources
 
-*   [Disable the payment button once the form is submitted](/articles/codelab-payment-form-best-practices#step_4_disable_the_payment_button_once_the_form_is_submitted)
+*   [Disable the payment button once the form is submitted](/articles/payment-and-address-form-best-practices#disable-submit)
 *   [Add CSS to make the form work better](/articles/codelab-sign-up-form-best-practices#step_2_design_for_mobile_and_desktop)
 
 [

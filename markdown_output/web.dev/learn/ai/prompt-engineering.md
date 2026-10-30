@@ -78,9 +78,7 @@ Example output:
 
 - Each title must be under 128 characters.
 - Titles must be original, not copied verbatim from the draft.
-- Keep the tone natural and human. Avoid emojis unless explicitly requested.
-- Avoid sensationalism or clickbait.
-- If the draft includes multiple topics, choose the most prominent topic.
+- Keep the tone natural and human. Avoid emojis unless e
 ```
 
 For your first prompts, start with the essentials: instruction and the output format. Then, iteratively add more components as you analyze the results and determine what finer controls are needed for success.
@@ -122,10 +120,7 @@ const session = await LanguageModel.create({
       Your task is to generate high-quality titles for blog posts.
       Always respond in concise, friendly language.
       Return exactly 3 alternative titles.
-      Produce valid JSON with a "titles" array of strings.`
-    }
-  ]
-});
+      Produce valid JSON with a "titles" array of stri
 ```
 
 When the user clicks **Show Titles**, the prompt is invoked for the current content:
@@ -168,7 +163,7 @@ Developers typically try several prompting techniques to find what works best fo
 You describe the task for the model and hope for the best. For example:
 
 ```
-"What is the capital of France?"
+"What is the capital of Fran
 ```
 
 Zero-shot prompting is an efficient baseline for many AI tasks. For requests that aren't complex, such as querying encyclopedic knowledge, you're probably best off staying with this technique. However, in most real-world applications, you need to expand your prompt with additional conditioning and logic.
@@ -186,8 +181,7 @@ Here are examples to guide your classifications:
 Input: "I love this product! It works perfectly."
 Output: { "label": "positive" }
 
-Input: "This is terrible. I want a refund."
-Output: { "label": "negative" }
+Input: "Thi
 ```
 
 Few-shot prompting is useful for this kind of pseudo-predictive task. It can also be applied to tasks that follow a recognizable structure, like title generation in Figure 1.
@@ -200,7 +194,7 @@ You encourage the model to reason step-by-step before producing an answer. The s
 
 ```
 "Think step-by-step to identify the main idea of this paragraph. Then produce a
-short heading under 60 characters."
+short heading under 60 characte
 ```
 
 Chain-of-thought works great for tasks that require multi-step reasoning and execution, such as outlining a blog post or supporting complex decisions. It's the main technique behind so-called reasoning models.
@@ -213,7 +207,7 @@ Following the initial generation, you request that the model critiques and revis
 
 ```
 "Review your previous output.
-Identify unclear phrasing and rewrite it more concisely."
+Identify unclear phrasing and rewrite it more concise
 ```
 
 Self-reflection is especially useful for tasks that benefit from iterative refinement, such as editing or rewriting tools. It's quick to implement and can produce substantial quality gains. A self-reflection loop is beneficial, once your prompt is performing well. First, refine the output for more clarity or added user delight.

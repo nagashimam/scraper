@@ -175,7 +175,7 @@ When a heading is nested in a document banner `<header>`, it is the heading for 
 
 It is recommended to use heading levels similarly to heading levels in a text editor: starting with a `<h1>` as the main heading, with `<h2>` as headings for sub-sections, and `<h3>` if those sub-sections have sections; avoid skipping heading levels. There is a good [article on section headings](https://developer.mozilla.org/docs/Web/HTML/Element/Heading_Elements) here.
 
-Some screen reader users do access headings to understand a page's content. Originally, headings were supposed to outline a document, just as MS Word or Google Docs can produce an outline based on headings, but browsers never implemented this structure. While browsers do display nested headings at increasingly smaller font sizes as shown in the following example, they don't actually support outlining.
+Some screen reader users do access headings to understand a page's content. Originally, headings were supposed to outline a document, just as MS Word or Google Docs can produce an outline based on headings, but browsers never implemented this structure, and the proposed outline algorithm was removed from the HTML specification. While browsers historically displayed `<h1>` elements nested in sectioning elements at smaller font sizes, modern browsers have removed those default styles and don't support automatic document outlining.
 
 You now have enough knowledge to outline MachineLearningWorkshop.com:
 

@@ -287,7 +287,7 @@ background-image: url("https://assets.codepen.io/7518/pngaaa.com-1272986.png"),
   background-size: contain, cover, auto;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: 50% 50%, 10% 50%, 0% 0%;
-  background-origin: padding-box, border-box, content-box;
+  background-origin: padding-box, borde
 ```
 
 ## The background shorthand
@@ -313,13 +313,13 @@ The following declaration clips the background, and originates it from the conte
 
 ```
 background: url("https://assets.codepen.io/7518/blob.svg") 50%
-      50% / contain no-repeat content-box;
+      50% / contain no-repeat con
 ```
 
 With these shorthand semantics in mind, the previous background-related declarations of the code snippet could be rewritten to be following:
 
 ```
-background: url("https://assets.codepen.io/7518/pngaaa.com-1272986.png") 50% 50%/contain no-repeat padding-box, url("https://assets.codepen.io/7518/blob.svg") 10% 50% / cover border-box, linear-gradient(hsl(191deg, 40%, 86%), hsla(191deg, 96%, 96%, 0.5) ) 0% 0% / cover no-repeat content-box ;
+background: url("https://assets.codepen.io/7518/pngaaa.com-1272986.png") 50% 50%/contain no-repeat padding-box, url("https://assets.codepen.io/7518/blob.svg") 10% 50% / cover border-box, linear-gradient(hsl(191deg, 40%, 86%), hsla(191deg, 96%, 96%, 0.5) ) 0% 0% / cover no-r
 ```
 
 ### Check your understanding

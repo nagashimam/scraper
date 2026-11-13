@@ -1,3 +1,5 @@
+**Modern Web Guidance is now stable!** Upgrade your coding agents with expert-vetted web development best practices. [Read the announcement](https://goo.gle/mwg-stable).
+
 *   [web.dev](https://web.dev/)
 *   [Resources](https://web.dev/learn)
 *   [AI](https://web.dev/learn/ai)
@@ -32,7 +34,7 @@ That said, you may discover high-impact opportunities, such as light touches of 
 
 To determine the right idea, you should have a good sense of who your users are. Work with your UX team or [brush up on personas](http://figma.com/community/file/1119057572478437366/user-persona-template-google-ux-themed) to define who those users are. Take a [user-first (or people-first) approach](https://pair.withgoogle.com/guidebook/chapters/user-needs-and-defining-success), and map the AI opportunities you find to concrete use cases for your product.
 
-**Note:** This is covered in more depth in [UX patterns](/learn/ai/ux-partterns).
+**Note:** This is covered in greater depth in the [UX patterns module](/learn/ai/ux-patterns).
 
 These can be:
 

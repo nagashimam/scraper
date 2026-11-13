@@ -1,3 +1,5 @@
+**Modern Web Guidance is now stable!** Upgrade your coding agents with expert-vetted web development best practices. [Read the announcement](https://goo.gle/mwg-stable).
+
 *   [web.dev](https://web.dev/)
 *   [Resources](https://web.dev/learn)
 *   [CSS](https://web.dev/learn/css)

@@ -24,7 +24,7 @@ In this section we will introduce how to scaffold a Vue [Single Page Application
 
 Make sure you have an up-to-date version of [Node.js](https://nodejs.org/) installed and your current working directory is the one where you intend to create a project. Run the following command in your command line (without the `$` sign):
 
-npmpnpmyarnbun
+npmpnpmyarnbunvite+
 
 sh
 
@@ -57,6 +57,12 @@ sh
 $ bun create vue@latest
 ```
 
+sh
+
+```
+$ vp create vue@latest
+```
+
 This command will install and execute [create-vue](https://github.com/vuejs/create-vue), the official Vue project scaffolding tool. You will be presented with prompts for several optional features such as TypeScript and testing support:
 
 ```
@@ -77,7 +83,7 @@ Done.
 
 If you are unsure about an option, simply choose `No` by hitting enter for now. Once the project is created, follow the instructions to install dependencies and start the dev server:
 
-npmpnpmyarnbun
+npmpnpmyarnbunvite+
 
 sh
 
@@ -111,6 +117,14 @@ $ bun install
 $ bun run dev
 ```
 
+sh
+
+```
+$ cd <your-project-name>
+$ vp install
+$ vp run dev
+```
+
 You should now have your first Vue project running! Note that the example components in the generated project are written using the [Composition API](/guide/introduction#composition-api) and `<script setup>`, rather than the [Options API](/guide/introduction#options-api). Here are some additional tips:
 
 *   The recommended IDE setup is [Visual Studio Code](https://code.visualstudio.com/) + [Vue - Official extension](https://marketplace.visualstudio.com/items?itemName=Vue.volar). If you use other editors, check out the [IDE support section](/guide/scaling-up/tooling#ide-support).
@@ -120,7 +134,7 @@ You should now have your first Vue project running! Note that the example compon
 
 When you are ready to ship your app to production, run the following:
 
-npmpnpmyarnbun
+npmpnpmyarnbunvite+
 
 sh
 
@@ -144,6 +158,12 @@ sh
 
 ```
 $ bun run build
+```
+
+sh
+
+```
+$ vp run build
 ```
 
 This will create a production-ready build of your app in the project's `./dist` directory. Check out the [Production Deployment Guide](/guide/best-practices/production-deployment) to learn more about shipping your app to production.

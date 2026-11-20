@@ -1,4 +1,4 @@
-**Modern Web Guidance is now stable!** Upgrade your coding agents with expert-vetted web development best practices. [Read the announcement](https://goo.gle/mwg-stable).
+**Modern Web Guidance is now stable!** Upgrade your coding agents with expert-vetted web development best practices. [Read the announcement](https://developer.chrome.com/blog/modern-web-guidance-v1).
 
 *   [web.dev](https://web.dev/)
 *   [Resources](https://web.dev/learn)
@@ -67,7 +67,9 @@ Elements with a `tabindex` of `1` or greater are included in a separate tab sequ
 
 ### The `contenteditable` attribute
 
-The [`contenteditable`](/learn/html/attributes#contenteditable) attribute was discussed earlier. Setting `contenteditable="true"` on any element makes it editable, focusable, and part of the tab order. The focus behavior is similar to setting `tabindex="0"`, but not the same. Nested `contenteditable` elements are focusable but not tabbable. To make a nested `contenteditable` element tabbable, add `tabindex="0"`, which adds it to the sequential focus navigation order.
+The [`contenteditable`](/learn/html/attributes#contenteditable) is a global attribute. Setting `contenteditable="true"` on any element makes it editable, focusable, and part of the tab order. The focus behavior is similar to setting `tabindex="0"`, but not the same.
+
+Nested `contenteditable` elements are focusable but not tabbable. To make a nested `contenteditable` element tabbable, add `tabindex="0"`, which adds the element to the sequential focus navigation order.
 
 ## Give `autofocus` to interactive elements
 
@@ -115,7 +117,7 @@ The `disabled` attribute doesn't apply to normally `inert` elements that are mad
 
 When the `inert` global boolean attribute is added to an element, that element and all nested content become disabled, which means they cannot be clicked or tabbed to. They are also removed from the accessibility tree. While `inert` can be applied to any element, it's generally used for sections of content, such as offscreen or otherwise hidden content.
 
-When applying `disabled` to form controls, the browser provides default styling and can be styled using the [`:disabled`](https://developer.mozilla.org/docs/Web/CSS/:disabled) pseudo class. The `inert` attribute provides no visual indicators and has no matching pseudoclass (though the `[inert]` [attribute selector](/learn/css/selectors#attribute_selector) matches).
+When applying `disabled` to form controls, the browser provides default styling and can be styled using the [`:disabled`](https://developer.mozilla.org/docs/Web/CSS/:disabled) pseudo class. The `inert` attribute provides no visual indicators and has no matching pseudo class (though the `[inert]` [attribute selector](/learn/css/selectors#attribute_selector) matches).
 
 Using `inert` on visible content without styles indicating the inertness can lead to poor user experience. As inert content is not available to screen reader users, it can lead to confusion when sighted screen reader users see content on screen that is not available to the accessibility tools. Make inertness very apparent with CSS.
 
@@ -139,17 +141,17 @@ Hidden.
 
 Try again.
 
-What will be true if the element has a `disabled` attribute?
+What is true if the element has a `disabled` attribute?
 
-It will be unfocusable.
+It is unfocusable.
 
 Correct!
 
-It will not be displayed.
+It is not displayed.
 
 Try again.
 
-If it is a form element it will not be submitted.
+If it is a form element, it is not submitted.
 
 Correct!
 

@@ -23,7 +23,7 @@ It is also recommended to use these online playgrounds to provide reproductions 
 
 To get started with Vite + Vue, simply run:
 
-npmpnpmyarnbun
+npmpnpmyarnbunvite+
 
 sh
 
@@ -51,6 +51,12 @@ sh
 
 ```
 $ bun create vue@latest
+```
+
+sh
+
+```
+$ vp create vue@latest
 ```
 
 This command will install and execute [create-vue](https://github.com/vuejs/create-vue), the official Vue project scaffolding tool.
